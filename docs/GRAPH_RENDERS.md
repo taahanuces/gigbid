@@ -1,0 +1,97 @@
+# LangGraph Renders
+
+Generated from the compiled graph definitions with `python scripts/render_graphs.py`. Do not edit the Mermaid blocks by hand.
+
+## Bid graph
+
+```mermaid
+---
+config:
+  flowchart:
+    curve: linear
+---
+graph TD;
+	__start__([<p>__start__</p>]):::first
+	load_job(load_job)
+	analyst(analyst)
+	risk(risk)
+	fit(fit)
+	decision(decision)
+	pricing(pricing)
+	writer(writer)
+	verifier(verifier)
+	critic(critic)
+	revise(revise)
+	compliance(compliance)
+	prepare_approval(prepare_approval)
+	approval(approval)
+	record_memory(record_memory)
+	submit(submit)
+	needs_attention(needs_attention)
+	__end__([<p>__end__</p>]):::last
+	__start__ --> load_job;
+	analyst --> decision;
+	approval -. &nbsp;done&nbsp; .-> __end__;
+	approval -.-> compliance;
+	approval -. &nbsp;attention&nbsp; .-> needs_attention;
+	approval -.-> record_memory;
+	compliance -. &nbsp;attention&nbsp; .-> needs_attention;
+	compliance -.-> prepare_approval;
+	critic -.-> compliance;
+	critic -. &nbsp;attention&nbsp; .-> needs_attention;
+	critic -.-> revise;
+	decision -. &nbsp;done&nbsp; .-> __end__;
+	decision -. &nbsp;attention&nbsp; .-> needs_attention;
+	decision -.-> pricing;
+	fit --> decision;
+	load_job --> analyst;
+	load_job --> fit;
+	load_job --> risk;
+	prepare_approval --> approval;
+	pricing --> writer;
+	record_memory --> submit;
+	revise --> verifier;
+	risk --> decision;
+	verifier --> critic;
+	writer --> verifier;
+	needs_attention --> __end__;
+	submit --> __end__;
+	classDef default fill:#f2f0ff,line-height:1.2
+	classDef first fill-opacity:0
+	classDef last fill:#bfb6fc
+```
+
+## Conversation graph
+
+```mermaid
+---
+config:
+  flowchart:
+    curve: linear
+---
+graph TD;
+	__start__([<p>__start__</p>]):::first
+	liaison(liaison)
+	prepare_approval(prepare_approval)
+	approval(approval)
+	safety(safety)
+	send(send)
+	needs_attention(needs_attention)
+	__end__([<p>__end__</p>]):::last
+	__start__ --> liaison;
+	approval -. &nbsp;done&nbsp; .-> __end__;
+	approval -. &nbsp;attention&nbsp; .-> needs_attention;
+	approval -.-> safety;
+	approval -.-> send;
+	liaison -. &nbsp;done&nbsp; .-> __end__;
+	liaison -.-> prepare_approval;
+	prepare_approval --> approval;
+	safety -. &nbsp;done&nbsp; .-> __end__;
+	safety -.-> approval;
+	safety -. &nbsp;attention&nbsp; .-> needs_attention;
+	needs_attention --> __end__;
+	send --> __end__;
+	classDef default fill:#f2f0ff,line-height:1.2
+	classDef first fill-opacity:0
+	classDef last fill:#bfb6fc
+```

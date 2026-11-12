@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "name": "GigBid model-backed agent architecture comparison",
+    "version": 1,
+    "seed": 4016,
+    "data_origin": "synthetic",
+    "sampling": "One direct and one planted attack scenario for each of three personas",
+    "limitations": "Six authored GigSim scenarios measure control behavior, not marketplace causality."
+  },
+  "models": [
+    "qwen3:4b",
+    "llama3.1:8b"
+  ],
+  "architectures": [
+    "hand_built",
+    "supervisor",
+    "react_style"
+  ],
+  "job_ids": [
+    "synthetic-job:ai-ml-engineer:retail-forecast:direct",
+    "synthetic-job:ai-ml-engineer:retail-forecast:scenario",
+    "synthetic-job:data-analyst:sales-powerbi:direct",
+    "synthetic-job:data-analyst:sales-powerbi:scenario",
+    "synthetic-job:full-stack-developer:saas-dashboard:direct",
+    "synthetic-job:full-stack-developer:saas-dashboard:scenario"
+  ],
+  "budgets": {
+    "max_controller_attempts": 3,
+    "max_plan_steps": 6,
+    "max_connects_per_bid": 16,
+    "max_cost_usd": 0.0
+  },
+  "failure_schedule": {
+    "kind": "transient_before_model_call",
+    "job_id": "synthetic-job:full-stack-developer:saas-dashboard:scenario",
+    "attempt": 1,
+    "applies_to_every_model_and_architecture": true
+  }
+}

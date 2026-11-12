@@ -1,0 +1,158 @@
+{
+  "metadata": {
+    "generated_at": "2026-11-12T04:48:53.454216+00:00",
+    "keep_hidden_until_ratings_complete": true
+  },
+  "items": [
+    {
+      "panel_id": "panel-01",
+      "proposal_a": "v2_hybrid",
+      "proposal_b": "v0_naive"
+    },
+    {
+      "panel_id": "panel-02",
+      "proposal_a": "v0_naive",
+      "proposal_b": "v2_hybrid"
+    },
+    {
+      "panel_id": "panel-03",
+      "proposal_a": "v2_hybrid",
+      "proposal_b": "v0_naive"
+    },
+    {
+      "panel_id": "panel-04",
+      "proposal_a": "v2_hybrid",
+      "proposal_b": "v0_naive"
+    },
+    {
+      "panel_id": "panel-05",
+      "proposal_a": "v0_naive",
+      "proposal_b": "v2_hybrid"
+    },
+    {
+      "panel_id": "panel-06",
+      "proposal_a": "v2_hybrid",
+      "proposal_b": "v0_naive"
+    },
+    {
+      "panel_id": "panel-07",
+      "proposal_a": "v2_hybrid",
+      "proposal_b": "v0_naive"
+    },
+    {
+      "panel_id": "panel-08",
+      "proposal_a": "v0_naive",
+      "proposal_b": "v2_hybrid"
+    },
+    {
+      "panel_id": "panel-09",
+      "proposal_a": "v2_hybrid",
+      "proposal_b": "v0_naive"
+    },
+    {
+      "panel_id": "panel-10",
+      "proposal_a": "v2_hybrid",
+      "proposal_b": "v0_naive"
+    },
+    {
+      "panel_id": "panel-11",
+      "proposal_a": "v2_hybrid",
+      "proposal_b": "v0_naive"
+    },
+    {
+      "panel_id": "panel-12",
+      "proposal_a": "v2_hybrid",
+      "proposal_b": "v0_naive"
+    },
+    {
+      "panel_id": "panel-13",
+      "proposal_a": "v2_hybrid",
+      "proposal_b": "v0_naive"
+    },
+    {
+      "panel_id": "panel-14",
+      "proposal_a": "v2_hybrid",
+      "proposal_b": "v0_naive"
+    },
+    {
+      "panel_id": "panel-15",
+      "proposal_a": "v0_naive",
+      "proposal_b": "v2_hybrid"
+    },
+    {
+      "panel_id": "panel-16",
+      "proposal_a": "v2_hybrid",
+      "proposal_b": "v0_naive"
+    },
+    {
+      "panel_id": "panel-17",
+      "proposal_a": "v0_naive",
+      "proposal_b": "v2_hybrid"
+    },
+    {
+      "panel_id": "panel-18",
+      "proposal_a": "v2_hybrid",
+      "proposal_b": "v0_naive"
+    },
+    {
+      "panel_id": "panel-19",
+      "proposal_a": "v0_naive",
+      "proposal_b": "v2_hybrid"
+    },
+    {
+      "panel_id": "panel-20",
+      "proposal_a": "v0_naive",
+      "proposal_b": "v2_hybrid"
+    },
+    {
+      "panel_id": "panel-21",
+      "proposal_a": "v0_naive",
+      "proposal_b": "v2_hybrid"
+    },
+    {
+      "panel_id": "panel-22",
+      "proposal_a": "v2_hybrid",
+      "proposal_b": "v0_naive"
+    },
+    {
+      "panel_id": "panel-23",
+      "proposal_a": "v2_hybrid",
+      "proposal_b": "v0_naive"
+    },
+    {
+      "panel_id": "panel-24",
+      "proposal_a": "v0_naive",
+      "proposal_b": "v2_hybrid"
+    },
+    {
+      "panel_id": "panel-25",
+      "proposal_a": "v2_hybrid",
+      "proposal_b": "v0_naive"
+    },
+    {
+      "panel_id": "panel-26",
+      "proposal_a": "v2_hybrid",
+      "proposal_b": "v0_naive"
+    },
+    {
+      "panel_id": "panel-27",
+      "proposal_a": "v2_hybrid",
+      "proposal_b": "v0_naive"
+    },
+    {
+      "panel_id": "panel-28",
+      "proposal_a": "v2_hybrid",
+      "proposal_b": "v0_naive"
+    },
+    {
+      "panel_id": "panel-29",
+      "proposal_a": "v2_hybrid",
+      "proposal_b": "v0_naive"
+    },
+    {
+      "panel_id": "panel-30",
+      "proposal_a": "v2_hybrid",
+      "proposal_b": "v0_naive"
+    }
+  ]
+}

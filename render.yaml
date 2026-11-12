@@ -1,0 +1,75 @@
+services:
+  - type: web
+    name: gigbid-api
+    runtime: docker
+    plan: free
+    dockerfilePath: ./infra/docker/api.Dockerfile
+    dockerContext: .
+    dockerCommand: sh scripts/render_api_start.sh
+    healthCheckPath: /health
+    autoDeployTrigger: commit
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: APP_SECRET_KEY
+        generateValue: true
+      - key: REVIEWER_PASSWORD
+        sync: false
+      - key: DATABASE_URL
+        fromDatabase:
+          name: gigbid-db
+          property: connectionString
+      - key: CHECKPOINT_BACKEND
+        value: postgres
+      - key: ASYNC_GRAPH_RUNS
+        value: "false"
+      - key: LANGGRAPH_STRICT_MSGPACK
+        value: "true"
+      - key: MARKETPLACE_MODE
+        value: gigsim
+      - key: ACTIVE_PERSONA
+        value: data-analyst
+      - key: GIGSIM_BASE_URL
+        value: http://127.0.0.1:8081
+      - key: GIGSIM_API_TOKEN
+        generateValue: true
+      - key: GIGSIM_REQUESTS_PER_MINUTE
+        value: "60"
+      - key: SIMULATOR_FIXTURE
+        value: evals/datasets/simulator_fixture.json
+      - key: MODEL_EXECUTION
+        value: deterministic
+      - key: TRACE_LOG_PATH
+        value: /tmp/gigbid/api.jsonl
+      - key: OTEL_SERVICE_NAME
+        value: gigbid-api
+      - key: OTEL_PROJECT_NAME
+        value: gigbid
+      - key: CORS_ORIGINS
+        fromService:
+          type: web
+          name: gigbid-web
+          envVarKey: RENDER_EXTERNAL_URL
+
+  - type: web
+    name: gigbid-web
+    runtime: docker
+    plan: free
+    dockerfilePath: ./infra/docker/web.Dockerfile
+    dockerContext: .
+    healthCheckPath: /login
+    autoDeployTrigger: commit
+    envVars:
+      - key: NEXT_PUBLIC_API_URL
+        fromService:
+          type: web
+          name: gigbid-api
+          envVarKey: RENDER_EXTERNAL_URL
+
+databases:
+  - name: gigbid-db
+    plan: free
+    postgresMajorVersion: "17"
+    databaseName: gigbid
+    user: gigbid
+    ipAllowList: []

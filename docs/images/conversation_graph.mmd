@@ -1,0 +1,30 @@
+---
+config:
+  flowchart:
+    curve: linear
+---
+graph TD;
+	__start__([<p>__start__</p>]):::first
+	liaison(liaison)
+	prepare_approval(prepare_approval)
+	approval(approval)
+	safety(safety)
+	send(send)
+	needs_attention(needs_attention)
+	__end__([<p>__end__</p>]):::last
+	__start__ --> liaison;
+	approval -. &nbsp;done&nbsp; .-> __end__;
+	approval -. &nbsp;attention&nbsp; .-> needs_attention;
+	approval -.-> safety;
+	approval -.-> send;
+	liaison -. &nbsp;done&nbsp; .-> __end__;
+	liaison -.-> prepare_approval;
+	prepare_approval --> approval;
+	safety -. &nbsp;done&nbsp; .-> __end__;
+	safety -.-> approval;
+	safety -. &nbsp;attention&nbsp; .-> needs_attention;
+	needs_attention --> __end__;
+	send --> __end__;
+	classDef default fill:#f2f0ff,line-height:1.2
+	classDef first fill-opacity:0
+	classDef last fill:#bfb6fc

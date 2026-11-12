@@ -1,0 +1,35 @@
+[
+  {
+    "evidence_id": "ev-demand-001",
+    "tenant_id": "demo",
+    "persona": "data-scientist",
+    "type": "case_study",
+    "title": "Retail demand forecasting study",
+    "text": "built a Python time-series forecasting pipeline, compared seasonal naive and gradient-boosted models, and reported MAE and MAPE limitations",
+    "source": "synthetic smoke-test case study",
+    "date": "2026-08-01",
+    "project": "retail-demand",
+    "skills": ["Python", "time-series forecasting", "model evaluation"],
+    "client_industry": "retail",
+    "outcome": "reviewed",
+    "data_origin": "synthetic",
+    "generator_version": "smoke-v1"
+  },
+  {
+    "evidence_id": "ev-report-002",
+    "tenant_id": "demo",
+    "persona": "data-scientist",
+    "type": "client_review",
+    "title": "Analytics explanation review",
+    "text": "translated model error metrics into clear operational recommendations for non-technical stakeholders",
+    "source": "synthetic smoke-test review",
+    "date": "2026-09-15",
+    "project": "operations-analytics",
+    "skills": ["model evaluation", "stakeholder communication"],
+    "client_industry": "operations",
+    "outcome": "positive_review",
+    "data_origin": "synthetic",
+    "generator_version": "smoke-v1"
+  }
+]
+

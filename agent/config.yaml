@@ -1,0 +1,81 @@
+marketplace:
+  mode: gigsim
+  max_requests_per_minute: 20
+  timeout_seconds: 15
+  max_retries: 3
+  saved_search_interval_minutes: 240
+
+models:
+  profile: open
+  profiles:
+    open:
+      provider: ollama
+      base_url: ${OLLAMA_BASE_URL}
+      fallback_model: llama3.1:8b
+      nodes:
+        scout: qwen3:4b
+        analyst: qwen3:4b
+        risk_assessor: qwen3:4b
+        fit_matcher: qwen3:4b
+        pricing: qwen3:4b
+        compliance: qwen3:4b
+        writer: qwen3:4b
+        critic: qwen3:4b
+        client_liaison: qwen3:4b
+      embeddings: nomic-embed-text
+      reranker: bge-reranker-v2-m3
+    open_small:
+      provider: ollama
+      base_url: ${OLLAMA_BASE_URL}
+      fallback_model: qwen3:4b
+      nodes:
+        scout: qwen3:4b
+        analyst: qwen3:4b
+        risk_assessor: qwen3:4b
+        fit_matcher: qwen3:4b
+        pricing: qwen3:4b
+        compliance: qwen3:4b
+        writer: qwen3:4b
+        critic: qwen3:4b
+        client_liaison: qwen3:4b
+      embeddings: nomic-embed-text
+      reranker: bge-reranker-v2-m3
+    paid:
+      enabled: false
+      provider: configure-me
+      nodes: {}
+
+budgets:
+  max_graph_steps: 30
+  max_revisions: 2
+  max_tokens_per_job: 12000
+  max_cost_per_job_usd: 0.00
+  max_cost_per_proposal_usd: 0.00
+  target_p95_job_latency_seconds: 45
+  target_p95_proposal_latency_seconds: 90
+
+thresholds:
+  minimum_fit_score: 0.60
+  maximum_risk_score: 0.70
+  auto_skip_fit_score: 0.20
+  minimum_evidence_score: 0.55
+  maximum_connects_per_bid: 16
+
+rag:
+  variant: v2_hybrid
+  top_k: 5
+  chunk_size: 700
+  chunk_overlap: 100
+
+memory:
+  style_minimum_consistent_edits: 3
+  outcome_minimum_observations: 5
+  outcome_minimum_reply_rate: 0.30
+
+policy:
+  rules_file: data/policy_pack/marketplace_policy.yaml
+  block_off_platform_contact: true
+  block_unpaid_production_work: true
+  block_guarantees: true
+  require_claim_evidence: true
+

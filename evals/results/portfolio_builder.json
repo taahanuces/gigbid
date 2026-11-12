@@ -1,0 +1,125 @@
+{
+  "metadata": {
+    "generated_at": "2026-11-11T08:47:41.175443+00:00",
+    "data_origin": "authored_synthetic_repository_snapshots",
+    "repositories": 12,
+    "live_github_validation": false
+  },
+  "summary": {
+    "technology_precision": 1.0,
+    "technology_recall": 1.0,
+    "unsupported_claim_recall": 1.0,
+    "unsupported_claim_false_positive_rate": 0.0,
+    "human_approval_required_rate": 1.0
+  },
+  "rows": [
+    {
+      "repository": "synthetic/python-fastapi-0",
+      "technology_precision": 1.0,
+      "technology_recall": 1.0,
+      "expected_claim_flag": true,
+      "claim_flag_detected": true,
+      "evidence_paths": 3,
+      "status": "pending_human_approval"
+    },
+    {
+      "repository": "synthetic/next-dashboard-1",
+      "technology_precision": 1.0,
+      "technology_recall": 1.0,
+      "expected_claim_flag": false,
+      "claim_flag_detected": false,
+      "evidence_paths": 2,
+      "status": "pending_human_approval"
+    },
+    {
+      "repository": "synthetic/celery-worker-2",
+      "technology_precision": 1.0,
+      "technology_recall": 1.0,
+      "expected_claim_flag": true,
+      "claim_flag_detected": true,
+      "evidence_paths": 2,
+      "status": "pending_human_approval"
+    },
+    {
+      "repository": "synthetic/ml-pipeline-3",
+      "technology_precision": 1.0,
+      "technology_recall": 1.0,
+      "expected_claim_flag": false,
+      "claim_flag_detected": false,
+      "evidence_paths": 2,
+      "status": "pending_human_approval"
+    },
+    {
+      "repository": "synthetic/docker-api-4",
+      "technology_precision": 1.0,
+      "technology_recall": 1.0,
+      "expected_claim_flag": true,
+      "claim_flag_detected": true,
+      "evidence_paths": 3,
+      "status": "pending_human_approval"
+    },
+    {
+      "repository": "synthetic/node-service-5",
+      "technology_precision": 1.0,
+      "technology_recall": 1.0,
+      "expected_claim_flag": false,
+      "claim_flag_detected": false,
+      "evidence_paths": 2,
+      "status": "pending_human_approval"
+    },
+    {
+      "repository": "synthetic/python-fastapi-6",
+      "technology_precision": 1.0,
+      "technology_recall": 1.0,
+      "expected_claim_flag": true,
+      "claim_flag_detected": true,
+      "evidence_paths": 3,
+      "status": "pending_human_approval"
+    },
+    {
+      "repository": "synthetic/next-dashboard-7",
+      "technology_precision": 1.0,
+      "technology_recall": 1.0,
+      "expected_claim_flag": false,
+      "claim_flag_detected": false,
+      "evidence_paths": 2,
+      "status": "pending_human_approval"
+    },
+    {
+      "repository": "synthetic/celery-worker-8",
+      "technology_precision": 1.0,
+      "technology_recall": 1.0,
+      "expected_claim_flag": true,
+      "claim_flag_detected": true,
+      "evidence_paths": 2,
+      "status": "pending_human_approval"
+    },
+    {
+      "repository": "synthetic/ml-pipeline-9",
+      "technology_precision": 1.0,
+      "technology_recall": 1.0,
+      "expected_claim_flag": false,
+      "claim_flag_detected": false,
+      "evidence_paths": 2,
+      "status": "pending_human_approval"
+    },
+    {
+      "repository": "synthetic/docker-api-10",
+      "technology_precision": 1.0,
+      "technology_recall": 1.0,
+      "expected_claim_flag": true,
+      "claim_flag_detected": true,
+      "evidence_paths": 3,
+      "status": "pending_human_approval"
+    },
+    {
+      "repository": "synthetic/node-service-11",
+      "technology_precision": 1.0,
+      "technology_recall": 1.0,
+      "expected_claim_flag": false,
+      "claim_flag_detected": false,
+      "evidence_paths": 2,
+      "status": "pending_human_approval"
+    }
+  ]
+}

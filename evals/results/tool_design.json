@@ -1,0 +1,2335 @@
+{
+  "metadata": {
+    "generated_at": "2026-11-10T19:13:36.354048+00:00",
+    "model": "llama3.1:8b",
+    "temperature": 0,
+    "seed": 4016,
+    "task_count": 40,
+    "calls": 120,
+    "execution": "selection only; no tool was executed and no external state changed",
+    "scoring": "exact JSON values and types; missing or additional arguments fail",
+    "model_digest": "667b0c1932bc6ffc593ed1d03f895bf2dc8dc6df21db3042284a6f4416b06a29",
+    "ollama_version": "0.40.7"
+  },
+  "designs": {
+    "fine_grained": "14 single-purpose tools with production descriptions",
+    "coarse_grained": "3 server-level action tools with an operation discriminator",
+    "best_descriptions": "14 single-purpose tools with use/avoid boundary guidance"
+  },
+  "summary": {
+    "fine_grained": {
+      "tasks": 40.0,
+      "tool_selection_accuracy": 1.0,
+      "argument_accuracy": 0.6,
+      "tokens_per_task": 1229.6,
+      "p50_latency_ms": 2173.3376255142502,
+      "p95_latency_ms": 5485.012124991044,
+      "errors": 0.0
+    },
+    "coarse_grained": {
+      "tasks": 40.0,
+      "tool_selection_accuracy": 0.8,
+      "argument_accuracy": 0.15,
+      "tokens_per_task": 410.975,
+      "p50_latency_ms": 2846.198937506415,
+      "p95_latency_ms": 6061.011084006168,
+      "errors": 0.0
+    },
+    "best_descriptions": {
+      "tasks": 40.0,
+      "tool_selection_accuracy": 1.0,
+      "argument_accuracy": 0.5,
+      "tokens_per_task": 1423.95,
+      "p50_latency_ms": 3058.138770516962,
+      "p95_latency_ms": 7739.837917033583,
+      "errors": 0.0
+    }
+  },
+  "rows": [
+    {
+      "task_id": "TD01",
+      "design": "fine_grained",
+      "expected_tool": "search_jobs",
+      "selected_tool": "search_jobs",
+      "selected_arguments": {
+        "query": "Python FastAPI",
+        "tenant_id": "acme",
+        "trace_id": "trace-0001"
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 1168,
+      "completion_tokens": 37,
+      "latency_ms": 16592.097457963973,
+      "error": null,
+      "tokens": 1205
+    },
+    {
+      "task_id": "TD02",
+      "design": "fine_grained",
+      "expected_tool": "search_jobs",
+      "selected_tool": "search_jobs",
+      "selected_arguments": {
+        "query": "Power BI dashboard work",
+        "tenant_id": "northstar",
+        "trace_id": "trace-0002"
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 1167,
+      "completion_tokens": 38,
+      "latency_ms": 2136.4677919773385,
+      "error": null,
+      "tokens": 1205
+    },
+    {
+      "task_id": "TD03",
+      "design": "fine_grained",
+      "expected_tool": "search_jobs",
+      "selected_tool": "search_jobs",
+      "selected_arguments": {
+        "query": "React accessibility",
+        "tenant_id": "atlas",
+        "trace_id": "trace-0003"
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 1166,
+      "completion_tokens": 36,
+      "latency_ms": 2047.1301659708843,
+      "error": null,
+      "tokens": 1202
+    },
+    {
+      "task_id": "TD04",
+      "design": "fine_grained",
+      "expected_tool": "get_job",
+      "selected_tool": "get_job",
+      "selected_arguments": {
+        "trace_id": "trace-0004",
+        "tenant_id": "acme",
+        "job_id": "job-104"
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 1167,
+      "completion_tokens": 38,
+      "latency_ms": 2136.6774999769405,
+      "error": null,
+      "tokens": 1205
+    },
+    {
+      "task_id": "TD05",
+      "design": "fine_grained",
+      "expected_tool": "get_job",
+      "selected_tool": "get_job",
+      "selected_arguments": {
+        "job_id": "job-882",
+        "trace_id": "trace-0005",
+        "tenant_id": "northstar"
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 1171,
+      "completion_tokens": 38,
+      "latency_ms": 2164.2515410203487,
+      "error": null,
+      "tokens": 1209
+    },
+    {
+      "task_id": "TD06",
+      "design": "fine_grained",
+      "expected_tool": "get_job",
+      "selected_tool": "get_job",
+      "selected_arguments": {
+        "job_id": "job-risk-7",
+        "trace_id": "trace-0006",
+        "tenant_id": "atlas"
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 1167,
+      "completion_tokens": 39,
+      "latency_ms": 2171.5954589890316,
+      "error": null,
+      "tokens": 1206
+    },
+    {
+      "task_id": "TD07",
+      "design": "fine_grained",
+      "expected_tool": "get_client_history",
+      "selected_tool": "get_client_history",
+      "selected_arguments": {
+        "client_id": "client-44",
+        "tenant_id": "acme",
+        "trace_id": "trace-0007"
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 1168,
+      "completion_tokens": 39,
+      "latency_ms": 2167.947999900207,
+      "error": null,
+      "tokens": 1207
+    },
+    {
+      "task_id": "TD08",
+      "design": "fine_grained",
+      "expected_tool": "get_client_history",
+      "selected_tool": "get_client_history",
+      "selected_arguments": {
+        "client_id": "client-902",
+        "tenant_id": "northstar",
+        "trace_id": "trace-0008"
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 1170,
+      "completion_tokens": 39,
+      "latency_ms": 2153.6530409939587,
+      "error": null,
+      "tokens": 1209
+    },
+    {
+      "task_id": "TD09",
+      "design": "fine_grained",
+      "expected_tool": "get_client_history",
+      "selected_tool": "get_client_history",
+      "selected_arguments": {
+        "tenant_id": "atlas",
+        "trace_id": "trace-0009",
+        "client_id": "client-new-3"
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 1167,
+      "completion_tokens": 40,
+      "latency_ms": 2243.8028749311343,
+      "error": null,
+      "tokens": 1207
+    },
+    {
+      "task_id": "TD10",
+      "design": "fine_grained",
+      "expected_tool": "get_connects_balance",
+      "selected_tool": "get_connects_balance",
+      "selected_arguments": {
+        "tenant_id": "acme",
+        "trace_id": "trace-0010"
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 1168,
+      "completion_tokens": 31,
+      "latency_ms": 1745.7251249579713,
+      "error": null,
+      "tokens": 1199
+    },
+    {
+      "task_id": "TD11",
+      "design": "fine_grained",
+      "expected_tool": "get_connects_balance",
+      "selected_tool": "get_connects_balance",
+      "selected_arguments": {
+        "tenant_id": "northstar",
+        "trace_id": "trace-0011"
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 1166,
+      "completion_tokens": 31,
+      "latency_ms": 1800.448082969524,
+      "error": null,
+      "tokens": 1197
+    },
+    {
+      "task_id": "TD12",
+      "design": "fine_grained",
+      "expected_tool": "list_messages",
+      "selected_tool": "list_messages",
+      "selected_arguments": {
+        "conversation_id": "conv-77",
+        "tenant_id": "acme",
+        "trace_id": "trace-0012"
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 1168,
+      "completion_tokens": 38,
+      "latency_ms": 2138.760415953584,
+      "error": null,
+      "tokens": 1206
+    },
+    {
+      "task_id": "TD13",
+      "design": "fine_grained",
+      "expected_tool": "list_messages",
+      "selected_tool": "list_messages",
+      "selected_arguments": {
+        "conversation_id": "conv-screen-5",
+        "tenant_id": "northstar",
+        "trace_id": "trace-0013"
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 1170,
+      "completion_tokens": 39,
+      "latency_ms": 2175.079792039469,
+      "error": null,
+      "tokens": 1209
+    },
+    {
+      "task_id": "TD14",
+      "design": "fine_grained",
+      "expected_tool": "list_messages",
+      "selected_tool": "list_messages",
+      "selected_arguments": {
+        "conversation_id": "conv-202",
+        "tenant_id": "atlas",
+        "trace_id": "trace-0014"
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 1168,
+      "completion_tokens": 38,
+      "latency_ms": 2138.302917010151,
+      "error": null,
+      "tokens": 1206
+    },
+    {
+      "task_id": "TD15",
+      "design": "fine_grained",
+      "expected_tool": "create_proposal_draft",
+      "selected_tool": "create_proposal_draft",
+      "selected_arguments": {
+        "cover_letter": "I can deliver this API safely and document every endpoint.",
+        "dry_run": true,
+        "idempotency_key": "proposal-acme-104",
+        "job_id": "job-104",
+        "tenant_id": "acme",
+        "trace_id": "trace-0015",
+        "connects_cost": 8
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 1199,
+      "completion_tokens": 84,
+      "latency_ms": 4766.001958982088,
+      "error": null,
+      "tokens": 1283
+    },
+    {
+      "task_id": "TD16",
+      "design": "fine_grained",
+      "expected_tool": "create_proposal_draft",
+      "selected_tool": "create_proposal_draft",
+      "selected_arguments": {
+        "connects_cost": 12,
+        "cover_letter": "I will build the dashboard with tested metrics and a clear handoff.",
+        "dry_run": true,
+        "idempotency_key": "proposal-northstar-882",
+        "job_id": "job-882",
+        "tenant_id": "northstar",
+        "trace_id": "trace-0016"
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 1199,
+      "completion_tokens": 88,
+      "latency_ms": 4940.762124955654,
+      "error": null,
+      "tokens": 1287
+    },
+    {
+      "task_id": "TD17",
+      "design": "fine_grained",
+      "expected_tool": "create_proposal_draft",
+      "selected_tool": "create_proposal_draft",
+      "selected_arguments": {
+        "tenant_id": "atlas",
+        "trace_id": "trace-0017",
+        "connects_cost": 6,
+        "cover_letter": "I can implement the accessible React flow and verify it in Playwright.",
+        "dry_run": true,
+        "idempotency_key": "proposal-atlas-55",
+        "job_id": "job-55"
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 1196,
+      "completion_tokens": 87,
+      "latency_ms": 4845.4694169340655,
+      "error": null,
+      "tokens": 1283
+    },
+    {
+      "task_id": "TD18",
+      "design": "fine_grained",
+      "expected_tool": "submit_proposal",
+      "selected_tool": "submit_proposal",
+      "selected_arguments": {
+        "dry_run": true,
+        "idempotency_key": "submit-acme-104",
+        "proposal_id": "prop-104",
+        "tenant_id": "acme",
+        "trace_id": "trace-0018"
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 1176,
+      "completion_tokens": 59,
+      "latency_ms": 3237.4955830164254,
+      "error": null,
+      "tokens": 1235
+    },
+    {
+      "task_id": "TD19",
+      "design": "fine_grained",
+      "expected_tool": "submit_proposal",
+      "selected_tool": "submit_proposal",
+      "selected_arguments": {
+        "dry_run": "true",
+        "idempotency_key": "submit-northstar-882",
+        "proposal_id": "prop-882",
+        "tenant_id": "northstar",
+        "trace_id": "trace-0019"
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 1178,
+      "completion_tokens": 61,
+      "latency_ms": 3418.5074999695644,
+      "error": null,
+      "tokens": 1239
+    },
+    {
+      "task_id": "TD20",
+      "design": "fine_grained",
+      "expected_tool": "send_message",
+      "selected_tool": "send_message",
+      "selected_arguments": {
+        "body": "Tuesday at 10:00 UTC works for me.",
+        "conversation_id": "conv-77",
+        "dry_run": "true",
+        "idempotency_key": "message-acme-77",
+        "tenant_id": "acme",
+        "trace_id": "trace-0020"
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 1186,
+      "completion_tokens": 74,
+      "latency_ms": 4235.378041979857,
+      "error": null,
+      "tokens": 1260
+    },
+    {
+      "task_id": "TD21",
+      "design": "fine_grained",
+      "expected_tool": "send_message",
+      "selected_tool": "send_message",
+      "selected_arguments": {
+        "tenant_id": "northstar",
+        "trace_id": "trace-0021",
+        "body": "Could you confirm the expected row volume?",
+        "conversation_id": "conv-screen-5",
+        "dry_run": true,
+        "idempotency_key": "message-northstar-5"
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 1186,
+      "completion_tokens": 72,
+      "latency_ms": 4126.779832993634,
+      "error": null,
+      "tokens": 1258
+    },
+    {
+      "task_id": "TD22",
+      "design": "fine_grained",
+      "expected_tool": "send_message",
+      "selected_tool": "send_message",
+      "selected_arguments": {
+        "tenant_id": "atlas",
+        "trace_id": "trace-0022",
+        "body": "I can share a milestone plan after approval.",
+        "conversation_id": "conv-202",
+        "dry_run": "true",
+        "idempotency_key": "message-atlas-202"
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 1184,
+      "completion_tokens": 72,
+      "latency_ms": 4294.841541908681,
+      "error": null,
+      "tokens": 1256
+    },
+    {
+      "task_id": "TD23",
+      "design": "fine_grained",
+      "expected_tool": "search_evidence",
+      "selected_tool": "search_evidence",
+      "selected_arguments": {
+        "requirement": "FastAPI authentication",
+        "k": "5"
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 1164,
+      "completion_tokens": 27,
+      "latency_ms": 1565.1115000946447,
+      "error": null,
+      "tokens": 1191
+    },
+    {
+      "task_id": "TD24",
+      "design": "fine_grained",
+      "expected_tool": "search_evidence",
+      "selected_tool": "search_evidence",
+      "selected_arguments": {
+        "requirement": "time-series forecasting",
+        "k": "8"
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 1163,
+      "completion_tokens": 27,
+      "latency_ms": 1572.1592920599505,
+      "error": null,
+      "tokens": 1190
+    },
+    {
+      "task_id": "TD25",
+      "design": "fine_grained",
+      "expected_tool": "search_evidence",
+      "selected_tool": "search_evidence",
+      "selected_arguments": {
+        "k": "3",
+        "requirement": "accessible React forms"
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 1164,
+      "completion_tokens": 27,
+      "latency_ms": 1582.0996250258759,
+      "error": null,
+      "tokens": 1191
+    },
+    {
+      "task_id": "TD26",
+      "design": "fine_grained",
+      "expected_tool": "search_evidence",
+      "selected_tool": "search_evidence",
+      "selected_arguments": {
+        "k": "6",
+        "requirement": "Power BI executive dashboards"
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 1164,
+      "completion_tokens": 29,
+      "latency_ms": 1795.831208000891,
+      "error": null,
+      "tokens": 1193
+    },
+    {
+      "task_id": "TD27",
+      "design": "fine_grained",
+      "expected_tool": "get_case_study",
+      "selected_tool": "get_case_study",
+      "selected_arguments": {
+        "evidence_id": "ai-ml-engineer:support-rag:case"
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 1169,
+      "completion_tokens": 30,
+      "latency_ms": 1743.12887492124,
+      "error": null,
+      "tokens": 1199
+    },
+    {
+      "task_id": "TD28",
+      "design": "fine_grained",
+      "expected_tool": "get_case_study",
+      "selected_tool": "get_case_study",
+      "selected_arguments": {
+        "evidence_id": "full-stack-developer:saas-dashboard:case"
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 1166,
+      "completion_tokens": 29,
+      "latency_ms": 1668.958208989352,
+      "error": null,
+      "tokens": 1195
+    },
+    {
+      "task_id": "TD29",
+      "design": "fine_grained",
+      "expected_tool": "get_case_study",
+      "selected_tool": "get_case_study",
+      "selected_arguments": {
+        "evidence_id": "data-analyst:executive-dashboard:case"
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 1166,
+      "completion_tokens": 29,
+      "latency_ms": 1659.995499998331,
+      "error": null,
+      "tokens": 1195
+    },
+    {
+      "task_id": "TD30",
+      "design": "fine_grained",
+      "expected_tool": "list_skills",
+      "selected_tool": "list_skills",
+      "selected_arguments": {},
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 1160,
+      "completion_tokens": 13,
+      "latency_ms": 1082.3789580026641,
+      "error": null,
+      "tokens": 1173
+    },
+    {
+      "task_id": "TD31",
+      "design": "fine_grained",
+      "expected_tool": "list_skills",
+      "selected_tool": "list_skills",
+      "selected_arguments": {},
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 1159,
+      "completion_tokens": 13,
+      "latency_ms": 770.9867500234395,
+      "error": null,
+      "tokens": 1172
+    },
+    {
+      "task_id": "TD32",
+      "design": "fine_grained",
+      "expected_tool": "list_free_slots",
+      "selected_tool": "list_free_slots",
+      "selected_arguments": {
+        "end": "2026-11-11T17:00:00+05:00",
+        "limit": "5",
+        "start": "2026-11-11T09:00:00+05:00",
+        "tenant_id": "acme",
+        "timezone": "Asia/Karachi"
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 1204,
+      "completion_tokens": 77,
+      "latency_ms": 4341.79720794782,
+      "error": null,
+      "tokens": 1281
+    },
+    {
+      "task_id": "TD33",
+      "design": "fine_grained",
+      "expected_tool": "list_free_slots",
+      "selected_tool": "list_free_slots",
+      "selected_arguments": {
+        "tenant_id": "northstar",
+        "timezone": "UTC",
+        "end": "2026-11-12T15:00:00+00:00",
+        "limit": "3",
+        "start": "2026-11-12T09:00:00+00:00"
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 1198,
+      "completion_tokens": 74,
+      "latency_ms": 4394.429749925621,
+      "error": null,
+      "tokens": 1272
+    },
+    {
+      "task_id": "TD34",
+      "design": "fine_grained",
+      "expected_tool": "list_free_slots",
+      "selected_tool": "list_free_slots",
+      "selected_arguments": {
+        "end": "2026-11-13T16:00:00+05:00",
+        "limit": "4",
+        "start": "2026-11-13T10:00:00+05:00",
+        "tenant_id": "atlas",
+        "timezone": "Asia/Karachi"
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 1200,
+      "completion_tokens": 77,
+      "latency_ms": 4718.808625009842,
+      "error": null,
+      "tokens": 1277
+    },
+    {
+      "task_id": "TD35",
+      "design": "fine_grained",
+      "expected_tool": "create_tentative_hold",
+      "selected_tool": "create_tentative_hold",
+      "selected_arguments": {
+        "starts_at": "2026-11-11T10:00:00+05:00",
+        "tenant_id": "tenant-id",
+        "title": "Client interview",
+        "dry_run": "true",
+        "ends_at": "2026-11-11T10:30:00+05:00",
+        "idempotency_key": "hold-acme-001"
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 1205,
+      "completion_tokens": 94,
+      "latency_ms": 5485.012124991044,
+      "error": null,
+      "tokens": 1299
+    },
+    {
+      "task_id": "TD36",
+      "design": "fine_grained",
+      "expected_tool": "create_tentative_hold",
+      "selected_tool": "create_tentative_hold",
+      "selected_arguments": {
+        "ends_at": "2026-11-12T14:00:00+00:00",
+        "idempotency_key": "hold-northstar-002",
+        "starts_at": "2026-11-12T13:00:00+00:00",
+        "tenant_id": "northstar",
+        "title": "Technical screen",
+        "dry_run": true
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 1208,
+      "completion_tokens": 94,
+      "latency_ms": 5512.069166987203,
+      "error": null,
+      "tokens": 1302
+    },
+    {
+      "task_id": "TD37",
+      "design": "fine_grained",
+      "expected_tool": "create_tentative_hold",
+      "selected_tool": "create_tentative_hold",
+      "selected_arguments": {
+        "dry_run": "true",
+        "ends_at": "2026-11-13T11:45:00+05:00",
+        "idempotency_key": "hold-atlas-003",
+        "starts_at": "2026-11-13T11:00:00+05:00",
+        "tenant_id": "atlas",
+        "title": "Scope review"
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 1204,
+      "completion_tokens": 94,
+      "latency_ms": 5373.469084035605,
+      "error": null,
+      "tokens": 1298
+    },
+    {
+      "task_id": "TD38",
+      "design": "fine_grained",
+      "expected_tool": "create_email_draft",
+      "selected_tool": "create_email_draft",
+      "selected_arguments": {
+        "dry_run": "false",
+        "idempotency_key": "email-acme-001",
+        "recipient": "client@example.test",
+        "subject": "Interview confirmation",
+        "body": "Tuesday at 10:00 UTC is confirmed.",
+        "tenant_id": "acme"
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 1187,
+      "completion_tokens": 70,
+      "latency_ms": 4147.180625004694,
+      "error": null,
+      "tokens": 1257
+    },
+    {
+      "task_id": "TD39",
+      "design": "fine_grained",
+      "expected_tool": "create_email_draft",
+      "selected_tool": "create_email_draft",
+      "selected_arguments": {
+        "idempotency_key": "email-northstar-002",
+        "recipient": "hiring@example.test",
+        "subject": "Dashboard questions",
+        "body": "Could you confirm the source systems?",
+        "tenant_id": "northstar",
+        "trace_id": "northstar-002",
+        "dry_run": true
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 1186,
+      "completion_tokens": 78,
+      "latency_ms": 4510.149082983844,
+      "error": null,
+      "tokens": 1264
+    },
+    {
+      "task_id": "TD40",
+      "design": "fine_grained",
+      "expected_tool": "create_email_draft",
+      "selected_tool": "create_email_draft",
+      "selected_arguments": {
+        "subject": "Scope recap",
+        "body": "I have attached the proposed milestone sequence.",
+        "tenant_id": "atlas",
+        "trace_id": "atlas-003",
+        "dry_run": "false",
+        "idempotency_key": "email-atlas-003",
+        "recipient": "team@example.test"
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 1184,
+      "completion_tokens": 78,
+      "latency_ms": 4469.635040964931,
+      "error": null,
+      "tokens": 1262
+    },
+    {
+      "task_id": "TD01",
+      "design": "coarse_grained",
+      "expected_tool": "marketplace_action",
+      "selected_tool": "marketplace_action",
+      "selected_arguments": {
+        "arguments": {
+          "job_type": "Python FastAPI",
+          "tenant": "acme",
+          "trace_id": "trace-0001"
+        },
+        "operation": "search_jobs"
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 345,
+      "completion_tokens": 49,
+      "latency_ms": 4130.414916086011,
+      "error": null,
+      "tokens": 394
+    },
+    {
+      "task_id": "TD02",
+      "design": "coarse_grained",
+      "expected_tool": "marketplace_action",
+      "selected_tool": "portfolio_action",
+      "selected_arguments": {
+        "operation": "search_evidence",
+        "arguments": {
+          "search_term": "Power BI dashboard work",
+          "tenant": "northstar",
+          "trace_id": "trace-0002"
+        }
+      },
+      "correct_tool": false,
+      "correct_arguments": false,
+      "prompt_tokens": 344,
+      "completion_tokens": 50,
+      "latency_ms": 2862.213750020601,
+      "error": null,
+      "tokens": 394
+    },
+    {
+      "task_id": "TD03",
+      "design": "coarse_grained",
+      "expected_tool": "marketplace_action",
+      "selected_tool": "marketplace_action",
+      "selected_arguments": {
+        "operation": "search_jobs",
+        "arguments": {
+          "job_id": "trace-0003",
+          "keywords": "React accessibility",
+          "tenant": "atlas"
+        }
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 343,
+      "completion_tokens": 47,
+      "latency_ms": 2602.610999951139,
+      "error": null,
+      "tokens": 390
+    },
+    {
+      "task_id": "TD04",
+      "design": "coarse_grained",
+      "expected_tool": "marketplace_action",
+      "selected_tool": "marketplace_action",
+      "selected_arguments": {
+        "operation": "get_job",
+        "arguments": {
+          "job_id": "job-104",
+          "tenant_id": "acme",
+          "trace_id": "trace-0004"
+        }
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 344,
+      "completion_tokens": 50,
+      "latency_ms": 2716.6865000035614,
+      "error": null,
+      "tokens": 394
+    },
+    {
+      "task_id": "TD05",
+      "design": "coarse_grained",
+      "expected_tool": "marketplace_action",
+      "selected_tool": "marketplace_action",
+      "selected_arguments": {
+        "operation": "get_job",
+        "arguments": {
+          "job_id": "job-882",
+          "tenant_id": "northstar",
+          "trace_id": "trace-0005"
+        }
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 348,
+      "completion_tokens": 50,
+      "latency_ms": 2717.4500840483233,
+      "error": null,
+      "tokens": 398
+    },
+    {
+      "task_id": "TD06",
+      "design": "coarse_grained",
+      "expected_tool": "marketplace_action",
+      "selected_tool": "marketplace_action",
+      "selected_arguments": {
+        "operation": "get_job",
+        "arguments": {
+          "client_id": "atlas",
+          "job_id": "job-risk-7",
+          "trace_id": "trace-0006"
+        }
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 344,
+      "completion_tokens": 51,
+      "latency_ms": 2807.808042038232,
+      "error": null,
+      "tokens": 395
+    },
+    {
+      "task_id": "TD07",
+      "design": "coarse_grained",
+      "expected_tool": "marketplace_action",
+      "selected_tool": "marketplace_action",
+      "selected_arguments": {
+        "operation": "get_client_history",
+        "arguments": {
+          "client_id": "client-44",
+          "tenant_id": "acme",
+          "trace_id": "trace-0007"
+        }
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 345,
+      "completion_tokens": 51,
+      "latency_ms": 2765.989457955584,
+      "error": null,
+      "tokens": 396
+    },
+    {
+      "task_id": "TD08",
+      "design": "coarse_grained",
+      "expected_tool": "marketplace_action",
+      "selected_tool": "marketplace_action",
+      "selected_arguments": {
+        "operation": "get_client_history",
+        "arguments": {
+          "client_id": "client-902",
+          "trace_id": "trace-0008"
+        }
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 347,
+      "completion_tokens": 43,
+      "latency_ms": 2529.6607919735834,
+      "error": null,
+      "tokens": 390
+    },
+    {
+      "task_id": "TD09",
+      "design": "coarse_grained",
+      "expected_tool": "marketplace_action",
+      "selected_tool": "marketplace_action",
+      "selected_arguments": {
+        "operation": "get_client_history",
+        "arguments": {
+          "atlas": "atlas",
+          "client_id": "client-new-3",
+          "trace_id": "trace-0009"
+        }
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 344,
+      "completion_tokens": 52,
+      "latency_ms": 2829.5472499448806,
+      "error": null,
+      "tokens": 396
+    },
+    {
+      "task_id": "TD10",
+      "design": "coarse_grained",
+      "expected_tool": "marketplace_action",
+      "selected_tool": "marketplace_action",
+      "selected_arguments": {
+        "arguments": {
+          "tenant_id": "acme",
+          "trace_id": "trace-0010"
+        },
+        "operation": "get_connects_balance"
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 345,
+      "completion_tokens": 43,
+      "latency_ms": 2426.92120897118,
+      "error": null,
+      "tokens": 388
+    },
+    {
+      "task_id": "TD11",
+      "design": "coarse_grained",
+      "expected_tool": "marketplace_action",
+      "selected_tool": "marketplace_action",
+      "selected_arguments": {
+        "operation": "get_connects_balance",
+        "arguments": {
+          "account": "northstar",
+          "job_id": "trace-0011"
+        }
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 343,
+      "completion_tokens": 42,
+      "latency_ms": 2386.5870410809293,
+      "error": null,
+      "tokens": 385
+    },
+    {
+      "task_id": "TD12",
+      "design": "coarse_grained",
+      "expected_tool": "marketplace_action",
+      "selected_tool": "marketplace_action",
+      "selected_arguments": {
+        "operation": "list_messages",
+        "arguments": {
+          "client_id": "acme",
+          "conversation_id": "conv-77",
+          "trace_id": "trace-0012"
+        }
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 345,
+      "completion_tokens": 50,
+      "latency_ms": 2828.4401670098305,
+      "error": null,
+      "tokens": 395
+    },
+    {
+      "task_id": "TD13",
+      "design": "coarse_grained",
+      "expected_tool": "marketplace_action",
+      "selected_tool": "marketplace_action",
+      "selected_arguments": {
+        "operation": "list_messages",
+        "arguments": {
+          "conversation_id": "conv-screen-5",
+          "trace_id": "trace-0013",
+          "workspace": "northstar"
+        }
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 347,
+      "completion_tokens": 50,
+      "latency_ms": 2856.8495420040563,
+      "error": null,
+      "tokens": 397
+    },
+    {
+      "task_id": "TD14",
+      "design": "coarse_grained",
+      "expected_tool": "marketplace_action",
+      "selected_tool": "marketplace_action",
+      "selected_arguments": {
+        "operation": "list_messages",
+        "arguments": {
+          "conversation_id": "conv-202"
+        }
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 345,
+      "completion_tokens": 32,
+      "latency_ms": 1851.790750049986,
+      "error": null,
+      "tokens": 377
+    },
+    {
+      "task_id": "TD15",
+      "design": "coarse_grained",
+      "expected_tool": "marketplace_action",
+      "selected_tool": null,
+      "selected_arguments": {},
+      "correct_tool": false,
+      "correct_arguments": false,
+      "prompt_tokens": 376,
+      "completion_tokens": 80,
+      "latency_ms": 5908.063708920963,
+      "error": null,
+      "tokens": 456
+    },
+    {
+      "task_id": "TD16",
+      "design": "coarse_grained",
+      "expected_tool": "marketplace_action",
+      "selected_tool": "marketplace_action",
+      "selected_arguments": {
+        "operation": "create_proposal_draft",
+        "arguments": {
+          "draft_cost": "12",
+          "draft_job_id": "job-882",
+          "draft_letter": "I will build the dashboard with tested metrics and a clear handoff.",
+          "draft_name": "Key proposal-northstar-882",
+          "draft_trace": "trace",
+          "draft_trace_id": "trace-0016",
+          "draft_type": "northstar"
+        }
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 376,
+      "completion_tokens": 100,
+      "latency_ms": 6493.228083010763,
+      "error": null,
+      "tokens": 476
+    },
+    {
+      "task_id": "TD17",
+      "design": "coarse_grained",
+      "expected_tool": "marketplace_action",
+      "selected_tool": "marketplace_action",
+      "selected_arguments": {
+        "operation": "get_job",
+        "arguments": {
+          "connects": 6,
+          "job_id": "job-55",
+          "key": "proposal-atlas-55",
+          "letter": "I can implement the accessible React flow and verify it in Playwright.",
+          "trace": "trace-0017"
+        }
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 373,
+      "completion_tokens": 76,
+      "latency_ms": 5003.615000052378,
+      "error": null,
+      "tokens": 449
+    },
+    {
+      "task_id": "TD18",
+      "design": "coarse_grained",
+      "expected_tool": "marketplace_action",
+      "selected_tool": null,
+      "selected_arguments": {},
+      "correct_tool": false,
+      "correct_arguments": false,
+      "prompt_tokens": 353,
+      "completion_tokens": 60,
+      "latency_ms": 3558.0598750384524,
+      "error": null,
+      "tokens": 413
+    },
+    {
+      "task_id": "TD19",
+      "design": "coarse_grained",
+      "expected_tool": "marketplace_action",
+      "selected_tool": "marketplace_action",
+      "selected_arguments": {
+        "operation": "submit_proposal",
+        "arguments": {
+          "idempotency_key": "submit-northstar-882",
+          "proposal_draft_id": "prop-882",
+          "trace_id": "trace-0019"
+        }
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 355,
+      "completion_tokens": 59,
+      "latency_ms": 3683.1397499190643,
+      "error": null,
+      "tokens": 414
+    },
+    {
+      "task_id": "TD20",
+      "design": "coarse_grained",
+      "expected_tool": "marketplace_action",
+      "selected_tool": "marketplace_action",
+      "selected_arguments": {
+        "operation": "send_message",
+        "arguments": {
+          "conversation_id": "conv-77",
+          "key": "message-acme-77",
+          "message": "Tuesday at 10:00 UTC works for me.",
+          "trace": "trace-0020"
+        }
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 363,
+      "completion_tokens": 66,
+      "latency_ms": 4301.0834159795195,
+      "error": null,
+      "tokens": 429
+    },
+    {
+      "task_id": "TD21",
+      "design": "coarse_grained",
+      "expected_tool": "marketplace_action",
+      "selected_tool": "marketplace_action",
+      "selected_arguments": {
+        "operation": "send_message",
+        "arguments": {
+          "conversation_id": "conv-screen-5",
+          "key": "message-northstar-5",
+          "message": "Could you confirm the expected row volume?",
+          "trace_id": "trace-0021"
+        }
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 363,
+      "completion_tokens": 66,
+      "latency_ms": 4458.131290972233,
+      "error": null,
+      "tokens": 429
+    },
+    {
+      "task_id": "TD22",
+      "design": "coarse_grained",
+      "expected_tool": "marketplace_action",
+      "selected_tool": "marketplace_action",
+      "selected_arguments": {
+        "operation": "send_message",
+        "arguments": {
+          "conversation_id": "conv-202",
+          "key": "message-atlas-202",
+          "message": "I can share a milestone plan after approval.",
+          "trace": "trace-0022"
+        }
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 361,
+      "completion_tokens": 64,
+      "latency_ms": 4165.1899999706075,
+      "error": null,
+      "tokens": 425
+    },
+    {
+      "task_id": "TD23",
+      "design": "coarse_grained",
+      "expected_tool": "portfolio_action",
+      "selected_tool": "portfolio_action",
+      "selected_arguments": {
+        "operation": "search_evidence",
+        "arguments": {
+          "limit": 5,
+          "query": "FastAPI authentication"
+        }
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 341,
+      "completion_tokens": 36,
+      "latency_ms": 2394.89808306098,
+      "error": null,
+      "tokens": 377
+    },
+    {
+      "task_id": "TD24",
+      "design": "coarse_grained",
+      "expected_tool": "portfolio_action",
+      "selected_tool": "portfolio_action",
+      "selected_arguments": {
+        "operation": "search_evidence",
+        "arguments": {
+          "count": "8",
+          "query": "time-series forecasting"
+        }
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 340,
+      "completion_tokens": 37,
+      "latency_ms": 2456.4010419417173,
+      "error": null,
+      "tokens": 377
+    },
+    {
+      "task_id": "TD25",
+      "design": "coarse_grained",
+      "expected_tool": "portfolio_action",
+      "selected_tool": "portfolio_action",
+      "selected_arguments": {
+        "arguments": {
+          "limit": "3",
+          "query": "accessible React forms"
+        },
+        "operation": "search_evidence"
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 341,
+      "completion_tokens": 37,
+      "latency_ms": 2474.5962499873713,
+      "error": null,
+      "tokens": 378
+    },
+    {
+      "task_id": "TD26",
+      "design": "coarse_grained",
+      "expected_tool": "portfolio_action",
+      "selected_tool": "portfolio_action",
+      "selected_arguments": {
+        "operation": "search_evidence",
+        "arguments": {
+          "count": "6",
+          "query": "Power BI executive dashboards"
+        }
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 341,
+      "completion_tokens": 39,
+      "latency_ms": 2575.125541887246,
+      "error": null,
+      "tokens": 380
+    },
+    {
+      "task_id": "TD27",
+      "design": "coarse_grained",
+      "expected_tool": "portfolio_action",
+      "selected_tool": "portfolio_action",
+      "selected_arguments": {
+        "operation": "get_case_study",
+        "arguments": {
+          "case_id": "ai-ml-engineer:support-rag:case"
+        }
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 346,
+      "completion_tokens": 40,
+      "latency_ms": 2594.9685419909656,
+      "error": null,
+      "tokens": 386
+    },
+    {
+      "task_id": "TD28",
+      "design": "coarse_grained",
+      "expected_tool": "portfolio_action",
+      "selected_tool": "portfolio_action",
+      "selected_arguments": {
+        "operation": "get_case_study",
+        "arguments": {
+          "case_study_id": "full-stack-developer:saas-dashboard:case"
+        }
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 343,
+      "completion_tokens": 40,
+      "latency_ms": 2835.5483330087736,
+      "error": null,
+      "tokens": 383
+    },
+    {
+      "task_id": "TD29",
+      "design": "coarse_grained",
+      "expected_tool": "portfolio_action",
+      "selected_tool": "portfolio_action",
+      "selected_arguments": {
+        "operation": "get_case_study",
+        "arguments": {
+          "case_id": "data-analyst:executive-dashboard:case"
+        }
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 343,
+      "completion_tokens": 39,
+      "latency_ms": 2627.4364589480683,
+      "error": null,
+      "tokens": 382
+    },
+    {
+      "task_id": "TD30",
+      "design": "coarse_grained",
+      "expected_tool": "portfolio_action",
+      "selected_tool": "portfolio_action",
+      "selected_arguments": {
+        "operation": "list_skills",
+        "arguments": {}
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 337,
+      "completion_tokens": 23,
+      "latency_ms": 1620.0654580025002,
+      "error": null,
+      "tokens": 360
+    },
+    {
+      "task_id": "TD31",
+      "design": "coarse_grained",
+      "expected_tool": "portfolio_action",
+      "selected_tool": "portfolio_action",
+      "selected_arguments": {
+        "arguments": {},
+        "operation": "list_skills"
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 336,
+      "completion_tokens": 23,
+      "latency_ms": 1551.699792034924,
+      "error": null,
+      "tokens": 359
+    },
+    {
+      "task_id": "TD32",
+      "design": "coarse_grained",
+      "expected_tool": "workspace_action",
+      "selected_tool": null,
+      "selected_arguments": {},
+      "correct_tool": false,
+      "correct_arguments": false,
+      "prompt_tokens": 381,
+      "completion_tokens": 88,
+      "latency_ms": 6061.011084006168,
+      "error": null,
+      "tokens": 469
+    },
+    {
+      "task_id": "TD33",
+      "design": "coarse_grained",
+      "expected_tool": "workspace_action",
+      "selected_tool": null,
+      "selected_arguments": {},
+      "correct_tool": false,
+      "correct_arguments": false,
+      "prompt_tokens": 375,
+      "completion_tokens": 85,
+      "latency_ms": 5725.27449997142,
+      "error": null,
+      "tokens": 460
+    },
+    {
+      "task_id": "TD34",
+      "design": "coarse_grained",
+      "expected_tool": "workspace_action",
+      "selected_tool": null,
+      "selected_arguments": {},
+      "correct_tool": false,
+      "correct_arguments": false,
+      "prompt_tokens": 377,
+      "completion_tokens": 81,
+      "latency_ms": 5644.23070801422,
+      "error": null,
+      "tokens": 458
+    },
+    {
+      "task_id": "TD35",
+      "design": "coarse_grained",
+      "expected_tool": "workspace_action",
+      "selected_tool": null,
+      "selected_arguments": {},
+      "correct_tool": false,
+      "correct_arguments": false,
+      "prompt_tokens": 382,
+      "completion_tokens": 85,
+      "latency_ms": 5846.914125024341,
+      "error": null,
+      "tokens": 467
+    },
+    {
+      "task_id": "TD36",
+      "design": "coarse_grained",
+      "expected_tool": "workspace_action",
+      "selected_tool": null,
+      "selected_arguments": {},
+      "correct_tool": false,
+      "correct_arguments": false,
+      "prompt_tokens": 385,
+      "completion_tokens": 91,
+      "latency_ms": 6326.258791028522,
+      "error": null,
+      "tokens": 476
+    },
+    {
+      "task_id": "TD37",
+      "design": "coarse_grained",
+      "expected_tool": "workspace_action",
+      "selected_tool": "workspace_action",
+      "selected_arguments": {
+        "operation": "create_tentative_hold",
+        "arguments": {
+          "end_time": "2026-11-13T11:45:00+05:00",
+          "hold_name": "Scope review",
+          "key": "hold-atlas-003",
+          "start_time": "2026-11-13T11:00:00+05:00"
+        }
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 381,
+      "completion_tokens": 87,
+      "latency_ms": 5776.966582983732,
+      "error": null,
+      "tokens": 468
+    },
+    {
+      "task_id": "TD38",
+      "design": "coarse_grained",
+      "expected_tool": "workspace_action",
+      "selected_tool": "workspace_action",
+      "selected_arguments": {
+        "arguments": {
+          "body": "Tuesday at 10:00 UTC is confirmed.",
+          "draft_id": "email-acme-001",
+          "subject": "Interview confirmation",
+          "to": "client@example.test"
+        },
+        "operation": "create_email_draft"
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 364,
+      "completion_tokens": 63,
+      "latency_ms": 4273.902916000225,
+      "error": null,
+      "tokens": 427
+    },
+    {
+      "task_id": "TD39",
+      "design": "coarse_grained",
+      "expected_tool": "workspace_action",
+      "selected_tool": "workspace_action",
+      "selected_arguments": {
+        "operation": "create_email_draft",
+        "arguments": {
+          "body": "Could you confirm the source systems?",
+          "dry_run": "true",
+          "key": "email-northstar-002",
+          "subject": "Dashboard questions",
+          "to": "hiring@example.test"
+        }
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 363,
+      "completion_tokens": 68,
+      "latency_ms": 4742.998040979728,
+      "error": null,
+      "tokens": 431
+    },
+    {
+      "task_id": "TD40",
+      "design": "coarse_grained",
+      "expected_tool": "workspace_action",
+      "selected_tool": "workspace_action",
+      "selected_arguments": {
+        "operation": "create_email_draft",
+        "arguments": {
+          "body": "I have attached the proposed milestone sequence.",
+          "key": "email-atlas-003",
+          "subject": "Scope recap",
+          "to": "team@example.test"
+        }
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 361,
+      "completion_tokens": 60,
+      "latency_ms": 4186.418000026606,
+      "error": null,
+      "tokens": 421
+    },
+    {
+      "task_id": "TD01",
+      "design": "best_descriptions",
+      "expected_tool": "search_jobs",
+      "selected_tool": "search_jobs",
+      "selected_arguments": {
+        "query": "Python FastAPI",
+        "tenant_id": "acme",
+        "trace_id": "trace-0001"
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 1362,
+      "completion_tokens": 37,
+      "latency_ms": 13662.635041982867,
+      "error": null,
+      "tokens": 1399
+    },
+    {
+      "task_id": "TD02",
+      "design": "best_descriptions",
+      "expected_tool": "search_jobs",
+      "selected_tool": "search_jobs",
+      "selected_arguments": {
+        "tenant_id": "northstar",
+        "trace_id": "trace-0002",
+        "query": "Power BI dashboard work"
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 1361,
+      "completion_tokens": 38,
+      "latency_ms": 2652.021999936551,
+      "error": null,
+      "tokens": 1399
+    },
+    {
+      "task_id": "TD03",
+      "design": "best_descriptions",
+      "expected_tool": "search_jobs",
+      "selected_tool": "search_jobs",
+      "selected_arguments": {
+        "query": "React accessibility",
+        "tenant_id": "atlas",
+        "trace_id": "trace-0003"
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 1360,
+      "completion_tokens": 36,
+      "latency_ms": 2690.1855419855565,
+      "error": null,
+      "tokens": 1396
+    },
+    {
+      "task_id": "TD04",
+      "design": "best_descriptions",
+      "expected_tool": "get_job",
+      "selected_tool": "get_job",
+      "selected_arguments": {
+        "trace_id": "trace-0004",
+        "tenant_id": "acme",
+        "job_id": "job-104"
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 1361,
+      "completion_tokens": 38,
+      "latency_ms": 2782.046083942987,
+      "error": null,
+      "tokens": 1399
+    },
+    {
+      "task_id": "TD05",
+      "design": "best_descriptions",
+      "expected_tool": "get_job",
+      "selected_tool": "get_job",
+      "selected_arguments": {
+        "job_id": "job-882",
+        "trace_id": "trace-0005",
+        "tenant_id": "northstar"
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 1365,
+      "completion_tokens": 38,
+      "latency_ms": 2680.49679195974,
+      "error": null,
+      "tokens": 1403
+    },
+    {
+      "task_id": "TD06",
+      "design": "best_descriptions",
+      "expected_tool": "get_job",
+      "selected_tool": "get_job",
+      "selected_arguments": {
+        "tenant_id": "atlas",
+        "job_id": "job-risk-7",
+        "trace_id": "trace-0006"
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 1361,
+      "completion_tokens": 39,
+      "latency_ms": 3059.3382080551237,
+      "error": null,
+      "tokens": 1400
+    },
+    {
+      "task_id": "TD07",
+      "design": "best_descriptions",
+      "expected_tool": "get_client_history",
+      "selected_tool": "get_client_history",
+      "selected_arguments": {
+        "client_id": "client-44",
+        "tenant_id": "acme",
+        "trace_id": "trace-0007"
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 1362,
+      "completion_tokens": 39,
+      "latency_ms": 3056.9393329788,
+      "error": null,
+      "tokens": 1401
+    },
+    {
+      "task_id": "TD08",
+      "design": "best_descriptions",
+      "expected_tool": "get_client_history",
+      "selected_tool": "get_client_history",
+      "selected_arguments": {
+        "client_id": "client-902",
+        "tenant_id": "northstar",
+        "trace_id": "trace-0008"
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 1364,
+      "completion_tokens": 39,
+      "latency_ms": 3477.385833975859,
+      "error": null,
+      "tokens": 1403
+    },
+    {
+      "task_id": "TD09",
+      "design": "best_descriptions",
+      "expected_tool": "get_client_history",
+      "selected_tool": "get_client_history",
+      "selected_arguments": {
+        "client_id": "client-new-3",
+        "tenant_id": "atlas",
+        "trace_id": "trace-0009"
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 1361,
+      "completion_tokens": 40,
+      "latency_ms": 2894.9411659268662,
+      "error": null,
+      "tokens": 1401
+    },
+    {
+      "task_id": "TD10",
+      "design": "best_descriptions",
+      "expected_tool": "get_connects_balance",
+      "selected_tool": "get_connects_balance",
+      "selected_arguments": {
+        "tenant_id": "acme",
+        "trace_id": "trace-0010"
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 1362,
+      "completion_tokens": 31,
+      "latency_ms": 2440.500000026077,
+      "error": null,
+      "tokens": 1393
+    },
+    {
+      "task_id": "TD11",
+      "design": "best_descriptions",
+      "expected_tool": "get_connects_balance",
+      "selected_tool": "get_connects_balance",
+      "selected_arguments": {
+        "trace_id": "trace-0011",
+        "tenant_id": "northstar"
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 1360,
+      "completion_tokens": 31,
+      "latency_ms": 2465.880124946125,
+      "error": null,
+      "tokens": 1391
+    },
+    {
+      "task_id": "TD12",
+      "design": "best_descriptions",
+      "expected_tool": "list_messages",
+      "selected_tool": "list_messages",
+      "selected_arguments": {
+        "conversation_id": "conv-77",
+        "tenant_id": "acme",
+        "trace_id": "trace-0012"
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 1362,
+      "completion_tokens": 38,
+      "latency_ms": 2700.7858749711886,
+      "error": null,
+      "tokens": 1400
+    },
+    {
+      "task_id": "TD13",
+      "design": "best_descriptions",
+      "expected_tool": "list_messages",
+      "selected_tool": "list_messages",
+      "selected_arguments": {
+        "conversation_id": "conv-screen-5",
+        "tenant_id": "northstar",
+        "trace_id": "trace-0013"
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 1364,
+      "completion_tokens": 39,
+      "latency_ms": 2795.8717501023784,
+      "error": null,
+      "tokens": 1403
+    },
+    {
+      "task_id": "TD14",
+      "design": "best_descriptions",
+      "expected_tool": "list_messages",
+      "selected_tool": "list_messages",
+      "selected_arguments": {
+        "conversation_id": "conv-202",
+        "tenant_id": "atlas",
+        "trace_id": "trace-0014"
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 1362,
+      "completion_tokens": 38,
+      "latency_ms": 3003.684916999191,
+      "error": null,
+      "tokens": 1400
+    },
+    {
+      "task_id": "TD15",
+      "design": "best_descriptions",
+      "expected_tool": "create_proposal_draft",
+      "selected_tool": "create_proposal_draft",
+      "selected_arguments": {
+        "idempotency_key": "proposal-acme-104",
+        "job_id": "job-104",
+        "tenant_id": "acme",
+        "trace_id": "trace-0015",
+        "connects_cost": "8",
+        "cover_letter": "I can deliver this API safely and document every endpoint.",
+        "dry_run": "true"
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 1393,
+      "completion_tokens": 85,
+      "latency_ms": 6153.623208985664,
+      "error": null,
+      "tokens": 1478
+    },
+    {
+      "task_id": "TD16",
+      "design": "best_descriptions",
+      "expected_tool": "create_proposal_draft",
+      "selected_tool": "create_proposal_draft",
+      "selected_arguments": {
+        "idempotency_key": "proposal-northstar-882",
+        "job_id": "job-882",
+        "tenant_id": "northstar",
+        "trace_id": "trace-0016",
+        "connects_cost": "12",
+        "cover_letter": "I will build the dashboard with tested metrics and a clear handoff.",
+        "dry_run": "true"
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 1393,
+      "completion_tokens": 89,
+      "latency_ms": 6366.682874970138,
+      "error": null,
+      "tokens": 1482
+    },
+    {
+      "task_id": "TD17",
+      "design": "best_descriptions",
+      "expected_tool": "create_proposal_draft",
+      "selected_tool": "create_proposal_draft",
+      "selected_arguments": {
+        "job_id": "job-55",
+        "tenant_id": "atlas",
+        "trace_id": "trace-0017",
+        "connects_cost": "6",
+        "cover_letter": "I can implement the accessible React flow and verify it in Playwright.",
+        "dry_run": "true",
+        "idempotency_key": "proposal-atlas-55"
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 1390,
+      "completion_tokens": 88,
+      "latency_ms": 6276.023332960904,
+      "error": null,
+      "tokens": 1478
+    },
+    {
+      "task_id": "TD18",
+      "design": "best_descriptions",
+      "expected_tool": "submit_proposal",
+      "selected_tool": "submit_proposal",
+      "selected_arguments": {
+        "dry_run": true,
+        "idempotency_key": "submit-acme-104",
+        "proposal_id": "prop-104",
+        "tenant_id": "acme",
+        "trace_id": "trace-0018"
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 1370,
+      "completion_tokens": 59,
+      "latency_ms": 4168.829458998516,
+      "error": null,
+      "tokens": 1429
+    },
+    {
+      "task_id": "TD19",
+      "design": "best_descriptions",
+      "expected_tool": "submit_proposal",
+      "selected_tool": "submit_proposal",
+      "selected_arguments": {
+        "tenant_id": "northstar",
+        "trace_id": "trace-0019",
+        "dry_run": "true",
+        "idempotency_key": "submit-northstar-882",
+        "proposal_id": "prop-882"
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 1372,
+      "completion_tokens": 61,
+      "latency_ms": 4633.951500058174,
+      "error": null,
+      "tokens": 1433
+    },
+    {
+      "task_id": "TD20",
+      "design": "best_descriptions",
+      "expected_tool": "send_message",
+      "selected_tool": "send_message",
+      "selected_arguments": {
+        "tenant_id": "acme",
+        "trace_id": "trace-0020",
+        "body": "Tuesday at 10:00 UTC works for me.",
+        "conversation_id": "conv-77",
+        "dry_run": "true",
+        "idempotency_key": "message-acme-77"
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 1380,
+      "completion_tokens": 74,
+      "latency_ms": 5496.662584017031,
+      "error": null,
+      "tokens": 1454
+    },
+    {
+      "task_id": "TD21",
+      "design": "best_descriptions",
+      "expected_tool": "send_message",
+      "selected_tool": "send_message",
+      "selected_arguments": {
+        "body": "Could you confirm the expected row volume?",
+        "conversation_id": "conv-screen-5",
+        "dry_run": "true",
+        "idempotency_key": "message-northstar-5",
+        "tenant_id": "northstar",
+        "trace_id": "trace-0021"
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 1380,
+      "completion_tokens": 73,
+      "latency_ms": 6006.70920801349,
+      "error": null,
+      "tokens": 1453
+    },
+    {
+      "task_id": "TD22",
+      "design": "best_descriptions",
+      "expected_tool": "send_message",
+      "selected_tool": "send_message",
+      "selected_arguments": {
+        "body": "I can share a milestone plan after approval.",
+        "conversation_id": "conv-202",
+        "dry_run": "true",
+        "idempotency_key": "message-atlas-202",
+        "tenant_id": "atlas",
+        "trace_id": "trace-0022"
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 1378,
+      "completion_tokens": 72,
+      "latency_ms": 6044.484041980468,
+      "error": null,
+      "tokens": 1450
+    },
+    {
+      "task_id": "TD23",
+      "design": "best_descriptions",
+      "expected_tool": "search_evidence",
+      "selected_tool": "search_evidence",
+      "selected_arguments": {
+        "requirement": "FastAPI authentication",
+        "k": "5"
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 1358,
+      "completion_tokens": 27,
+      "latency_ms": 2293.5564580839127,
+      "error": null,
+      "tokens": 1385
+    },
+    {
+      "task_id": "TD24",
+      "design": "best_descriptions",
+      "expected_tool": "search_evidence",
+      "selected_tool": "search_evidence",
+      "selected_arguments": {
+        "requirement": "time-series forecasting",
+        "k": "8"
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 1357,
+      "completion_tokens": 27,
+      "latency_ms": 2093.601042055525,
+      "error": null,
+      "tokens": 1384
+    },
+    {
+      "task_id": "TD25",
+      "design": "best_descriptions",
+      "expected_tool": "search_evidence",
+      "selected_tool": "search_evidence",
+      "selected_arguments": {
+        "requirement": "accessible React forms",
+        "k": "3"
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 1358,
+      "completion_tokens": 27,
+      "latency_ms": 2122.085875016637,
+      "error": null,
+      "tokens": 1385
+    },
+    {
+      "task_id": "TD26",
+      "design": "best_descriptions",
+      "expected_tool": "search_evidence",
+      "selected_tool": "search_evidence",
+      "selected_arguments": {
+        "k": "6",
+        "requirement": "Power BI executive dashboards"
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 1358,
+      "completion_tokens": 29,
+      "latency_ms": 2262.5344999833032,
+      "error": null,
+      "tokens": 1387
+    },
+    {
+      "task_id": "TD27",
+      "design": "best_descriptions",
+      "expected_tool": "get_case_study",
+      "selected_tool": "get_case_study",
+      "selected_arguments": {
+        "evidence_id": "ai-ml-engineer:support-rag:case"
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 1363,
+      "completion_tokens": 30,
+      "latency_ms": 2160.1713340496644,
+      "error": null,
+      "tokens": 1393
+    },
+    {
+      "task_id": "TD28",
+      "design": "best_descriptions",
+      "expected_tool": "get_case_study",
+      "selected_tool": "get_case_study",
+      "selected_arguments": {
+        "evidence_id": "full-stack-developer:saas-dashboard:case"
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 1360,
+      "completion_tokens": 29,
+      "latency_ms": 2308.3836670266464,
+      "error": null,
+      "tokens": 1389
+    },
+    {
+      "task_id": "TD29",
+      "design": "best_descriptions",
+      "expected_tool": "get_case_study",
+      "selected_tool": "get_case_study",
+      "selected_arguments": {
+        "evidence_id": "data-analyst:executive-dashboard:case"
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 1360,
+      "completion_tokens": 29,
+      "latency_ms": 2894.1343750339,
+      "error": null,
+      "tokens": 1389
+    },
+    {
+      "task_id": "TD30",
+      "design": "best_descriptions",
+      "expected_tool": "list_skills",
+      "selected_tool": "list_skills",
+      "selected_arguments": {},
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 1354,
+      "completion_tokens": 13,
+      "latency_ms": 1211.0589999938384,
+      "error": null,
+      "tokens": 1367
+    },
+    {
+      "task_id": "TD31",
+      "design": "best_descriptions",
+      "expected_tool": "list_skills",
+      "selected_tool": "list_skills",
+      "selected_arguments": {},
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 1353,
+      "completion_tokens": 13,
+      "latency_ms": 1156.37116599828,
+      "error": null,
+      "tokens": 1366
+    },
+    {
+      "task_id": "TD32",
+      "design": "best_descriptions",
+      "expected_tool": "list_free_slots",
+      "selected_tool": "list_free_slots",
+      "selected_arguments": {
+        "start": "2026-11-11T09:00:00+05:00",
+        "tenant_id": "acme",
+        "timezone": "Asia/Karachi",
+        "end": "2026-11-11T17:00:00+05:00",
+        "limit": "5"
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 1398,
+      "completion_tokens": 77,
+      "latency_ms": 6160.769250011072,
+      "error": null,
+      "tokens": 1475
+    },
+    {
+      "task_id": "TD33",
+      "design": "best_descriptions",
+      "expected_tool": "list_free_slots",
+      "selected_tool": "list_free_slots",
+      "selected_arguments": {
+        "limit": "3",
+        "start": "2026-11-12T09:00:00+00:00",
+        "tenant_id": "northstar",
+        "timezone": "UTC",
+        "end": "2026-11-12T15:00:00+00:00"
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 1392,
+      "completion_tokens": 74,
+      "latency_ms": 6690.604540985078,
+      "error": null,
+      "tokens": 1466
+    },
+    {
+      "task_id": "TD34",
+      "design": "best_descriptions",
+      "expected_tool": "list_free_slots",
+      "selected_tool": "list_free_slots",
+      "selected_arguments": {
+        "timezone": "Asia/Karachi",
+        "end": "2026-11-13T16:00:00+05:00",
+        "limit": "4",
+        "start": "2026-11-13T10:00:00+05:00",
+        "tenant_id": "atlas"
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 1394,
+      "completion_tokens": 77,
+      "latency_ms": 6350.360083044507,
+      "error": null,
+      "tokens": 1471
+    },
+    {
+      "task_id": "TD35",
+      "design": "best_descriptions",
+      "expected_tool": "create_tentative_hold",
+      "selected_tool": "create_tentative_hold",
+      "selected_arguments": {
+        "dry_run": "true",
+        "ends_at": "2026-11-11T10:30:00+05:00",
+        "idempotency_key": "hold-acme-001",
+        "starts_at": "2026-11-11T10:00:00+05:00",
+        "tenant_id": "acme",
+        "title": "Client interview"
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 1399,
+      "completion_tokens": 94,
+      "latency_ms": 8160.440583014861,
+      "error": null,
+      "tokens": 1493
+    },
+    {
+      "task_id": "TD36",
+      "design": "best_descriptions",
+      "expected_tool": "create_tentative_hold",
+      "selected_tool": "create_tentative_hold",
+      "selected_arguments": {
+        "starts_at": "2026-11-12T13:00:00+00:00",
+        "tenant_id": "northstar",
+        "title": "Technical screen",
+        "dry_run": true,
+        "ends_at": "2026-11-12T14:00:00+00:00",
+        "idempotency_key": "hold-northstar-002"
+      },
+      "correct_tool": true,
+      "correct_arguments": true,
+      "prompt_tokens": 1402,
+      "completion_tokens": 94,
+      "latency_ms": 7739.837917033583,
+      "error": null,
+      "tokens": 1496
+    },
+    {
+      "task_id": "TD37",
+      "design": "best_descriptions",
+      "expected_tool": "create_tentative_hold",
+      "selected_tool": "create_tentative_hold",
+      "selected_arguments": {
+        "dry_run": "true",
+        "ends_at": "2026-11-13T11:45:00+05:00",
+        "idempotency_key": "hold-atlas-003",
+        "starts_at": "2026-11-13T11:00:00+05:00",
+        "tenant_id": "atlas",
+        "title": "Scope review"
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 1398,
+      "completion_tokens": 94,
+      "latency_ms": 7726.344250026159,
+      "error": null,
+      "tokens": 1492
+    },
+    {
+      "task_id": "TD38",
+      "design": "best_descriptions",
+      "expected_tool": "create_email_draft",
+      "selected_tool": "create_email_draft",
+      "selected_arguments": {
+        "body": "Tuesday at 10:00 UTC is confirmed.",
+        "tenant_id": "acme",
+        "trace_id": "null",
+        "dry_run": "false",
+        "idempotency_key": "email-acme-001",
+        "recipient": "client@example.test",
+        "subject": "Interview confirmation"
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 1381,
+      "completion_tokens": 77,
+      "latency_ms": 7276.337082963437,
+      "error": null,
+      "tokens": 1458
+    },
+    {
+      "task_id": "TD39",
+      "design": "best_descriptions",
+      "expected_tool": "create_email_draft",
+      "selected_tool": "create_email_draft",
+      "selected_arguments": {
+        "body": "Could you confirm the source systems?",
+        "tenant_id": "northstar",
+        "trace_id": "email-northstar-002",
+        "dry_run": "true",
+        "idempotency_key": "email-northstar-002",
+        "recipient": "hiring@example.test",
+        "subject": "Dashboard questions"
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 1380,
+      "completion_tokens": 81,
+      "latency_ms": 6994.459292036481,
+      "error": null,
+      "tokens": 1461
+    },
+    {
+      "task_id": "TD40",
+      "design": "best_descriptions",
+      "expected_tool": "create_email_draft",
+      "selected_tool": "create_email_draft",
+      "selected_arguments": {
+        "recipient": "team@example.test",
+        "subject": "Scope recap",
+        "body": "I have attached the proposed milestone sequence.",
+        "tenant_id": "atlas",
+        "trace_id": "atlas-003",
+        "dry_run": "false",
+        "idempotency_key": "email-atlas-003"
+      },
+      "correct_tool": true,
+      "correct_arguments": false,
+      "prompt_tokens": 1378,
+      "completion_tokens": 78,
+      "latency_ms": 6394.436124945059,
+      "error": null,
+      "tokens": 1456
+    }
+  ]
+}

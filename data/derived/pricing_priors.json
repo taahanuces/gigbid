@@ -1,0 +1,148 @@
+{
+  "metadata": {
+    "generated_at": "2026-11-10T18:56:13.864268+00:00",
+    "data_origin": "real_public_dataset",
+    "source": "asaniczka/freelance-contracts-dataset-1-3-million-entries",
+    "source_version": 1,
+    "license": "ODC-By-1.0",
+    "rows_scanned": 1292791,
+    "filtering": {
+      "hourly_rate_usd": "1 <= value <= 500",
+      "fixed_total_paid_usd": "1 <= value <= 100000",
+      "rejected": {
+        "fixed_outside_1_to_100000_usd": 212130,
+        "hourly_outside_1_to_500_usd": 2839
+      }
+    },
+    "warning": "Descriptive observational priors only; not causal pricing guidance or outcomes."
+  },
+  "category_method": "deterministic title keyword rules in build_public_profiles.py",
+  "priors": {
+    "admin_support": {
+      "fixed_or_milestone": {
+        "count": 5366,
+        "p25": 18.0,
+        "median": 50.0,
+        "p75": 200.0
+      },
+      "hourly": {
+        "count": 15861,
+        "p25": 5.0,
+        "median": 6.6,
+        "p75": 11.0
+      }
+    },
+    "ai_ml": {
+      "fixed_or_milestone": {
+        "count": 5734,
+        "p25": 50.0,
+        "median": 165.0,
+        "p75": 590.47
+      },
+      "hourly": {
+        "count": 5514,
+        "p25": 20.0,
+        "median": 30.0,
+        "p75": 50.0
+      }
+    },
+    "all": {
+      "fixed_or_milestone": {
+        "count": 584617,
+        "p25": 41.0,
+        "median": 115.0,
+        "p75": 350.0
+      },
+      "hourly": {
+        "count": 493205,
+        "p25": 10.5,
+        "median": 21.0,
+        "p75": 40.0
+      }
+    },
+    "data_analytics": {
+      "fixed_or_milestone": {
+        "count": 13563,
+        "p25": 39.6,
+        "median": 100.0,
+        "p75": 250.0
+      },
+      "hourly": {
+        "count": 16695,
+        "p25": 15.0,
+        "median": 30.0,
+        "p75": 50.0
+      }
+    },
+    "design_creative": {
+      "fixed_or_milestone": {
+        "count": 42522,
+        "p25": 37.5,
+        "median": 100.0,
+        "p75": 250.0
+      },
+      "hourly": {
+        "count": 29256,
+        "p25": 15.0,
+        "median": 25.0,
+        "p75": 35.0
+      }
+    },
+    "marketing_sales": {
+      "fixed_or_milestone": {
+        "count": 25763,
+        "p25": 50.0,
+        "median": 150.0,
+        "p75": 500.0
+      },
+      "hourly": {
+        "count": 38345,
+        "p25": 6.99,
+        "median": 13.0,
+        "p75": 30.0
+      }
+    },
+    "other": {
+      "fixed_or_milestone": {
+        "count": 354915,
+        "p25": 40.0,
+        "median": 105.0,
+        "p75": 345.0
+      },
+      "hourly": {
+        "count": 284755,
+        "p25": 12.0,
+        "median": 25.0,
+        "p75": 45.0
+      }
+    },
+    "web_development": {
+      "fixed_or_milestone": {
+        "count": 79401,
+        "p25": 55.0,
+        "median": 170.0,
+        "p75": 500.0
+      },
+      "hourly": {
+        "count": 77255,
+        "p25": 12.0,
+        "median": 20.0,
+        "p75": 35.0
+      }
+    },
+    "writing_translation": {
+      "fixed_or_milestone": {
+        "count": 57353,
+        "p25": 33.32,
+        "median": 100.0,
+        "p75": 350.0
+      },
+      "hourly": {
+        "count": 25524,
+        "p25": 12.6,
+        "median": 25.0,
+        "p75": 45.0
+      }
+    }
+  }
+}

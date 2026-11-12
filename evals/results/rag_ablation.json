@@ -1,0 +1,3409 @@
+{
+  "metadata": {
+    "generated_at": "2026-11-12T04:54:36.350889+00:00",
+    "data_origin": "synthetic",
+    "jobs": 90,
+    "shipped_variant": "v2_hybrid",
+    "interpretation_boundary": "Component ablation on authored synthetic relevance labels; no real outcome claim."
+  },
+  "hypothesis": {
+    "statement": "Type-diverse hybrid RRF improves nDCG@10 over dense-only and lexical-only retrieval.",
+    "passed": false
+  },
+  "overall": {
+    "dense_only": {
+      "jobs": 90.0,
+      "evidence_recall_at_5": 0.49333333333333335,
+      "mrr": 0.9833333333333333,
+      "ndcg_at_10": 0.7417313954535409,
+      "p95_latency_ms": 11.669166968204081
+    },
+    "lexical_only": {
+      "jobs": 90.0,
+      "evidence_recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8330513066452382,
+      "p95_latency_ms": 684.5119999488816
+    },
+    "hybrid_rrf": {
+      "jobs": 90.0,
+      "evidence_recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "p95_latency_ms": 693.4638330712914
+    }
+  },
+  "by_persona": {
+    "ai-ml-engineer": {
+      "dense_only": {
+        "jobs": 30.0,
+        "evidence_recall_at_5": 0.49333333333333335,
+        "mrr": 0.9833333333333333,
+        "ndcg_at_10": 0.7391740570084664,
+        "p95_latency_ms": 11.551499948836863
+      },
+      "lexical_only": {
+        "jobs": 30.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8284662551845928,
+        "p95_latency_ms": 797.5705420831218
+      },
+      "hybrid_rrf": {
+        "jobs": 30.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8006937664098819,
+        "p95_latency_ms": 769.4255409296602
+      }
+    },
+    "data-analyst": {
+      "dense_only": {
+        "jobs": 30.0,
+        "evidence_recall_at_5": 0.4866666666666667,
+        "mrr": 0.9666666666666667,
+        "ndcg_at_10": 0.7396040485819491,
+        "p95_latency_ms": 10.56037493981421
+      },
+      "lexical_only": {
+        "jobs": 30.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8423524995719482,
+        "p95_latency_ms": 588.9468339737505
+      },
+      "hybrid_rrf": {
+        "jobs": 30.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8006937664098819,
+        "p95_latency_ms": 558.8688339339569
+      }
+    },
+    "full-stack-developer": {
+      "dense_only": {
+        "jobs": 30.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.7464160807702074,
+        "p95_latency_ms": 11.90979196690023
+      },
+      "lexical_only": {
+        "jobs": 30.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8283351651791734,
+        "p95_latency_ms": 629.778082948178
+      },
+      "hybrid_rrf": {
+        "jobs": 30.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8006937664098819,
+        "p95_latency_ms": 637.3404170153663
+      }
+    }
+  },
+  "by_job_type": {
+    "SaaS": {
+      "dense_only": {
+        "jobs": 8.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.7352824428353908,
+        "p95_latency_ms": 11.90979196690023
+      },
+      "lexical_only": {
+        "jobs": 8.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8267304746361733,
+        "p95_latency_ms": 588.3028329117224
+      },
+      "hybrid_rrf": {
+        "jobs": 8.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8006937664098819,
+        "p95_latency_ms": 637.3404170153663
+      }
+    },
+    "accounting": {
+      "dense_only": {
+        "jobs": 2.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.7591402384099977,
+        "p95_latency_ms": 8.865500101819634
+      },
+      "lexical_only": {
+        "jobs": 2.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8006937664098819,
+        "p95_latency_ms": 545.8809999981895
+      },
+      "hybrid_rrf": {
+        "jobs": 2.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8006937664098819,
+        "p95_latency_ms": 564.6326669957489
+      }
+    },
+    "analytics": {
+      "dense_only": {
+        "jobs": 2.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.7591402384099977,
+        "p95_latency_ms": 8.513292064890265
+      },
+      "lexical_only": {
+        "jobs": 2.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8006937664098819,
+        "p95_latency_ms": 486.99745803605765
+      },
+      "hybrid_rrf": {
+        "jobs": 2.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8006937664098819,
+        "p95_latency_ms": 504.8681249609217
+      }
+    },
+    "consumer services": {
+      "dense_only": {
+        "jobs": 2.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.7591402384099977,
+        "p95_latency_ms": 4.677792079746723
+      },
+      "lexical_only": {
+        "jobs": 2.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8701249883466592,
+        "p95_latency_ms": 305.3352501010522
+      },
+      "hybrid_rrf": {
+        "jobs": 2.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8006937664098819,
+        "p95_latency_ms": 302.30049998499453
+      }
+    },
+    "customer support": {
+      "dense_only": {
+        "jobs": 4.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.7273298443105218,
+        "p95_latency_ms": 11.571416049264371
+      },
+      "lexical_only": {
+        "jobs": 4.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.7823527858850419,
+        "p95_latency_ms": 605.7044999906793
+      },
+      "hybrid_rrf": {
+        "jobs": 4.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8006937664098819,
+        "p95_latency_ms": 610.5032920604572
+      }
+    },
+    "e-commerce": {
+      "dense_only": {
+        "jobs": 6.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.7640118053602019,
+        "p95_latency_ms": 12.02079199720174
+      },
+      "lexical_only": {
+        "jobs": 6.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8469812477010668,
+        "p95_latency_ms": 582.0467500016093
+      },
+      "hybrid_rrf": {
+        "jobs": 6.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8006937664098819,
+        "p95_latency_ms": 609.5782079501078
+      }
+    },
+    "energy": {
+      "dense_only": {
+        "jobs": 2.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.7591402384099977,
+        "p95_latency_ms": 8.998999954201281
+      },
+      "lexical_only": {
+        "jobs": 2.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8006937664098819,
+        "p95_latency_ms": 582.7174159931019
+      },
+      "hybrid_rrf": {
+        "jobs": 2.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8006937664098819,
+        "p95_latency_ms": 601.8412909470499
+      }
+    },
+    "enterprise software": {
+      "dense_only": {
+        "jobs": 2.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.7591402384099977,
+        "p95_latency_ms": 9.291708003729582
+      },
+      "lexical_only": {
+        "jobs": 2.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8354093773782705,
+        "p95_latency_ms": 460.15220892149955
+      },
+      "hybrid_rrf": {
+        "jobs": 2.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8006937664098819,
+        "p95_latency_ms": 455.4538340307772
+      }
+    },
+    "field services": {
+      "dense_only": {
+        "jobs": 2.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.7591402384099977,
+        "p95_latency_ms": 6.356791942380369
+      },
+      "lexical_only": {
+        "jobs": 2.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8701249883466592,
+        "p95_latency_ms": 433.8816669769585
+      },
+      "hybrid_rrf": {
+        "jobs": 2.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8006937664098819,
+        "p95_latency_ms": 469.68224993906915
+      }
+    },
+    "finance": {
+      "dense_only": {
+        "jobs": 4.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.7432350413602598,
+        "p95_latency_ms": 6.2517920741811395
+      },
+      "lexical_only": {
+        "jobs": 4.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8354093773782705,
+        "p95_latency_ms": 501.3072909787297
+      },
+      "hybrid_rrf": {
+        "jobs": 4.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8006937664098819,
+        "p95_latency_ms": 512.0081250788644
+      }
+    },
+    "fintech": {
+      "dense_only": {
+        "jobs": 4.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.7432350413602598,
+        "p95_latency_ms": 7.945749908685684
+      },
+      "lexical_only": {
+        "jobs": 4.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8180515718940762,
+        "p95_latency_ms": 495.03925000317395
+      },
+      "hybrid_rrf": {
+        "jobs": 4.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8006937664098819,
+        "p95_latency_ms": 533.9307499816641
+      }
+    },
+    "health services": {
+      "dense_only": {
+        "jobs": 2.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.7273298443105218,
+        "p95_latency_ms": 11.85758295468986
+      },
+      "lexical_only": {
+        "jobs": 2.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8354093773782705,
+        "p95_latency_ms": 647.1094170119613
+      },
+      "hybrid_rrf": {
+        "jobs": 2.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8006937664098819,
+        "p95_latency_ms": 641.378583968617
+      }
+    },
+    "healthcare": {
+      "dense_only": {
+        "jobs": 2.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.7591402384099977,
+        "p95_latency_ms": 4.41258295904845
+      },
+      "lexical_only": {
+        "jobs": 2.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8354093773782705,
+        "p95_latency_ms": 332.27666607126594
+      },
+      "hybrid_rrf": {
+        "jobs": 2.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8006937664098819,
+        "p95_latency_ms": 355.4868750507012
+      }
+    },
+    "insurance": {
+      "dense_only": {
+        "jobs": 2.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.7591402384099977,
+        "p95_latency_ms": 11.669166968204081
+      },
+      "lexical_only": {
+        "jobs": 2.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8354093773782705,
+        "p95_latency_ms": 717.7885830169544
+      },
+      "hybrid_rrf": {
+        "jobs": 2.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8006937664098819,
+        "p95_latency_ms": 665.7692920416594
+      }
+    },
+    "legal": {
+      "dense_only": {
+        "jobs": 2.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.7591402384099977,
+        "p95_latency_ms": 8.415624964982271
+      },
+      "lexical_only": {
+        "jobs": 2.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8701249883466592,
+        "p95_latency_ms": 484.70183403696865
+      },
+      "hybrid_rrf": {
+        "jobs": 2.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8006937664098819,
+        "p95_latency_ms": 534.2312910361215
+      }
+    },
+    "logistics": {
+      "dense_only": {
+        "jobs": 4.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.7591402384099977,
+        "p95_latency_ms": 9.589500026777387
+      },
+      "lexical_only": {
+        "jobs": 4.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8354093773782705,
+        "p95_latency_ms": 444.0220840042457
+      },
+      "hybrid_rrf": {
+        "jobs": 4.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8006937664098819,
+        "p95_latency_ms": 473.07266702409834
+      }
+    },
+    "manufacturing": {
+      "dense_only": {
+        "jobs": 4.0,
+        "evidence_recall_at_5": 0.45,
+        "mrr": 0.875,
+        "ndcg_at_10": 0.6901784498670311,
+        "p95_latency_ms": 7.284332998096943
+      },
+      "lexical_only": {
+        "jobs": 4.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8354093773782705,
+        "p95_latency_ms": 459.96287500020117
+      },
+      "hybrid_rrf": {
+        "jobs": 4.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8006937664098819,
+        "p95_latency_ms": 465.39649995975196
+      }
+    },
+    "marketing": {
+      "dense_only": {
+        "jobs": 2.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.7273298443105218,
+        "p95_latency_ms": 10.065417038276792
+      },
+      "lexical_only": {
+        "jobs": 2.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8701249883466592,
+        "p95_latency_ms": 571.6119999997318
+      },
+      "hybrid_rrf": {
+        "jobs": 2.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8006937664098819,
+        "p95_latency_ms": 558.8688339339569
+      }
+    },
+    "marketplace": {
+      "dense_only": {
+        "jobs": 4.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.7432350413602598,
+        "p95_latency_ms": 8.058791980147362
+      },
+      "lexical_only": {
+        "jobs": 4.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8354093773782705,
+        "p95_latency_ms": 448.8806670997292
+      },
+      "hybrid_rrf": {
+        "jobs": 4.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8006937664098819,
+        "p95_latency_ms": 455.17599990125746
+      }
+    },
+    "media": {
+      "dense_only": {
+        "jobs": 4.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.7591402384099977,
+        "p95_latency_ms": 9.74070793017745
+      },
+      "lexical_only": {
+        "jobs": 4.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8354093773782705,
+        "p95_latency_ms": 616.6815829928964
+      },
+      "hybrid_rrf": {
+        "jobs": 4.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8006937664098819,
+        "p95_latency_ms": 581.3984170090407
+      }
+    },
+    "professional services": {
+      "dense_only": {
+        "jobs": 4.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.7554458682150669,
+        "p95_latency_ms": 11.551499948836863
+      },
+      "lexical_only": {
+        "jobs": 4.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8527671828624649,
+        "p95_latency_ms": 797.5705420831218
+      },
+      "hybrid_rrf": {
+        "jobs": 4.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8006937664098819,
+        "p95_latency_ms": 769.4255409296602
+      }
+    },
+    "publishing": {
+      "dense_only": {
+        "jobs": 2.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.7591402384099977,
+        "p95_latency_ms": 11.429667007178068
+      },
+      "lexical_only": {
+        "jobs": 2.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8006937664098819,
+        "p95_latency_ms": 828.6422500386834
+      },
+      "hybrid_rrf": {
+        "jobs": 2.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8006937664098819,
+        "p95_latency_ms": 836.7628750856966
+      }
+    },
+    "retail": {
+      "dense_only": {
+        "jobs": 6.0,
+        "evidence_recall_at_5": 0.4666666666666667,
+        "mrr": 0.9166666666666666,
+        "ndcg_at_10": 0.7025622480148613,
+        "p95_latency_ms": 13.047624961473048
+      },
+      "lexical_only": {
+        "jobs": 6.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8354093773782705,
+        "p95_latency_ms": 628.3125840127468
+      },
+      "hybrid_rrf": {
+        "jobs": 6.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8006937664098819,
+        "p95_latency_ms": 632.3101250454783
+      }
+    },
+    "subscriptions": {
+      "dense_only": {
+        "jobs": 4.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.7432350413602598,
+        "p95_latency_ms": 7.805083063431084
+      },
+      "lexical_only": {
+        "jobs": 4.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8354093773782705,
+        "p95_latency_ms": 436.68312509544194
+      },
+      "hybrid_rrf": {
+        "jobs": 4.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8006937664098819,
+        "p95_latency_ms": 437.4422909459099
+      }
+    },
+    "technology": {
+      "dense_only": {
+        "jobs": 8.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.7524055316226798,
+        "p95_latency_ms": 9.835832985118032
+      },
+      "lexical_only": {
+        "jobs": 8.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8354093773782705,
+        "p95_latency_ms": 629.778082948178
+      },
+      "hybrid_rrf": {
+        "jobs": 8.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8006937664098819,
+        "p95_latency_ms": 620.7113330019638
+      }
+    },
+    "telecom": {
+      "dense_only": {
+        "jobs": 2.0,
+        "evidence_recall_at_5": 0.4,
+        "mrr": 0.75,
+        "ndcg_at_10": 0.6530270554235404,
+        "p95_latency_ms": 8.356707985512912
+      },
+      "lexical_only": {
+        "jobs": 2.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8354093773782705,
+        "p95_latency_ms": 670.9986249916255
+      },
+      "hybrid_rrf": {
+        "jobs": 2.0,
+        "evidence_recall_at_5": 0.5,
+        "mrr": 1.0,
+        "ndcg_at_10": 0.8006937664098819,
+        "p95_latency_ms": 693.4638330712914
+      }
+    }
+  },
+  "rows": [
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:retail-forecast:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "retail",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 6.195791997015476
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:retail-forecast:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "retail",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8701249883466592,
+      "latency_ms": 450.02333307638764
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:retail-forecast:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "retail",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 454.0332079632208
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:retail-forecast:scenario",
+      "persona": "ai-ml-engineer",
+      "job_type": "retail",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 7.203000015579164
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:retail-forecast:scenario",
+      "persona": "ai-ml-engineer",
+      "job_type": "retail",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 457.9803339438513
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:retail-forecast:scenario",
+      "persona": "ai-ml-engineer",
+      "job_type": "retail",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 450.82850009202957
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:support-rag:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "SaaS",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 6.877457955852151
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:support-rag:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "SaaS",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 433.75541595742106
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:support-rag:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "SaaS",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 439.77833399549127
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:support-rag:scenario",
+      "persona": "ai-ml-engineer",
+      "job_type": "SaaS",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 6.113250041380525
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:support-rag:scenario",
+      "persona": "ai-ml-engineer",
+      "job_type": "SaaS",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 435.2738750167191
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:support-rag:scenario",
+      "persona": "ai-ml-engineer",
+      "job_type": "SaaS",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 437.5155830057338
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:vision-defects:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "manufacturing",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 6.251791026443243
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:vision-defects:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "manufacturing",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8701249883466592,
+      "latency_ms": 459.96287500020117
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:vision-defects:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "manufacturing",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 465.39649995975196
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:vision-defects:scenario",
+      "persona": "ai-ml-engineer",
+      "job_type": "manufacturing",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 7.284332998096943
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:vision-defects:scenario",
+      "persona": "ai-ml-engineer",
+      "job_type": "manufacturing",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 438.6725419899449
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:vision-defects:scenario",
+      "persona": "ai-ml-engineer",
+      "job_type": "manufacturing",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 450.93358296435326
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:churn-model:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "subscriptions",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 7.805083063431084
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:churn-model:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "subscriptions",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8701249883466592,
+      "latency_ms": 428.09962504543364
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:churn-model:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "subscriptions",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 436.7803329369053
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:churn-model:scenario",
+      "persona": "ai-ml-engineer",
+      "job_type": "subscriptions",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 7.335166912525892
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:churn-model:scenario",
+      "persona": "ai-ml-engineer",
+      "job_type": "subscriptions",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 436.68312509544194
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:churn-model:scenario",
+      "persona": "ai-ml-engineer",
+      "job_type": "subscriptions",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 437.4422909459099
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:nlp-routing:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "customer support",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 7.640708005055785
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:nlp-routing:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "customer support",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 457.3314170120284
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:nlp-routing:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "customer support",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 465.8129160525277
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:nlp-routing:scenario",
+      "persona": "ai-ml-engineer",
+      "job_type": "customer support",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 6.904916022904217
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:nlp-routing:scenario",
+      "persona": "ai-ml-engineer",
+      "job_type": "customer support",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 443.4724160237238
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:nlp-routing:scenario",
+      "persona": "ai-ml-engineer",
+      "job_type": "customer support",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 470.81183397676796
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:recommendations:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "marketplace",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 6.582959089428186
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:recommendations:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "marketplace",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8701249883466592,
+      "latency_ms": 448.8806670997292
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:recommendations:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "marketplace",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 455.17599990125746
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:recommendations:scenario",
+      "persona": "ai-ml-engineer",
+      "job_type": "marketplace",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 6.774583016522229
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:recommendations:scenario",
+      "persona": "ai-ml-engineer",
+      "job_type": "marketplace",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 425.0461250776425
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:recommendations:scenario",
+      "persona": "ai-ml-engineer",
+      "job_type": "marketplace",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 434.89829101599753
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:fraud-stream:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "fintech",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 7.400708040222526
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:fraud-stream:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "fintech",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 447.2482920391485
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:fraud-stream:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "fintech",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 358.68891701102257
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:fraud-stream:scenario",
+      "persona": "ai-ml-engineer",
+      "job_type": "fintech",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7909506325094736,
+      "latency_ms": 6.439000018872321
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:fraud-stream:scenario",
+      "persona": "ai-ml-engineer",
+      "job_type": "fintech",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8701249883466592,
+      "latency_ms": 461.79400000255555
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:fraud-stream:scenario",
+      "persona": "ai-ml-engineer",
+      "job_type": "fintech",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 466.6466669877991
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:mlops-release:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "technology",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 6.175540969707072
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:mlops-release:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "technology",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8701249883466592,
+      "latency_ms": 425.9024169296026
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:mlops-release:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "technology",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 428.41074999887496
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:mlops-release:scenario",
+      "persona": "ai-ml-engineer",
+      "job_type": "technology",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7909506325094736,
+      "latency_ms": 6.1481669545173645
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:mlops-release:scenario",
+      "persona": "ai-ml-engineer",
+      "job_type": "technology",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8701249883466592,
+      "latency_ms": 474.0954169537872
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:mlops-release:scenario",
+      "persona": "ai-ml-engineer",
+      "job_type": "technology",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 520.2934159897268
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:document-extract:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "accounting",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 8.865500101819634
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:document-extract:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "accounting",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 477.88133402355015
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:document-extract:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "accounting",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 487.8568749409169
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:document-extract:scenario",
+      "persona": "ai-ml-engineer",
+      "job_type": "accounting",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7909506325094736,
+      "latency_ms": 7.926500053144991
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:document-extract:scenario",
+      "persona": "ai-ml-engineer",
+      "job_type": "accounting",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 545.8809999981895
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:document-extract:scenario",
+      "persona": "ai-ml-engineer",
+      "job_type": "accounting",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 564.6326669957489
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:experimentation:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "e-commerce",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 6.874334067106247
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:experimentation:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "e-commerce",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8701249883466592,
+      "latency_ms": 466.83433395810425
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:experimentation:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "e-commerce",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 520.0020830379799
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:experimentation:scenario",
+      "persona": "ai-ml-engineer",
+      "job_type": "e-commerce",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 7.110042031854391
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:experimentation:scenario",
+      "persona": "ai-ml-engineer",
+      "job_type": "e-commerce",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 544.5101669756696
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:experimentation:scenario",
+      "persona": "ai-ml-engineer",
+      "job_type": "e-commerce",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 535.0273330695927
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:energy-forecast:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "energy",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 8.06208304129541
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:energy-forecast:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "energy",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 522.4727909080684
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:energy-forecast:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "energy",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 533.8045000098646
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:energy-forecast:scenario",
+      "persona": "ai-ml-engineer",
+      "job_type": "energy",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7909506325094736,
+      "latency_ms": 8.998999954201281
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:energy-forecast:scenario",
+      "persona": "ai-ml-engineer",
+      "job_type": "energy",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 582.7174159931019
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:energy-forecast:scenario",
+      "persona": "ai-ml-engineer",
+      "job_type": "energy",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 601.8412909470499
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:speech-quality:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "telecom",
+      "ablation": "dense_only",
+      "recall_at_5": 0.4,
+      "mrr": 0.5,
+      "ndcg_at_10": 0.5806020001118017,
+      "latency_ms": 8.356707985512912
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:speech-quality:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "telecom",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8701249883466592,
+      "latency_ms": 534.6212500007823
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:speech-quality:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "telecom",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 591.5072080679238
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:speech-quality:scenario",
+      "persona": "ai-ml-engineer",
+      "job_type": "telecom",
+      "ablation": "dense_only",
+      "recall_at_5": 0.4,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.725452110735279,
+      "latency_ms": 5.200041923671961
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:speech-quality:scenario",
+      "persona": "ai-ml-engineer",
+      "job_type": "telecom",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 670.9986249916255
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:speech-quality:scenario",
+      "persona": "ai-ml-engineer",
+      "job_type": "telecom",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 693.4638330712914
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:search-ranking:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "publishing",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 9.865499916486442
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:search-ranking:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "publishing",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 684.5119999488816
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:search-ranking:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "publishing",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 836.7628750856966
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:search-ranking:scenario",
+      "persona": "ai-ml-engineer",
+      "job_type": "publishing",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7909506325094736,
+      "latency_ms": 11.429667007178068
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:search-ranking:scenario",
+      "persona": "ai-ml-engineer",
+      "job_type": "publishing",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 828.6422500386834
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:search-ranking:scenario",
+      "persona": "ai-ml-engineer",
+      "job_type": "publishing",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 768.2023340603337
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:model-monitor:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "insurance",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 11.669166968204081
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:model-monitor:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "insurance",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8701249883466592,
+      "latency_ms": 717.7885830169544
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:model-monitor:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "insurance",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 593.563917092979
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:model-monitor:scenario",
+      "persona": "ai-ml-engineer",
+      "job_type": "insurance",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7909506325094736,
+      "latency_ms": 9.886582964099944
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:model-monitor:scenario",
+      "persona": "ai-ml-engineer",
+      "job_type": "insurance",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 632.1585830301046
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:model-monitor:scenario",
+      "persona": "ai-ml-engineer",
+      "job_type": "insurance",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 665.7692920416594
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:agent-workflow:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "professional services",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7125523635307982,
+      "latency_ms": 11.551499948836863
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:agent-workflow:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "professional services",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8701249883466592,
+      "latency_ms": 794.81879202649
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:agent-workflow:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "professional services",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 694.3508750991896
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:agent-workflow:scenario",
+      "persona": "ai-ml-engineer",
+      "job_type": "professional services",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7909506325094736,
+      "latency_ms": 6.886917049996555
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:agent-workflow:scenario",
+      "persona": "ai-ml-engineer",
+      "job_type": "professional services",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8701249883466592,
+      "latency_ms": 797.5705420831218
+    },
+    {
+      "job_id": "synthetic-job:ai-ml-engineer:agent-workflow:scenario",
+      "persona": "ai-ml-engineer",
+      "job_type": "professional services",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 769.4255409296602
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:saas-dashboard:direct",
+      "persona": "full-stack-developer",
+      "job_type": "SaaS",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 11.216749902814627
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:saas-dashboard:direct",
+      "persona": "full-stack-developer",
+      "job_type": "SaaS",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8701249883466592,
+      "latency_ms": 585.441792034544
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:saas-dashboard:direct",
+      "persona": "full-stack-developer",
+      "job_type": "SaaS",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 637.3404170153663
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:saas-dashboard:scenario",
+      "persona": "full-stack-developer",
+      "job_type": "SaaS",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 11.90979196690023
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:saas-dashboard:scenario",
+      "persona": "full-stack-developer",
+      "job_type": "SaaS",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 567.6890830509365
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:saas-dashboard:scenario",
+      "persona": "full-stack-developer",
+      "job_type": "SaaS",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 560.0687499390915
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:commerce-checkout:direct",
+      "persona": "full-stack-developer",
+      "job_type": "e-commerce",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 12.02079199720174
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:commerce-checkout:direct",
+      "persona": "full-stack-developer",
+      "job_type": "e-commerce",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8701249883466592,
+      "latency_ms": 546.511665917933
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:commerce-checkout:direct",
+      "persona": "full-stack-developer",
+      "job_type": "e-commerce",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 593.8039999455214
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:commerce-checkout:scenario",
+      "persona": "full-stack-developer",
+      "job_type": "e-commerce",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 11.458790977485478
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:commerce-checkout:scenario",
+      "persona": "full-stack-developer",
+      "job_type": "e-commerce",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 582.0467500016093
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:commerce-checkout:scenario",
+      "persona": "full-stack-developer",
+      "job_type": "e-commerce",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 609.5782079501078
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:booking-platform:direct",
+      "persona": "full-stack-developer",
+      "job_type": "health services",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 8.529541082680225
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:booking-platform:direct",
+      "persona": "full-stack-developer",
+      "job_type": "health services",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8701249883466592,
+      "latency_ms": 647.1094170119613
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:booking-platform:direct",
+      "persona": "full-stack-developer",
+      "job_type": "health services",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 627.605542074889
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:booking-platform:scenario",
+      "persona": "full-stack-developer",
+      "job_type": "health services",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 11.85758295468986
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:booking-platform:scenario",
+      "persona": "full-stack-developer",
+      "job_type": "health services",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 597.9624579194933
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:booking-platform:scenario",
+      "persona": "full-stack-developer",
+      "job_type": "health services",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 641.378583968617
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:realtime-chat:direct",
+      "persona": "full-stack-developer",
+      "job_type": "customer support",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 11.571416049264371
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:realtime-chat:direct",
+      "persona": "full-stack-developer",
+      "job_type": "customer support",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 605.7044999906793
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:realtime-chat:direct",
+      "persona": "full-stack-developer",
+      "job_type": "customer support",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 610.5032920604572
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:realtime-chat:scenario",
+      "persona": "full-stack-developer",
+      "job_type": "customer support",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 9.721416980028152
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:realtime-chat:scenario",
+      "persona": "full-stack-developer",
+      "job_type": "customer support",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 512.4068749137223
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:realtime-chat:scenario",
+      "persona": "full-stack-developer",
+      "job_type": "customer support",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 461.6187500068918
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:api-modernisation:direct",
+      "persona": "full-stack-developer",
+      "job_type": "logistics",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 9.589500026777387
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:api-modernisation:direct",
+      "persona": "full-stack-developer",
+      "job_type": "logistics",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8701249883466592,
+      "latency_ms": 444.0220840042457
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:api-modernisation:direct",
+      "persona": "full-stack-developer",
+      "job_type": "logistics",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 473.07266702409834
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:api-modernisation:scenario",
+      "persona": "full-stack-developer",
+      "job_type": "logistics",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7909506325094736,
+      "latency_ms": 8.344874950125813
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:api-modernisation:scenario",
+      "persona": "full-stack-developer",
+      "job_type": "logistics",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 377.98937503248453
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:api-modernisation:scenario",
+      "persona": "full-stack-developer",
+      "job_type": "logistics",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 340.2790839318186
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:design-system:direct",
+      "persona": "full-stack-developer",
+      "job_type": "technology",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 8.441500016488135
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:design-system:direct",
+      "persona": "full-stack-developer",
+      "job_type": "technology",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8701249883466592,
+      "latency_ms": 445.38758299313486
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:design-system:direct",
+      "persona": "full-stack-developer",
+      "job_type": "technology",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 448.6424579517916
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:design-system:scenario",
+      "persona": "full-stack-developer",
+      "job_type": "technology",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 7.1931249694898725
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:design-system:scenario",
+      "persona": "full-stack-developer",
+      "job_type": "technology",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 453.35341594181955
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:design-system:scenario",
+      "persona": "full-stack-developer",
+      "job_type": "technology",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 460.97916702274233
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:analytics-portal:direct",
+      "persona": "full-stack-developer",
+      "job_type": "analytics",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 8.02829209715128
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:analytics-portal:direct",
+      "persona": "full-stack-developer",
+      "job_type": "analytics",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 442.34741700347513
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:analytics-portal:direct",
+      "persona": "full-stack-developer",
+      "job_type": "analytics",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 471.0235419915989
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:analytics-portal:scenario",
+      "persona": "full-stack-developer",
+      "job_type": "analytics",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7909506325094736,
+      "latency_ms": 8.513292064890265
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:analytics-portal:scenario",
+      "persona": "full-stack-developer",
+      "job_type": "analytics",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 486.99745803605765
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:analytics-portal:scenario",
+      "persona": "full-stack-developer",
+      "job_type": "analytics",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 504.8681249609217
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:document-workflow:direct",
+      "persona": "full-stack-developer",
+      "job_type": "legal",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 8.415624964982271
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:document-workflow:direct",
+      "persona": "full-stack-developer",
+      "job_type": "legal",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8701249883466592,
+      "latency_ms": 484.70183403696865
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:document-workflow:direct",
+      "persona": "full-stack-developer",
+      "job_type": "legal",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 418.67883293889463
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:document-workflow:scenario",
+      "persona": "full-stack-developer",
+      "job_type": "legal",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7909506325094736,
+      "latency_ms": 5.646375007927418
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:document-workflow:scenario",
+      "persona": "full-stack-developer",
+      "job_type": "legal",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8701249883466592,
+      "latency_ms": 435.3647909592837
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:document-workflow:scenario",
+      "persona": "full-stack-developer",
+      "job_type": "legal",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 534.2312910361215
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:marketplace-app:direct",
+      "persona": "full-stack-developer",
+      "job_type": "marketplace",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 8.058791980147362
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:marketplace-app:direct",
+      "persona": "full-stack-developer",
+      "job_type": "marketplace",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8701249883466592,
+      "latency_ms": 418.84804202709347
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:marketplace-app:direct",
+      "persona": "full-stack-developer",
+      "job_type": "marketplace",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 414.8370419861749
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:marketplace-app:scenario",
+      "persona": "full-stack-developer",
+      "job_type": "marketplace",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7909506325094736,
+      "latency_ms": 5.174166057258844
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:marketplace-app:scenario",
+      "persona": "full-stack-developer",
+      "job_type": "marketplace",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 336.69204206671566
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:marketplace-app:scenario",
+      "persona": "full-stack-developer",
+      "job_type": "marketplace",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 362.2840829193592
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:mobile-pwa:direct",
+      "persona": "full-stack-developer",
+      "job_type": "field services",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 6.356791942380369
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:mobile-pwa:direct",
+      "persona": "full-stack-developer",
+      "job_type": "field services",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8701249883466592,
+      "latency_ms": 413.3385409368202
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:mobile-pwa:direct",
+      "persona": "full-stack-developer",
+      "job_type": "field services",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 401.6727090347558
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:mobile-pwa:scenario",
+      "persona": "full-stack-developer",
+      "job_type": "field services",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7909506325094736,
+      "latency_ms": 5.266332998871803
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:mobile-pwa:scenario",
+      "persona": "full-stack-developer",
+      "job_type": "field services",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8701249883466592,
+      "latency_ms": 433.8816669769585
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:mobile-pwa:scenario",
+      "persona": "full-stack-developer",
+      "job_type": "field services",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 469.68224993906915
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:auth-platform:direct",
+      "persona": "full-stack-developer",
+      "job_type": "enterprise software",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 4.824250005185604
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:auth-platform:direct",
+      "persona": "full-stack-developer",
+      "job_type": "enterprise software",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8701249883466592,
+      "latency_ms": 360.3977500461042
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:auth-platform:direct",
+      "persona": "full-stack-developer",
+      "job_type": "enterprise software",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 424.245584057644
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:auth-platform:scenario",
+      "persona": "full-stack-developer",
+      "job_type": "enterprise software",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7909506325094736,
+      "latency_ms": 9.291708003729582
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:auth-platform:scenario",
+      "persona": "full-stack-developer",
+      "job_type": "enterprise software",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 460.15220892149955
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:auth-platform:scenario",
+      "persona": "full-stack-developer",
+      "job_type": "enterprise software",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 455.4538340307772
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:billing-jobs:direct",
+      "persona": "full-stack-developer",
+      "job_type": "SaaS",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 8.760041906498373
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:billing-jobs:direct",
+      "persona": "full-stack-developer",
+      "job_type": "SaaS",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8701249883466592,
+      "latency_ms": 562.828166061081
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:billing-jobs:direct",
+      "persona": "full-stack-developer",
+      "job_type": "SaaS",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 487.5224579591304
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:billing-jobs:scenario",
+      "persona": "full-stack-developer",
+      "job_type": "SaaS",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7909506325094736,
+      "latency_ms": 11.648750049062073
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:billing-jobs:scenario",
+      "persona": "full-stack-developer",
+      "job_type": "SaaS",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 588.3028329117224
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:billing-jobs:scenario",
+      "persona": "full-stack-developer",
+      "job_type": "SaaS",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 597.6950000040233
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:test-platform:direct",
+      "persona": "full-stack-developer",
+      "job_type": "technology",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 9.55645798239857
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:test-platform:direct",
+      "persona": "full-stack-developer",
+      "job_type": "technology",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 575.2408329863101
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:test-platform:direct",
+      "persona": "full-stack-developer",
+      "job_type": "technology",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 574.5519580086693
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:test-platform:scenario",
+      "persona": "full-stack-developer",
+      "job_type": "technology",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7909506325094736,
+      "latency_ms": 9.835832985118032
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:test-platform:scenario",
+      "persona": "full-stack-developer",
+      "job_type": "technology",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 629.778082948178
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:test-platform:scenario",
+      "persona": "full-stack-developer",
+      "job_type": "technology",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 620.7113330019638
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:cms-migration:direct",
+      "persona": "full-stack-developer",
+      "job_type": "media",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 9.353541070595384
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:cms-migration:direct",
+      "persona": "full-stack-developer",
+      "job_type": "media",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8701249883466592,
+      "latency_ms": 574.3336669402197
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:cms-migration:direct",
+      "persona": "full-stack-developer",
+      "job_type": "media",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 581.3984170090407
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:cms-migration:scenario",
+      "persona": "full-stack-developer",
+      "job_type": "media",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7909506325094736,
+      "latency_ms": 9.74070793017745
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:cms-migration:scenario",
+      "persona": "full-stack-developer",
+      "job_type": "media",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 616.6815829928964
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:cms-migration:scenario",
+      "persona": "full-stack-developer",
+      "job_type": "media",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 572.5618340075016
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:observability:direct",
+      "persona": "full-stack-developer",
+      "job_type": "fintech",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 7.945749908685684
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:observability:direct",
+      "persona": "full-stack-developer",
+      "job_type": "fintech",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 440.0047499220818
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:observability:direct",
+      "persona": "full-stack-developer",
+      "job_type": "fintech",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 459.2839169781655
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:observability:scenario",
+      "persona": "full-stack-developer",
+      "job_type": "fintech",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 6.888541975058615
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:observability:scenario",
+      "persona": "full-stack-developer",
+      "job_type": "fintech",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 495.03925000317395
+    },
+    {
+      "job_id": "synthetic-job:full-stack-developer:observability:scenario",
+      "persona": "full-stack-developer",
+      "job_type": "fintech",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 533.9307499816641
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:sales-powerbi:direct",
+      "persona": "data-analyst",
+      "job_type": "retail",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 10.56037493981421
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:sales-powerbi:direct",
+      "persona": "data-analyst",
+      "job_type": "retail",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8701249883466592,
+      "latency_ms": 588.9468339737505
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:sales-powerbi:direct",
+      "persona": "data-analyst",
+      "job_type": "retail",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 632.3101250454783
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:sales-powerbi:scenario",
+      "persona": "data-analyst",
+      "job_type": "retail",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 13.047624961473048
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:sales-powerbi:scenario",
+      "persona": "data-analyst",
+      "job_type": "retail",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 628.3125840127468
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:sales-powerbi:scenario",
+      "persona": "data-analyst",
+      "job_type": "retail",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 558.1079580588266
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:marketing-tableau:direct",
+      "persona": "data-analyst",
+      "job_type": "marketing",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 10.065417038276792
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:marketing-tableau:direct",
+      "persona": "data-analyst",
+      "job_type": "marketing",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8701249883466592,
+      "latency_ms": 571.6119999997318
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:marketing-tableau:direct",
+      "persona": "data-analyst",
+      "job_type": "marketing",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 558.8688339339569
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:marketing-tableau:scenario",
+      "persona": "data-analyst",
+      "job_type": "marketing",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 8.340542088262737
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:marketing-tableau:scenario",
+      "persona": "data-analyst",
+      "job_type": "marketing",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8701249883466592,
+      "latency_ms": 526.8263750476763
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:marketing-tableau:scenario",
+      "persona": "data-analyst",
+      "job_type": "marketing",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 552.0939589478076
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:warehouse-dbt:direct",
+      "persona": "data-analyst",
+      "job_type": "SaaS",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 8.626125054433942
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:warehouse-dbt:direct",
+      "persona": "data-analyst",
+      "job_type": "SaaS",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8701249883466592,
+      "latency_ms": 516.8334579793736
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:warehouse-dbt:direct",
+      "persona": "data-analyst",
+      "job_type": "SaaS",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 511.48979098070413
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:warehouse-dbt:scenario",
+      "persona": "data-analyst",
+      "job_type": "SaaS",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 7.963499985635281
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:warehouse-dbt:scenario",
+      "persona": "data-analyst",
+      "job_type": "SaaS",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 462.087333900854
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:warehouse-dbt:scenario",
+      "persona": "data-analyst",
+      "job_type": "SaaS",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 464.4757080823183
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:excel-automation:direct",
+      "persona": "data-analyst",
+      "job_type": "finance",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 6.2517920741811395
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:excel-automation:direct",
+      "persona": "data-analyst",
+      "job_type": "finance",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8701249883466592,
+      "latency_ms": 432.12125007994473
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:excel-automation:direct",
+      "persona": "data-analyst",
+      "job_type": "finance",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 425.2439590636641
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:excel-automation:scenario",
+      "persona": "data-analyst",
+      "job_type": "finance",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 6.140167010016739
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:excel-automation:scenario",
+      "persona": "data-analyst",
+      "job_type": "finance",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 411.5133750019595
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:excel-automation:scenario",
+      "persona": "data-analyst",
+      "job_type": "finance",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 423.22591692209244
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:product-funnel:direct",
+      "persona": "data-analyst",
+      "job_type": "technology",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 6.074915989302099
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:product-funnel:direct",
+      "persona": "data-analyst",
+      "job_type": "technology",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8701249883466592,
+      "latency_ms": 395.30508394818753
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:product-funnel:direct",
+      "persona": "data-analyst",
+      "job_type": "technology",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 301.36575002688915
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:product-funnel:scenario",
+      "persona": "data-analyst",
+      "job_type": "technology",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 4.012375022284687
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:product-funnel:scenario",
+      "persona": "data-analyst",
+      "job_type": "technology",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 334.41829204093665
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:product-funnel:scenario",
+      "persona": "data-analyst",
+      "job_type": "technology",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 335.7875830261037
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:operations-looker:direct",
+      "persona": "data-analyst",
+      "job_type": "logistics",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7909506325094736,
+      "latency_ms": 5.1900839898735285
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:operations-looker:direct",
+      "persona": "data-analyst",
+      "job_type": "logistics",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8701249883466592,
+      "latency_ms": 333.92283297143877
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:operations-looker:direct",
+      "persona": "data-analyst",
+      "job_type": "logistics",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 304.2040419531986
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:operations-looker:scenario",
+      "persona": "data-analyst",
+      "job_type": "logistics",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 4.41858300473541
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:operations-looker:scenario",
+      "persona": "data-analyst",
+      "job_type": "logistics",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 286.9491660967469
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:operations-looker:scenario",
+      "persona": "data-analyst",
+      "job_type": "logistics",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 292.4539170926437
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:survey-analysis:direct",
+      "persona": "data-analyst",
+      "job_type": "consumer services",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 4.430499975569546
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:survey-analysis:direct",
+      "persona": "data-analyst",
+      "job_type": "consumer services",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8701249883466592,
+      "latency_ms": 285.8925419859588
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:survey-analysis:direct",
+      "persona": "data-analyst",
+      "job_type": "consumer services",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 283.9253330603242
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:survey-analysis:scenario",
+      "persona": "data-analyst",
+      "job_type": "consumer services",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7909506325094736,
+      "latency_ms": 4.677792079746723
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:survey-analysis:scenario",
+      "persona": "data-analyst",
+      "job_type": "consumer services",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8701249883466592,
+      "latency_ms": 305.3352501010522
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:survey-analysis:scenario",
+      "persona": "data-analyst",
+      "job_type": "consumer services",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 302.30049998499453
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:ab-testing:direct",
+      "persona": "data-analyst",
+      "job_type": "e-commerce",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 3.9165830239653587
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:ab-testing:direct",
+      "persona": "data-analyst",
+      "job_type": "e-commerce",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8701249883466592,
+      "latency_ms": 284.5979999983683
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:ab-testing:direct",
+      "persona": "data-analyst",
+      "job_type": "e-commerce",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 285.7087090378627
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:ab-testing:scenario",
+      "persona": "data-analyst",
+      "job_type": "e-commerce",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 4.005459020845592
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:ab-testing:scenario",
+      "persona": "data-analyst",
+      "job_type": "e-commerce",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8701249883466592,
+      "latency_ms": 308.1715409643948
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:ab-testing:scenario",
+      "persona": "data-analyst",
+      "job_type": "e-commerce",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 331.267207977362
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:quality-dashboard:direct",
+      "persona": "data-analyst",
+      "job_type": "manufacturing",
+      "ablation": "dense_only",
+      "recall_at_5": 0.4,
+      "mrr": 0.5,
+      "ndcg_at_10": 0.5806020001118017,
+      "latency_ms": 4.4683750020340085
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:quality-dashboard:direct",
+      "persona": "data-analyst",
+      "job_type": "manufacturing",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8701249883466592,
+      "latency_ms": 321.65199995506555
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:quality-dashboard:direct",
+      "persona": "data-analyst",
+      "job_type": "manufacturing",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 326.4720829902217
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:quality-dashboard:scenario",
+      "persona": "data-analyst",
+      "job_type": "manufacturing",
+      "ablation": "dense_only",
+      "recall_at_5": 0.4,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.725452110735279,
+      "latency_ms": 4.4412079732865095
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:quality-dashboard:scenario",
+      "persona": "data-analyst",
+      "job_type": "manufacturing",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 349.2031249916181
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:quality-dashboard:scenario",
+      "persona": "data-analyst",
+      "job_type": "manufacturing",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 354.2507089441642
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:forecast-workbook:direct",
+      "persona": "data-analyst",
+      "job_type": "professional services",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 4.411416011862457
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:forecast-workbook:direct",
+      "persona": "data-analyst",
+      "job_type": "professional services",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8701249883466592,
+      "latency_ms": 297.1754999598488
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:forecast-workbook:direct",
+      "persona": "data-analyst",
+      "job_type": "professional services",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 300.1389999408275
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:forecast-workbook:scenario",
+      "persona": "data-analyst",
+      "job_type": "professional services",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7909506325094736,
+      "latency_ms": 4.433457972481847
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:forecast-workbook:scenario",
+      "persona": "data-analyst",
+      "job_type": "professional services",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 309.3046660069376
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:forecast-workbook:scenario",
+      "persona": "data-analyst",
+      "job_type": "professional services",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 320.4979170113802
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:customer-segments:direct",
+      "persona": "data-analyst",
+      "job_type": "subscriptions",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 3.8871249416843057
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:customer-segments:direct",
+      "persona": "data-analyst",
+      "job_type": "subscriptions",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8701249883466592,
+      "latency_ms": 251.16770807653666
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:customer-segments:direct",
+      "persona": "data-analyst",
+      "job_type": "subscriptions",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 248.0230409419164
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:customer-segments:scenario",
+      "persona": "data-analyst",
+      "job_type": "subscriptions",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7909506325094736,
+      "latency_ms": 4.41204197704792
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:customer-segments:scenario",
+      "persona": "data-analyst",
+      "job_type": "subscriptions",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 271.21545909903944
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:customer-segments:scenario",
+      "persona": "data-analyst",
+      "job_type": "subscriptions",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 261.7297919932753
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:inventory-sql:direct",
+      "persona": "data-analyst",
+      "job_type": "retail",
+      "ablation": "dense_only",
+      "recall_at_5": 0.4,
+      "mrr": 0.5,
+      "ndcg_at_10": 0.5806020001118017,
+      "latency_ms": 3.911999985575676
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:inventory-sql:direct",
+      "persona": "data-analyst",
+      "job_type": "retail",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8701249883466592,
+      "latency_ms": 315.8231250708923
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:inventory-sql:direct",
+      "persona": "data-analyst",
+      "job_type": "retail",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 309.9055830389261
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:inventory-sql:scenario",
+      "persona": "data-analyst",
+      "job_type": "retail",
+      "ablation": "dense_only",
+      "recall_at_5": 0.4,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.725452110735279,
+      "latency_ms": 4.44216700270772
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:inventory-sql:scenario",
+      "persona": "data-analyst",
+      "job_type": "retail",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 344.7447919752449
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:inventory-sql:scenario",
+      "persona": "data-analyst",
+      "job_type": "retail",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 345.65516689326614
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:health-metrics:direct",
+      "persona": "data-analyst",
+      "job_type": "healthcare",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 4.368333960883319
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:health-metrics:direct",
+      "persona": "data-analyst",
+      "job_type": "healthcare",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8701249883466592,
+      "latency_ms": 294.7724580299109
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:health-metrics:direct",
+      "persona": "data-analyst",
+      "job_type": "healthcare",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 302.6017500087619
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:health-metrics:scenario",
+      "persona": "data-analyst",
+      "job_type": "healthcare",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7909506325094736,
+      "latency_ms": 4.41258295904845
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:health-metrics:scenario",
+      "persona": "data-analyst",
+      "job_type": "healthcare",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 332.27666607126594
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:health-metrics:scenario",
+      "persona": "data-analyst",
+      "job_type": "healthcare",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 355.4868750507012
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:pipeline-airflow:direct",
+      "persona": "data-analyst",
+      "job_type": "media",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 5.124125047586858
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:pipeline-airflow:direct",
+      "persona": "data-analyst",
+      "job_type": "media",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8701249883466592,
+      "latency_ms": 328.96137493662536
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:pipeline-airflow:direct",
+      "persona": "data-analyst",
+      "job_type": "media",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 330.6601670337841
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:pipeline-airflow:scenario",
+      "persona": "data-analyst",
+      "job_type": "media",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7909506325094736,
+      "latency_ms": 5.108207929879427
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:pipeline-airflow:scenario",
+      "persona": "data-analyst",
+      "job_type": "media",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 419.25433301366866
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:pipeline-airflow:scenario",
+      "persona": "data-analyst",
+      "job_type": "media",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 434.86295896582305
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:board-report:direct",
+      "persona": "data-analyst",
+      "job_type": "finance",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7273298443105218,
+      "latency_ms": 6.230125087313354
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:board-report:direct",
+      "persona": "data-analyst",
+      "job_type": "finance",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8701249883466592,
+      "latency_ms": 461.0549999633804
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:board-report:direct",
+      "persona": "data-analyst",
+      "job_type": "finance",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 476.91445890814066
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:board-report:scenario",
+      "persona": "data-analyst",
+      "job_type": "finance",
+      "ablation": "dense_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7909506325094736,
+      "latency_ms": 6.038416991941631
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:board-report:scenario",
+      "persona": "data-analyst",
+      "job_type": "finance",
+      "ablation": "lexical_only",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 501.3072909787297
+    },
+    {
+      "job_id": "synthetic-job:data-analyst:board-report:scenario",
+      "persona": "data-analyst",
+      "job_type": "finance",
+      "ablation": "hybrid_rrf",
+      "recall_at_5": 0.5,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.8006937664098819,
+      "latency_ms": 512.0081250788644
+    }
+  ]
+}

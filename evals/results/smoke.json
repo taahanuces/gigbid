@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "generated_at": "2026-11-10T13:44:11.604839+00:00",
+    "dataset": "synthetic smoke only - not reportable R&D evidence",
+    "python": "3.13.5",
+    "job_count": 2
+  },
+  "rag": {
+    "v0_naive": {
+      "evidence_recall_at_5": 0.5,
+      "mrr": 0.5,
+      "ndcg_at_10": 1.0,
+      "p95_latency_ms": 0.0754169886931777
+    },
+    "v1_requirements": {
+      "evidence_recall_at_5": 0.5,
+      "mrr": 0.5,
+      "ndcg_at_10": 1.0,
+      "p95_latency_ms": 0.2782499650493264
+    },
+    "v2_hybrid": {
+      "evidence_recall_at_5": 0.5,
+      "mrr": 0.5,
+      "ndcg_at_10": 1.0,
+      "p95_latency_ms": 0.10383292101323605
+    },
+    "v3_rerank": {
+      "evidence_recall_at_5": 0.5,
+      "mrr": 0.5,
+      "ndcg_at_10": 1.0,
+      "p95_latency_ms": 0.10833295527845621
+    },
+    "v8_corrective": {
+      "evidence_recall_at_5": 1.0,
+      "mrr": 0.5,
+      "ndcg_at_10": 1.0,
+      "p95_latency_ms": 0.26629201602190733
+    }
+  },
+  "decisions": [
+    {
+      "job_id": "job-forecast-001",
+      "action": "bid",
+      "risk_score": 0.0,
+      "fit_score": 0.833,
+      "injection_detected": false
+    },
+    {
+      "job_id": "job-risk-002",
+      "action": "skip",
+      "risk_score": 0.6,
+      "fit_score": 0.0,
+      "injection_detected": true
+    }
+  ]
+}

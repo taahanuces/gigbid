@@ -1,0 +1,7 @@
+{
+  "status": "awaiting_author_labels",
+  "required": 30,
+  "labelled": 0,
+  "cohen_kappa": null,
+  "note": "Human labels cannot be generated or inferred by this script."
+}

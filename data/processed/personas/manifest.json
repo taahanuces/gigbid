@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-11-11T06:03:44.961649+00:00",
+  "data_origin": "synthetic",
+  "generator_version": "gigbid-personas-v1",
+  "seed": "template-deterministic-no-rng",
+  "personas": {
+    "ai-ml-engineer": {
+      "case_studies": 15,
+      "past_proposals": 150,
+      "total_evidence_items": 210
+    },
+    "full-stack-developer": {
+      "case_studies": 15,
+      "past_proposals": 150,
+      "total_evidence_items": 210
+    },
+    "data-analyst": {
+      "case_studies": 15,
+      "past_proposals": 150,
+      "total_evidence_items": 210
+    }
+  },
+  "benchmark_jobs": 90,
+  "warning": "Synthetic persona evidence and labels are not real-world outcome evidence."
+}

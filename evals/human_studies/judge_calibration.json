@@ -1,0 +1,638 @@
+{
+  "metadata": {
+    "generated_at": "2026-11-12T04:48:53.454216+00:00",
+    "data_origin": "synthetic",
+    "items": 30,
+    "status": "awaiting_author_labels",
+    "allowed_labels": [
+      "pass",
+      "fail"
+    ]
+  },
+  "items": [
+    {
+      "item_id": "calibration-01",
+      "persona": "ai-ml-engineer",
+      "job_title": "Need help with Retail demand forecast",
+      "proposal": "Your need help with retail demand forecast project calls for a careful, reproducible delivery.\n\nFor Python, I can draw on Retail demand forecast proposal 1, where I proposed a scoped retail demand forecast delivery using python, lightgbm, time series, with milestones and validation [ai-ml-engineer:retail-forecast:proposal-01].\n\nFor LightGBM, I can draw on Retail demand forecast proposal 1, where I proposed a scoped retail demand forecast delivery using python, lightgbm, time series, with milestones and validation [ai-ml-engineer:retail-forecast:proposal-01].\n\nFor time series, I can draw on Retail demand forecast proposal 1, where I proposed a scoped retail demand forecast delivery using python, lightgbm, time series, with milestones and validation [ai-ml-engineer:retail-forecast:proposal-01].\n\nFor MAE, I can draw on Retail demand forecast proposal 1, where I proposed a scoped retail demand forecast delivery using python, lightgbm, time series, with milestones and validation [ai-ml-engineer:retail-forecast:proposal-01].\n\nFor working retail demand forecast, I can draw on Retail demand forecast proposal 1, where I proposed a scoped retail demand forecast delivery using python, lightgbm, time series, with milestones and validation [ai-ml-engineer:retail-forecast:proposal-01].\n\nFor validation report, I can draw on Invoice document extraction, where I designed and delivered invoice document extraction using ocr, layout models, python, validation; achieved 96% synthetic field accuracy [ai-ml-engineer:document-extract:case].\n\nI would confirm the milestones first, then deliver within the agreed scope at 911 USD.",
+      "evidence_ids": [
+        "ai-ml-engineer:retail-forecast:proposal-01",
+        "ai-ml-engineer:retail-forecast:proposal-02",
+        "ai-ml-engineer:retail-forecast:proposal-03",
+        "ai-ml-engineer:retail-forecast:readme",
+        "ai-ml-engineer:retail-forecast:case",
+        "ai-ml-engineer:retail-forecast:code",
+        "ai-ml-engineer:retail-forecast:review",
+        "ai-ml-engineer:energy-forecast:case",
+        "ai-ml-engineer:energy-forecast:readme",
+        "ai-ml-engineer:document-extract:case"
+      ],
+      "machine_label": "pass",
+      "human_label": null,
+      "human_notes": null
+    },
+    {
+      "item_id": "calibration-02",
+      "persona": "ai-ml-engineer",
+      "job_title": "Need help with Retail demand forecast",
+      "proposal": "Your need help with retail demand forecast project calls for a careful, reproducible delivery.\n\nFor Python, I can draw on Retail demand forecast proposal 1, where I proposed a scoped retail demand forecast delivery using python, lightgbm, time series, with milestones and validation [ai-ml-engineer:retail-forecast:proposal-01].\n\nFor LightGBM, I can draw on Retail demand forecast proposal 1, where I proposed a scoped retail demand forecast delivery using python, lightgbm, time series, with milestones and validation [ai-ml-engineer:retail-forecast:proposal-01].\n\nFor time series, I can draw on Retail demand forecast proposal 1, where I proposed a scoped retail demand forecast delivery using python, lightgbm, time series, with milestones and validation [ai-ml-engineer:retail-forecast:proposal-01].\n\nFor MAE, I can draw on Retail demand forecast proposal 1, where I proposed a scoped retail demand forecast delivery using python, lightgbm, time series, with milestones and validation [ai-ml-engineer:retail-forecast:proposal-01].\n\nFor working retail demand forecast, I can draw on Retail demand forecast proposal 1, where I proposed a scoped retail demand forecast delivery using python, lightgbm, time series, with milestones and validation [ai-ml-engineer:retail-forecast:proposal-01].\n\nI would confirm the milestones first, then deliver within the agreed scope at 953 USD.",
+      "evidence_ids": [
+        "ai-ml-engineer:retail-forecast:proposal-01",
+        "ai-ml-engineer:retail-forecast:proposal-02",
+        "ai-ml-engineer:retail-forecast:proposal-03",
+        "ai-ml-engineer:retail-forecast:case",
+        "ai-ml-engineer:retail-forecast:readme",
+        "ai-ml-engineer:retail-forecast:review",
+        "ai-ml-engineer:retail-forecast:code",
+        "ai-ml-engineer:energy-forecast:case",
+        "ai-ml-engineer:energy-forecast:code",
+        "ai-ml-engineer:energy-forecast:readme"
+      ],
+      "machine_label": "pass",
+      "human_label": null,
+      "human_notes": null
+    },
+    {
+      "item_id": "calibration-03",
+      "persona": "ai-ml-engineer",
+      "job_title": "Need help with Support knowledge RAG",
+      "proposal": "Your need help with support knowledge rag project calls for a careful, reproducible delivery.\n\nFor LangGraph, I can draw on Support knowledge RAG proposal 1, where I proposed a scoped support knowledge rag delivery using langgraph, qdrant, embeddings, with milestones and validation [ai-ml-engineer:support-rag:proposal-01].\n\nFor Qdrant, I can draw on Support knowledge RAG proposal 1, where I proposed a scoped support knowledge rag delivery using langgraph, qdrant, embeddings, with milestones and validation [ai-ml-engineer:support-rag:proposal-01].\n\nFor embeddings, I can draw on Support knowledge RAG proposal 1, where I proposed a scoped support knowledge rag delivery using langgraph, qdrant, embeddings, with milestones and validation [ai-ml-engineer:support-rag:proposal-01].\n\nFor RAG, I can draw on Support knowledge RAG proposal 1, where I proposed a scoped support knowledge rag delivery using langgraph, qdrant, embeddings, with milestones and validation [ai-ml-engineer:support-rag:proposal-01].\n\nFor working support knowledge rag, I can draw on Support knowledge RAG proposal 1, where I proposed a scoped support knowledge rag delivery using langgraph, qdrant, embeddings, with milestones and validation [ai-ml-engineer:support-rag:proposal-01].\n\nFor validation report, I can draw on Invoice document extraction implementation, where I tested implementation modules for ocr, layout models, python, validation with configuration and error handling [ai-ml-engineer:document-extract:code].\n\nI would confirm the milestones first, then deliver within the agreed scope at 911 USD.",
+      "evidence_ids": [
+        "ai-ml-engineer:support-rag:proposal-01",
+        "ai-ml-engineer:support-rag:proposal-02",
+        "ai-ml-engineer:support-rag:proposal-03",
+        "ai-ml-engineer:support-rag:readme",
+        "ai-ml-engineer:support-rag:case",
+        "ai-ml-engineer:support-rag:code",
+        "ai-ml-engineer:support-rag:review",
+        "ai-ml-engineer:nlp-routing:review",
+        "ai-ml-engineer:document-extract:code",
+        "ai-ml-engineer:document-extract:case"
+      ],
+      "machine_label": "pass",
+      "human_label": null,
+      "human_notes": null
+    },
+    {
+      "item_id": "calibration-04",
+      "persona": "ai-ml-engineer",
+      "job_title": "Need help with Support knowledge RAG",
+      "proposal": "Your need help with support knowledge rag project calls for a careful, reproducible delivery.\n\nFor LangGraph, I can draw on Support knowledge RAG proposal 1, where I proposed a scoped support knowledge rag delivery using langgraph, qdrant, embeddings, with milestones and validation [ai-ml-engineer:support-rag:proposal-01].\n\nFor Qdrant, I can draw on Support knowledge RAG proposal 1, where I proposed a scoped support knowledge rag delivery using langgraph, qdrant, embeddings, with milestones and validation [ai-ml-engineer:support-rag:proposal-01].\n\nFor embeddings, I can draw on Support knowledge RAG proposal 1, where I proposed a scoped support knowledge rag delivery using langgraph, qdrant, embeddings, with milestones and validation [ai-ml-engineer:support-rag:proposal-01].\n\nFor RAG, I can draw on Support knowledge RAG proposal 1, where I proposed a scoped support knowledge rag delivery using langgraph, qdrant, embeddings, with milestones and validation [ai-ml-engineer:support-rag:proposal-01].\n\nFor working support knowledge rag, I can draw on Support knowledge RAG proposal 1, where I proposed a scoped support knowledge rag delivery using langgraph, qdrant, embeddings, with milestones and validation [ai-ml-engineer:support-rag:proposal-01].\n\nI would confirm the milestones first, then deliver within the agreed scope at 953 USD.",
+      "evidence_ids": [
+        "ai-ml-engineer:support-rag:proposal-01",
+        "ai-ml-engineer:support-rag:proposal-02",
+        "ai-ml-engineer:support-rag:proposal-03",
+        "ai-ml-engineer:support-rag:case",
+        "ai-ml-engineer:support-rag:readme",
+        "ai-ml-engineer:support-rag:code",
+        "ai-ml-engineer:support-rag:review",
+        "ai-ml-engineer:nlp-routing:review",
+        "ai-ml-engineer:experimentation:code"
+      ],
+      "machine_label": "pass",
+      "human_label": null,
+      "human_notes": null
+    },
+    {
+      "item_id": "calibration-05",
+      "persona": "ai-ml-engineer",
+      "job_title": "Need help with Manufacturing defect vision",
+      "proposal": "Your need help with manufacturing defect vision project calls for a careful, reproducible delivery.\n\nFor PyTorch, I can draw on Manufacturing defect vision proposal 1, where I proposed a scoped manufacturing defect vision delivery using pytorch, computer vision, fastapi, with milestones and validation [ai-ml-engineer:vision-defects:proposal-01].\n\nFor computer vision, I can draw on Manufacturing defect vision proposal 1, where I proposed a scoped manufacturing defect vision delivery using pytorch, computer vision, fastapi, with milestones and validation [ai-ml-engineer:vision-defects:proposal-01].\n\nFor FastAPI, I can draw on Manufacturing defect vision proposal 1, where I proposed a scoped manufacturing defect vision delivery using pytorch, computer vision, fastapi, with milestones and validation [ai-ml-engineer:vision-defects:proposal-01].\n\nFor Docker, I can draw on Manufacturing defect vision proposal 1, where I proposed a scoped manufacturing defect vision delivery using pytorch, computer vision, fastapi, with milestones and validation [ai-ml-engineer:vision-defects:proposal-01].\n\nFor working manufacturing defect vision, I can draw on Manufacturing defect vision proposal 1, where I proposed a scoped manufacturing defect vision delivery using pytorch, computer vision, fastapi, with milestones and validation [ai-ml-engineer:vision-defects:proposal-01].\n\nFor validation report, I can draw on Invoice document extraction implementation, where I tested implementation modules for ocr, layout models, python, validation with configuration and error handling [ai-ml-engineer:document-extract:code].\n\nI would confirm the milestones first, then deliver within the agreed scope at 911 USD.",
+      "evidence_ids": [
+        "ai-ml-engineer:vision-defects:proposal-01",
+        "ai-ml-engineer:vision-defects:proposal-02",
+        "ai-ml-engineer:vision-defects:proposal-03",
+        "ai-ml-engineer:vision-defects:readme",
+        "ai-ml-engineer:vision-defects:case",
+        "ai-ml-engineer:vision-defects:code",
+        "ai-ml-engineer:vision-defects:review",
+        "ai-ml-engineer:document-extract:code",
+        "ai-ml-engineer:document-extract:case",
+        "ai-ml-engineer:fraud-stream:code"
+      ],
+      "machine_label": "pass",
+      "human_label": null,
+      "human_notes": null
+    },
+    {
+      "item_id": "calibration-06",
+      "persona": "ai-ml-engineer",
+      "job_title": "Need help with Manufacturing defect vision",
+      "proposal": "Your need help with manufacturing defect vision project calls for a careful, reproducible delivery.\n\nFor PyTorch, I can draw on Manufacturing defect vision proposal 1, where I proposed a scoped manufacturing defect vision delivery using pytorch, computer vision, fastapi, with milestones and validation [ai-ml-engineer:vision-defects:proposal-01].\n\nFor computer vision, I can draw on Manufacturing defect vision proposal 1, where I proposed a scoped manufacturing defect vision delivery using pytorch, computer vision, fastapi, with milestones and validation [ai-ml-engineer:vision-defects:proposal-01].\n\nFor FastAPI, I can draw on Manufacturing defect vision proposal 1, where I proposed a scoped manufacturing defect vision delivery using pytorch, computer vision, fastapi, with milestones and validation [ai-ml-engineer:vision-defects:proposal-01].\n\nFor Docker, I can draw on Manufacturing defect vision proposal 1, where I proposed a scoped manufacturing defect vision delivery using pytorch, computer vision, fastapi, with milestones and validation [ai-ml-engineer:vision-defects:proposal-01].\n\nFor working manufacturing defect vision, I can draw on Manufacturing defect vision proposal 1, where I proposed a scoped manufacturing defect vision delivery using pytorch, computer vision, fastapi, with milestones and validation [ai-ml-engineer:vision-defects:proposal-01].\n\nI would confirm the milestones first, then deliver within the agreed scope at 953 USD.",
+      "evidence_ids": [
+        "ai-ml-engineer:vision-defects:proposal-01",
+        "ai-ml-engineer:vision-defects:proposal-02",
+        "ai-ml-engineer:vision-defects:proposal-03",
+        "ai-ml-engineer:vision-defects:case",
+        "ai-ml-engineer:vision-defects:readme",
+        "ai-ml-engineer:vision-defects:review",
+        "ai-ml-engineer:vision-defects:code",
+        "ai-ml-engineer:experimentation:code"
+      ],
+      "machine_label": "pass",
+      "human_label": null,
+      "human_notes": null
+    },
+    {
+      "item_id": "calibration-07",
+      "persona": "ai-ml-engineer",
+      "job_title": "Need help with Subscription churn model",
+      "proposal": "Your need help with subscription churn model project calls for a careful, reproducible delivery.\n\nFor scikit-learn, I can draw on Subscription churn model proposal 1, where I proposed a scoped subscription churn model delivery using scikit-learn, xgboost, shap, with milestones and validation [ai-ml-engineer:churn-model:proposal-01].\n\nFor XGBoost, I can draw on Subscription churn model proposal 1, where I proposed a scoped subscription churn model delivery using scikit-learn, xgboost, shap, with milestones and validation [ai-ml-engineer:churn-model:proposal-01].\n\nFor SHAP, I can draw on Subscription churn model proposal 1, where I proposed a scoped subscription churn model delivery using scikit-learn, xgboost, shap, with milestones and validation [ai-ml-engineer:churn-model:proposal-01].\n\nFor pandas, I can draw on Subscription churn model proposal 1, where I proposed a scoped subscription churn model delivery using scikit-learn, xgboost, shap, with milestones and validation [ai-ml-engineer:churn-model:proposal-01].\n\nFor working subscription churn model, I can draw on Subscription churn model proposal 1, where I proposed a scoped subscription churn model delivery using scikit-learn, xgboost, shap, with milestones and validation [ai-ml-engineer:churn-model:proposal-01].\n\nI would confirm the milestones first, then deliver within the agreed scope at 886 USD.",
+      "evidence_ids": [
+        "ai-ml-engineer:churn-model:proposal-01",
+        "ai-ml-engineer:churn-model:proposal-02",
+        "ai-ml-engineer:churn-model:proposal-03",
+        "ai-ml-engineer:churn-model:readme",
+        "ai-ml-engineer:churn-model:case",
+        "ai-ml-engineer:churn-model:code",
+        "ai-ml-engineer:churn-model:review",
+        "ai-ml-engineer:model-monitor:readme",
+        "ai-ml-engineer:model-monitor:case",
+        "ai-ml-engineer:model-monitor:code"
+      ],
+      "machine_label": "pass",
+      "human_label": null,
+      "human_notes": null
+    },
+    {
+      "item_id": "calibration-08",
+      "persona": "ai-ml-engineer",
+      "job_title": "Need help with Subscription churn model",
+      "proposal": "Your need help with subscription churn model project calls for a careful, reproducible delivery.\n\nFor scikit-learn, I can draw on Subscription churn model proposal 1, where I proposed a scoped subscription churn model delivery using scikit-learn, xgboost, shap, with milestones and validation [ai-ml-engineer:churn-model:proposal-01].\n\nFor XGBoost, I can draw on Subscription churn model proposal 1, where I proposed a scoped subscription churn model delivery using scikit-learn, xgboost, shap, with milestones and validation [ai-ml-engineer:churn-model:proposal-01].\n\nFor SHAP, I can draw on Subscription churn model proposal 1, where I proposed a scoped subscription churn model delivery using scikit-learn, xgboost, shap, with milestones and validation [ai-ml-engineer:churn-model:proposal-01].\n\nFor pandas, I can draw on Subscription churn model proposal 1, where I proposed a scoped subscription churn model delivery using scikit-learn, xgboost, shap, with milestones and validation [ai-ml-engineer:churn-model:proposal-01].\n\nFor working subscription churn model, I can draw on Subscription churn model proposal 1, where I proposed a scoped subscription churn model delivery using scikit-learn, xgboost, shap, with milestones and validation [ai-ml-engineer:churn-model:proposal-01].\n\nI would confirm the milestones first, then deliver within the agreed scope at 953 USD.",
+      "evidence_ids": [
+        "ai-ml-engineer:churn-model:proposal-01",
+        "ai-ml-engineer:churn-model:proposal-02",
+        "ai-ml-engineer:churn-model:proposal-03",
+        "ai-ml-engineer:churn-model:case",
+        "ai-ml-engineer:churn-model:readme",
+        "ai-ml-engineer:churn-model:code",
+        "ai-ml-engineer:churn-model:review",
+        "ai-ml-engineer:model-monitor:readme",
+        "ai-ml-engineer:model-monitor:case",
+        "ai-ml-engineer:model-monitor:code"
+      ],
+      "machine_label": "pass",
+      "human_label": null,
+      "human_notes": null
+    },
+    {
+      "item_id": "calibration-09",
+      "persona": "ai-ml-engineer",
+      "job_title": "Need help with Multilingual ticket routing",
+      "proposal": "Your need help with multilingual ticket routing project calls for a careful, reproducible delivery.\n\nFor transformers, I can draw on Multilingual ticket routing proposal 1, where I proposed a scoped multilingual ticket routing delivery using transformers, nlp, hugging face, with milestones and validation [ai-ml-engineer:nlp-routing:proposal-01].\n\nFor NLP, I can draw on Multilingual ticket routing proposal 1, where I proposed a scoped multilingual ticket routing delivery using transformers, nlp, hugging face, with milestones and validation [ai-ml-engineer:nlp-routing:proposal-01].\n\nFor Hugging Face, I can draw on Multilingual ticket routing proposal 1, where I proposed a scoped multilingual ticket routing delivery using transformers, nlp, hugging face, with milestones and validation [ai-ml-engineer:nlp-routing:proposal-01].\n\nFor evaluation, I can draw on Multilingual ticket routing proposal 1, where I proposed a scoped multilingual ticket routing delivery using transformers, nlp, hugging face, with milestones and validation [ai-ml-engineer:nlp-routing:proposal-01].\n\nFor working multilingual ticket routing, I can draw on Multilingual ticket routing proposal 1, where I proposed a scoped multilingual ticket routing delivery using transformers, nlp, hugging face, with milestones and validation [ai-ml-engineer:nlp-routing:proposal-01].\n\nFor validation report, I can draw on Invoice document extraction implementation, where I tested implementation modules for ocr, layout models, python, validation with configuration and error handling [ai-ml-engineer:document-extract:code].\n\nI would confirm the milestones first, then deliver within the agreed scope at 911 USD.",
+      "evidence_ids": [
+        "ai-ml-engineer:nlp-routing:proposal-01",
+        "ai-ml-engineer:nlp-routing:proposal-02",
+        "ai-ml-engineer:nlp-routing:proposal-03",
+        "ai-ml-engineer:nlp-routing:readme",
+        "ai-ml-engineer:nlp-routing:case",
+        "ai-ml-engineer:nlp-routing:code",
+        "ai-ml-engineer:nlp-routing:review",
+        "ai-ml-engineer:document-extract:code",
+        "ai-ml-engineer:document-extract:case",
+        "ai-ml-engineer:search-ranking:code"
+      ],
+      "machine_label": "pass",
+      "human_label": null,
+      "human_notes": null
+    },
+    {
+      "item_id": "calibration-10",
+      "persona": "ai-ml-engineer",
+      "job_title": "Need help with Multilingual ticket routing",
+      "proposal": "Your need help with multilingual ticket routing project calls for a careful, reproducible delivery.\n\nFor transformers, I can draw on Multilingual ticket routing proposal 1, where I proposed a scoped multilingual ticket routing delivery using transformers, nlp, hugging face, with milestones and validation [ai-ml-engineer:nlp-routing:proposal-01].\n\nFor NLP, I can draw on Multilingual ticket routing proposal 1, where I proposed a scoped multilingual ticket routing delivery using transformers, nlp, hugging face, with milestones and validation [ai-ml-engineer:nlp-routing:proposal-01].\n\nFor Hugging Face, I can draw on Multilingual ticket routing proposal 1, where I proposed a scoped multilingual ticket routing delivery using transformers, nlp, hugging face, with milestones and validation [ai-ml-engineer:nlp-routing:proposal-01].\n\nFor evaluation, I can draw on Multilingual ticket routing proposal 1, where I proposed a scoped multilingual ticket routing delivery using transformers, nlp, hugging face, with milestones and validation [ai-ml-engineer:nlp-routing:proposal-01].\n\nFor working multilingual ticket routing, I can draw on Multilingual ticket routing proposal 1, where I proposed a scoped multilingual ticket routing delivery using transformers, nlp, hugging face, with milestones and validation [ai-ml-engineer:nlp-routing:proposal-01].\n\nI would confirm the milestones first, then deliver within the agreed scope at 953 USD.",
+      "evidence_ids": [
+        "ai-ml-engineer:nlp-routing:proposal-01",
+        "ai-ml-engineer:nlp-routing:proposal-02",
+        "ai-ml-engineer:nlp-routing:proposal-03",
+        "ai-ml-engineer:nlp-routing:case",
+        "ai-ml-engineer:nlp-routing:readme",
+        "ai-ml-engineer:nlp-routing:review",
+        "ai-ml-engineer:nlp-routing:code",
+        "ai-ml-engineer:experimentation:code"
+      ],
+      "machine_label": "pass",
+      "human_label": null,
+      "human_notes": null
+    },
+    {
+      "item_id": "calibration-11",
+      "persona": "full-stack-developer",
+      "job_title": "Need help with Multi-tenant SaaS dashboard",
+      "proposal": "Your need help with multi-tenant saas dashboard project calls for a careful, reproducible delivery.\n\nFor Next.js, I can draw on Multi-tenant SaaS dashboard proposal 1, where I proposed a scoped multi-tenant saas dashboard delivery using next.js, typescript, postgresql, with milestones and validation [full-stack-developer:saas-dashboard:proposal-01].\n\nFor TypeScript, I can draw on Multi-tenant SaaS dashboard proposal 1, where I proposed a scoped multi-tenant saas dashboard delivery using next.js, typescript, postgresql, with milestones and validation [full-stack-developer:saas-dashboard:proposal-01].\n\nFor PostgreSQL, I can draw on Multi-tenant SaaS dashboard proposal 1, where I proposed a scoped multi-tenant saas dashboard delivery using next.js, typescript, postgresql, with milestones and validation [full-stack-developer:saas-dashboard:proposal-01].\n\nFor RBAC, I can draw on Multi-tenant SaaS dashboard proposal 1, where I proposed a scoped multi-tenant saas dashboard delivery using next.js, typescript, postgresql, with milestones and validation [full-stack-developer:saas-dashboard:proposal-01].\n\nFor working multi-tenant saas dashboard, I can draw on Multi-tenant SaaS dashboard proposal 1, where I proposed a scoped multi-tenant saas dashboard delivery using next.js, typescript, postgresql, with milestones and validation [full-stack-developer:saas-dashboard:proposal-01].\n\nI would confirm the milestones first, then deliver within the agreed scope at 886 USD.",
+      "evidence_ids": [
+        "full-stack-developer:saas-dashboard:proposal-01",
+        "full-stack-developer:saas-dashboard:proposal-02",
+        "full-stack-developer:saas-dashboard:proposal-03",
+        "full-stack-developer:saas-dashboard:readme",
+        "full-stack-developer:saas-dashboard:case",
+        "full-stack-developer:saas-dashboard:code",
+        "full-stack-developer:saas-dashboard:review",
+        "full-stack-developer:analytics-portal:case",
+        "full-stack-developer:billing-jobs:review",
+        "full-stack-developer:analytics-portal:code"
+      ],
+      "machine_label": "pass",
+      "human_label": null,
+      "human_notes": null
+    },
+    {
+      "item_id": "calibration-12",
+      "persona": "full-stack-developer",
+      "job_title": "Need help with Multi-tenant SaaS dashboard",
+      "proposal": "Your need help with multi-tenant saas dashboard project calls for a careful, reproducible delivery.\n\nFor Next.js, I can draw on Multi-tenant SaaS dashboard proposal 1, where I proposed a scoped multi-tenant saas dashboard delivery using next.js, typescript, postgresql, with milestones and validation [full-stack-developer:saas-dashboard:proposal-01].\n\nFor TypeScript, I can draw on Multi-tenant SaaS dashboard proposal 1, where I proposed a scoped multi-tenant saas dashboard delivery using next.js, typescript, postgresql, with milestones and validation [full-stack-developer:saas-dashboard:proposal-01].\n\nFor PostgreSQL, I can draw on Multi-tenant SaaS dashboard proposal 1, where I proposed a scoped multi-tenant saas dashboard delivery using next.js, typescript, postgresql, with milestones and validation [full-stack-developer:saas-dashboard:proposal-01].\n\nFor RBAC, I can draw on Multi-tenant SaaS dashboard proposal 1, where I proposed a scoped multi-tenant saas dashboard delivery using next.js, typescript, postgresql, with milestones and validation [full-stack-developer:saas-dashboard:proposal-01].\n\nFor working multi-tenant saas dashboard, I can draw on Multi-tenant SaaS dashboard proposal 1, where I proposed a scoped multi-tenant saas dashboard delivery using next.js, typescript, postgresql, with milestones and validation [full-stack-developer:saas-dashboard:proposal-01].\n\nI would confirm the milestones first, then deliver within the agreed scope at 953 USD.",
+      "evidence_ids": [
+        "full-stack-developer:saas-dashboard:proposal-01",
+        "full-stack-developer:saas-dashboard:proposal-02",
+        "full-stack-developer:saas-dashboard:proposal-03",
+        "full-stack-developer:saas-dashboard:case",
+        "full-stack-developer:saas-dashboard:readme",
+        "full-stack-developer:saas-dashboard:review",
+        "full-stack-developer:design-system:case",
+        "full-stack-developer:design-system:readme",
+        "full-stack-developer:saas-dashboard:code",
+        "full-stack-developer:design-system:code"
+      ],
+      "machine_label": "pass",
+      "human_label": null,
+      "human_notes": null
+    },
+    {
+      "item_id": "calibration-13",
+      "persona": "full-stack-developer",
+      "job_title": "Need help with Commerce checkout rebuild",
+      "proposal": "Your need help with commerce checkout rebuild project calls for a careful, reproducible delivery.\n\nFor React, I can draw on Commerce checkout rebuild proposal 1, where I proposed a scoped commerce checkout rebuild delivery using react, node.js, stripe, with milestones and validation [full-stack-developer:commerce-checkout:proposal-01].\n\nFor Node.js, I can draw on Commerce checkout rebuild proposal 1, where I proposed a scoped commerce checkout rebuild delivery using react, node.js, stripe, with milestones and validation [full-stack-developer:commerce-checkout:proposal-01].\n\nFor Stripe, I can draw on Commerce checkout rebuild proposal 1, where I proposed a scoped commerce checkout rebuild delivery using react, node.js, stripe, with milestones and validation [full-stack-developer:commerce-checkout:proposal-01].\n\nFor Redis, I can draw on Commerce checkout rebuild proposal 1, where I proposed a scoped commerce checkout rebuild delivery using react, node.js, stripe, with milestones and validation [full-stack-developer:commerce-checkout:proposal-01].\n\nFor working commerce checkout rebuild, I can draw on Commerce checkout rebuild proposal 1, where I proposed a scoped commerce checkout rebuild delivery using react, node.js, stripe, with milestones and validation [full-stack-developer:commerce-checkout:proposal-01].\n\nI would confirm the milestones first, then deliver within the agreed scope at 886 USD.",
+      "evidence_ids": [
+        "full-stack-developer:commerce-checkout:proposal-01",
+        "full-stack-developer:commerce-checkout:proposal-02",
+        "full-stack-developer:commerce-checkout:proposal-03",
+        "full-stack-developer:commerce-checkout:readme",
+        "full-stack-developer:commerce-checkout:case",
+        "full-stack-developer:commerce-checkout:code",
+        "full-stack-developer:commerce-checkout:review",
+        "full-stack-developer:realtime-chat:code",
+        "full-stack-developer:realtime-chat:case",
+        "full-stack-developer:realtime-chat:readme"
+      ],
+      "machine_label": "pass",
+      "human_label": null,
+      "human_notes": null
+    },
+    {
+      "item_id": "calibration-14",
+      "persona": "full-stack-developer",
+      "job_title": "Need help with Commerce checkout rebuild",
+      "proposal": "Your need help with commerce checkout rebuild project calls for a careful, reproducible delivery.\n\nFor React, I can draw on Commerce checkout rebuild proposal 1, where I proposed a scoped commerce checkout rebuild delivery using react, node.js, stripe, with milestones and validation [full-stack-developer:commerce-checkout:proposal-01].\n\nFor Node.js, I can draw on Commerce checkout rebuild proposal 1, where I proposed a scoped commerce checkout rebuild delivery using react, node.js, stripe, with milestones and validation [full-stack-developer:commerce-checkout:proposal-01].\n\nFor Stripe, I can draw on Commerce checkout rebuild proposal 1, where I proposed a scoped commerce checkout rebuild delivery using react, node.js, stripe, with milestones and validation [full-stack-developer:commerce-checkout:proposal-01].\n\nFor Redis, I can draw on Commerce checkout rebuild proposal 1, where I proposed a scoped commerce checkout rebuild delivery using react, node.js, stripe, with milestones and validation [full-stack-developer:commerce-checkout:proposal-01].\n\nFor working commerce checkout rebuild, I can draw on Commerce checkout rebuild proposal 1, where I proposed a scoped commerce checkout rebuild delivery using react, node.js, stripe, with milestones and validation [full-stack-developer:commerce-checkout:proposal-01].\n\nI would confirm the milestones first, then deliver within the agreed scope at 953 USD.",
+      "evidence_ids": [
+        "full-stack-developer:commerce-checkout:proposal-01",
+        "full-stack-developer:commerce-checkout:proposal-02",
+        "full-stack-developer:commerce-checkout:proposal-03",
+        "full-stack-developer:commerce-checkout:readme",
+        "full-stack-developer:commerce-checkout:case",
+        "full-stack-developer:commerce-checkout:code",
+        "full-stack-developer:commerce-checkout:review",
+        "full-stack-developer:design-system:case",
+        "full-stack-developer:design-system:readme",
+        "full-stack-developer:design-system:code"
+      ],
+      "machine_label": "pass",
+      "human_label": null,
+      "human_notes": null
+    },
+    {
+      "item_id": "calibration-15",
+      "persona": "full-stack-developer",
+      "job_title": "Need help with Appointment booking platform",
+      "proposal": "Your need help with appointment booking platform project calls for a careful, reproducible delivery.\n\nFor Next.js, I can draw on Appointment booking platform proposal 1, where I proposed a scoped appointment booking platform delivery using next.js, fastapi, postgresql, with milestones and validation [full-stack-developer:booking-platform:proposal-01].\n\nFor FastAPI, I can draw on Appointment booking platform proposal 1, where I proposed a scoped appointment booking platform delivery using next.js, fastapi, postgresql, with milestones and validation [full-stack-developer:booking-platform:proposal-01].\n\nFor PostgreSQL, I can draw on Appointment booking platform proposal 1, where I proposed a scoped appointment booking platform delivery using next.js, fastapi, postgresql, with milestones and validation [full-stack-developer:booking-platform:proposal-01].\n\nFor calendar API, I can draw on Appointment booking platform proposal 1, where I proposed a scoped appointment booking platform delivery using next.js, fastapi, postgresql, with milestones and validation [full-stack-developer:booking-platform:proposal-01].\n\nFor working appointment booking platform, I can draw on Appointment booking platform proposal 1, where I proposed a scoped appointment booking platform delivery using next.js, fastapi, postgresql, with milestones and validation [full-stack-developer:booking-platform:proposal-01].\n\nI would confirm the milestones first, then deliver within the agreed scope at 886 USD.",
+      "evidence_ids": [
+        "full-stack-developer:booking-platform:proposal-01",
+        "full-stack-developer:booking-platform:proposal-02",
+        "full-stack-developer:booking-platform:proposal-03",
+        "full-stack-developer:booking-platform:readme",
+        "full-stack-developer:booking-platform:case",
+        "full-stack-developer:booking-platform:code",
+        "full-stack-developer:booking-platform:review",
+        "full-stack-developer:test-platform:case",
+        "full-stack-developer:marketplace-app:code",
+        "full-stack-developer:marketplace-app:case"
+      ],
+      "machine_label": "pass",
+      "human_label": null,
+      "human_notes": null
+    },
+    {
+      "item_id": "calibration-16",
+      "persona": "full-stack-developer",
+      "job_title": "Need help with Appointment booking platform",
+      "proposal": "Your need help with appointment booking platform project calls for a careful, reproducible delivery.\n\nFor Next.js, I can draw on Appointment booking platform proposal 1, where I proposed a scoped appointment booking platform delivery using next.js, fastapi, postgresql, with milestones and validation [full-stack-developer:booking-platform:proposal-01].\n\nFor FastAPI, I can draw on Appointment booking platform proposal 1, where I proposed a scoped appointment booking platform delivery using next.js, fastapi, postgresql, with milestones and validation [full-stack-developer:booking-platform:proposal-01].\n\nFor PostgreSQL, I can draw on Appointment booking platform proposal 1, where I proposed a scoped appointment booking platform delivery using next.js, fastapi, postgresql, with milestones and validation [full-stack-developer:booking-platform:proposal-01].\n\nFor calendar API, I can draw on Appointment booking platform proposal 1, where I proposed a scoped appointment booking platform delivery using next.js, fastapi, postgresql, with milestones and validation [full-stack-developer:booking-platform:proposal-01].\n\nFor working appointment booking platform, I can draw on Appointment booking platform proposal 1, where I proposed a scoped appointment booking platform delivery using next.js, fastapi, postgresql, with milestones and validation [full-stack-developer:booking-platform:proposal-01].\n\nI would confirm the milestones first, then deliver within the agreed scope at 953 USD.",
+      "evidence_ids": [
+        "full-stack-developer:booking-platform:proposal-01",
+        "full-stack-developer:booking-platform:proposal-02",
+        "full-stack-developer:booking-platform:proposal-03",
+        "full-stack-developer:booking-platform:case",
+        "full-stack-developer:booking-platform:readme",
+        "full-stack-developer:booking-platform:review",
+        "full-stack-developer:booking-platform:code",
+        "full-stack-developer:design-system:case",
+        "full-stack-developer:design-system:code",
+        "full-stack-developer:design-system:readme"
+      ],
+      "machine_label": "pass",
+      "human_label": null,
+      "human_notes": null
+    },
+    {
+      "item_id": "calibration-17",
+      "persona": "full-stack-developer",
+      "job_title": "Need help with Real-time support chat",
+      "proposal": "Your need help with real-time support chat project calls for a careful, reproducible delivery.\n\nFor WebSockets, I can draw on Real-time support chat proposal 1, where I proposed a scoped real-time support chat delivery using websockets, react, redis, with milestones and validation [full-stack-developer:realtime-chat:proposal-01].\n\nFor React, I can draw on Real-time support chat proposal 1, where I proposed a scoped real-time support chat delivery using websockets, react, redis, with milestones and validation [full-stack-developer:realtime-chat:proposal-01].\n\nFor Redis, I can draw on Real-time support chat proposal 1, where I proposed a scoped real-time support chat delivery using websockets, react, redis, with milestones and validation [full-stack-developer:realtime-chat:proposal-01].\n\nFor Node.js, I can draw on Real-time support chat proposal 1, where I proposed a scoped real-time support chat delivery using websockets, react, redis, with milestones and validation [full-stack-developer:realtime-chat:proposal-01].\n\nFor working real-time support chat, I can draw on Real-time support chat proposal 1, where I proposed a scoped real-time support chat delivery using websockets, react, redis, with milestones and validation [full-stack-developer:realtime-chat:proposal-01].\n\nI would confirm the milestones first, then deliver within the agreed scope at 886 USD.",
+      "evidence_ids": [
+        "full-stack-developer:realtime-chat:proposal-01",
+        "full-stack-developer:realtime-chat:proposal-02",
+        "full-stack-developer:realtime-chat:proposal-03",
+        "full-stack-developer:realtime-chat:readme",
+        "full-stack-developer:realtime-chat:case",
+        "full-stack-developer:realtime-chat:code",
+        "full-stack-developer:realtime-chat:review",
+        "full-stack-developer:commerce-checkout:code",
+        "full-stack-developer:commerce-checkout:case",
+        "full-stack-developer:commerce-checkout:readme"
+      ],
+      "machine_label": "pass",
+      "human_label": null,
+      "human_notes": null
+    },
+    {
+      "item_id": "calibration-18",
+      "persona": "full-stack-developer",
+      "job_title": "Need help with Real-time support chat",
+      "proposal": "Your need help with real-time support chat project calls for a careful, reproducible delivery.\n\nFor WebSockets, I can draw on Real-time support chat proposal 1, where I proposed a scoped real-time support chat delivery using websockets, react, redis, with milestones and validation [full-stack-developer:realtime-chat:proposal-01].\n\nFor React, I can draw on Real-time support chat proposal 1, where I proposed a scoped real-time support chat delivery using websockets, react, redis, with milestones and validation [full-stack-developer:realtime-chat:proposal-01].\n\nFor Redis, I can draw on Real-time support chat proposal 1, where I proposed a scoped real-time support chat delivery using websockets, react, redis, with milestones and validation [full-stack-developer:realtime-chat:proposal-01].\n\nFor Node.js, I can draw on Real-time support chat proposal 1, where I proposed a scoped real-time support chat delivery using websockets, react, redis, with milestones and validation [full-stack-developer:realtime-chat:proposal-01].\n\nFor working real-time support chat, I can draw on Real-time support chat proposal 1, where I proposed a scoped real-time support chat delivery using websockets, react, redis, with milestones and validation [full-stack-developer:realtime-chat:proposal-01].\n\nI would confirm the milestones first, then deliver within the agreed scope at 953 USD.",
+      "evidence_ids": [
+        "full-stack-developer:realtime-chat:proposal-01",
+        "full-stack-developer:realtime-chat:proposal-02",
+        "full-stack-developer:realtime-chat:proposal-03",
+        "full-stack-developer:realtime-chat:readme",
+        "full-stack-developer:realtime-chat:case",
+        "full-stack-developer:realtime-chat:review",
+        "full-stack-developer:realtime-chat:code",
+        "full-stack-developer:design-system:case",
+        "full-stack-developer:design-system:code",
+        "full-stack-developer:design-system:readme"
+      ],
+      "machine_label": "pass",
+      "human_label": null,
+      "human_notes": null
+    },
+    {
+      "item_id": "calibration-19",
+      "persona": "full-stack-developer",
+      "job_title": "Need help with Legacy API modernisation",
+      "proposal": "Your need help with legacy api modernisation project calls for a careful, reproducible delivery.\n\nFor FastAPI, I can draw on Legacy API modernisation proposal 1, where I proposed a scoped legacy api modernisation delivery using fastapi, sqlalchemy, alembic, with milestones and validation [full-stack-developer:api-modernisation:proposal-01].\n\nFor SQLAlchemy, I can draw on Legacy API modernisation proposal 1, where I proposed a scoped legacy api modernisation delivery using fastapi, sqlalchemy, alembic, with milestones and validation [full-stack-developer:api-modernisation:proposal-01].\n\nFor Alembic, I can draw on Legacy API modernisation proposal 1, where I proposed a scoped legacy api modernisation delivery using fastapi, sqlalchemy, alembic, with milestones and validation [full-stack-developer:api-modernisation:proposal-01].\n\nFor Docker, I can draw on Legacy API modernisation proposal 1, where I proposed a scoped legacy api modernisation delivery using fastapi, sqlalchemy, alembic, with milestones and validation [full-stack-developer:api-modernisation:proposal-01].\n\nFor working legacy api modernisation, I can draw on Legacy API modernisation proposal 1, where I proposed a scoped legacy api modernisation delivery using fastapi, sqlalchemy, alembic, with milestones and validation [full-stack-developer:api-modernisation:proposal-01].\n\nI would confirm the milestones first, then deliver within the agreed scope at 886 USD.",
+      "evidence_ids": [
+        "full-stack-developer:api-modernisation:proposal-01",
+        "full-stack-developer:api-modernisation:proposal-02",
+        "full-stack-developer:api-modernisation:proposal-03",
+        "full-stack-developer:api-modernisation:readme",
+        "full-stack-developer:api-modernisation:case",
+        "full-stack-developer:api-modernisation:code",
+        "full-stack-developer:api-modernisation:review",
+        "full-stack-developer:booking-platform:readme",
+        "full-stack-developer:booking-platform:code",
+        "full-stack-developer:booking-platform:case"
+      ],
+      "machine_label": "pass",
+      "human_label": null,
+      "human_notes": null
+    },
+    {
+      "item_id": "calibration-20",
+      "persona": "full-stack-developer",
+      "job_title": "Need help with Legacy API modernisation",
+      "proposal": "Your need help with legacy api modernisation project calls for a careful, reproducible delivery.\n\nFor FastAPI, I can draw on Legacy API modernisation proposal 1, where I proposed a scoped legacy api modernisation delivery using fastapi, sqlalchemy, alembic, with milestones and validation [full-stack-developer:api-modernisation:proposal-01].\n\nFor SQLAlchemy, I can draw on Legacy API modernisation proposal 1, where I proposed a scoped legacy api modernisation delivery using fastapi, sqlalchemy, alembic, with milestones and validation [full-stack-developer:api-modernisation:proposal-01].\n\nFor Alembic, I can draw on Legacy API modernisation proposal 1, where I proposed a scoped legacy api modernisation delivery using fastapi, sqlalchemy, alembic, with milestones and validation [full-stack-developer:api-modernisation:proposal-01].\n\nFor Docker, I can draw on Legacy API modernisation proposal 1, where I proposed a scoped legacy api modernisation delivery using fastapi, sqlalchemy, alembic, with milestones and validation [full-stack-developer:api-modernisation:proposal-01].\n\nFor working legacy api modernisation, I can draw on Legacy API modernisation proposal 1, where I proposed a scoped legacy api modernisation delivery using fastapi, sqlalchemy, alembic, with milestones and validation [full-stack-developer:api-modernisation:proposal-01].\n\nI would confirm the milestones first, then deliver within the agreed scope at 953 USD.",
+      "evidence_ids": [
+        "full-stack-developer:api-modernisation:proposal-01",
+        "full-stack-developer:api-modernisation:proposal-02",
+        "full-stack-developer:api-modernisation:proposal-03",
+        "full-stack-developer:api-modernisation:case",
+        "full-stack-developer:api-modernisation:readme",
+        "full-stack-developer:api-modernisation:review",
+        "full-stack-developer:api-modernisation:code",
+        "full-stack-developer:design-system:case",
+        "full-stack-developer:booking-platform:code",
+        "full-stack-developer:design-system:code"
+      ],
+      "machine_label": "pass",
+      "human_label": null,
+      "human_notes": null
+    },
+    {
+      "item_id": "calibration-21",
+      "persona": "data-analyst",
+      "job_title": "Need help with Executive sales dashboard",
+      "proposal": "Your need help with executive sales dashboard project calls for a careful, reproducible delivery.\n\nFor Power BI, I can draw on Executive sales dashboard proposal 1, where I proposed a scoped executive sales dashboard delivery using power bi, dax, sql, with milestones and validation [data-analyst:sales-powerbi:proposal-01].\n\nFor DAX, I can draw on Executive sales dashboard proposal 1, where I proposed a scoped executive sales dashboard delivery using power bi, dax, sql, with milestones and validation [data-analyst:sales-powerbi:proposal-01].\n\nFor SQL, I can draw on Executive sales dashboard proposal 1, where I proposed a scoped executive sales dashboard delivery using power bi, dax, sql, with milestones and validation [data-analyst:sales-powerbi:proposal-01].\n\nFor data modelling, I can draw on Executive sales dashboard proposal 1, where I proposed a scoped executive sales dashboard delivery using power bi, dax, sql, with milestones and validation [data-analyst:sales-powerbi:proposal-01].\n\nFor working executive sales dashboard, I can draw on Executive sales dashboard proposal 1, where I proposed a scoped executive sales dashboard delivery using power bi, dax, sql, with milestones and validation [data-analyst:sales-powerbi:proposal-01].\n\nI would confirm the milestones first, then deliver within the agreed scope at 886 USD.",
+      "evidence_ids": [
+        "data-analyst:sales-powerbi:proposal-01",
+        "data-analyst:sales-powerbi:proposal-02",
+        "data-analyst:sales-powerbi:proposal-03",
+        "data-analyst:sales-powerbi:readme",
+        "data-analyst:sales-powerbi:case",
+        "data-analyst:sales-powerbi:code",
+        "data-analyst:sales-powerbi:review",
+        "data-analyst:quality-dashboard:case",
+        "data-analyst:board-report:readme",
+        "data-analyst:board-report:case"
+      ],
+      "machine_label": "pass",
+      "human_label": null,
+      "human_notes": null
+    },
+    {
+      "item_id": "calibration-22",
+      "persona": "data-analyst",
+      "job_title": "Need help with Executive sales dashboard",
+      "proposal": "Your need help with executive sales dashboard project calls for a careful, reproducible delivery.\n\nFor Power BI, I can draw on Executive sales dashboard proposal 1, where I proposed a scoped executive sales dashboard delivery using power bi, dax, sql, with milestones and validation [data-analyst:sales-powerbi:proposal-01].\n\nFor DAX, I can draw on Executive sales dashboard proposal 1, where I proposed a scoped executive sales dashboard delivery using power bi, dax, sql, with milestones and validation [data-analyst:sales-powerbi:proposal-01].\n\nFor SQL, I can draw on Executive sales dashboard proposal 1, where I proposed a scoped executive sales dashboard delivery using power bi, dax, sql, with milestones and validation [data-analyst:sales-powerbi:proposal-01].\n\nFor data modelling, I can draw on Executive sales dashboard proposal 1, where I proposed a scoped executive sales dashboard delivery using power bi, dax, sql, with milestones and validation [data-analyst:sales-powerbi:proposal-01].\n\nFor working executive sales dashboard, I can draw on Executive sales dashboard proposal 1, where I proposed a scoped executive sales dashboard delivery using power bi, dax, sql, with milestones and validation [data-analyst:sales-powerbi:proposal-01].\n\nI would confirm the milestones first, then deliver within the agreed scope at 953 USD.",
+      "evidence_ids": [
+        "data-analyst:sales-powerbi:proposal-01",
+        "data-analyst:sales-powerbi:proposal-02",
+        "data-analyst:sales-powerbi:proposal-03",
+        "data-analyst:sales-powerbi:case",
+        "data-analyst:sales-powerbi:readme",
+        "data-analyst:sales-powerbi:code",
+        "data-analyst:sales-powerbi:review",
+        "data-analyst:board-report:readme",
+        "data-analyst:quality-dashboard:case",
+        "data-analyst:board-report:case"
+      ],
+      "machine_label": "pass",
+      "human_label": null,
+      "human_notes": null
+    },
+    {
+      "item_id": "calibration-23",
+      "persona": "data-analyst",
+      "job_title": "Need help with Marketing attribution workbook",
+      "proposal": "Your need help with marketing attribution workbook project calls for a careful, reproducible delivery.\n\nFor Tableau, I can draw on Marketing attribution workbook proposal 1, where I proposed a scoped marketing attribution workbook delivery using tableau, attribution, sql, with milestones and validation [data-analyst:marketing-tableau:proposal-01].\n\nFor attribution, I can draw on Marketing attribution workbook proposal 1, where I proposed a scoped marketing attribution workbook delivery using tableau, attribution, sql, with milestones and validation [data-analyst:marketing-tableau:proposal-01].\n\nFor SQL, I can draw on Marketing attribution workbook proposal 1, where I proposed a scoped marketing attribution workbook delivery using tableau, attribution, sql, with milestones and validation [data-analyst:marketing-tableau:proposal-01].\n\nFor calculated fields, I can draw on Marketing attribution workbook proposal 1, where I proposed a scoped marketing attribution workbook delivery using tableau, attribution, sql, with milestones and validation [data-analyst:marketing-tableau:proposal-01].\n\nFor working marketing attribution workbook, I can draw on Marketing attribution workbook proposal 1, where I proposed a scoped marketing attribution workbook delivery using tableau, attribution, sql, with milestones and validation [data-analyst:marketing-tableau:proposal-01].\n\nI would confirm the milestones first, then deliver within the agreed scope at 886 USD.",
+      "evidence_ids": [
+        "data-analyst:marketing-tableau:proposal-01",
+        "data-analyst:marketing-tableau:proposal-02",
+        "data-analyst:marketing-tableau:proposal-03",
+        "data-analyst:marketing-tableau:readme",
+        "data-analyst:marketing-tableau:case",
+        "data-analyst:marketing-tableau:code",
+        "data-analyst:marketing-tableau:review",
+        "data-analyst:excel-automation:case",
+        "data-analyst:forecast-workbook:case",
+        "data-analyst:excel-automation:readme"
+      ],
+      "machine_label": "pass",
+      "human_label": null,
+      "human_notes": null
+    },
+    {
+      "item_id": "calibration-24",
+      "persona": "data-analyst",
+      "job_title": "Need help with Marketing attribution workbook",
+      "proposal": "Your need help with marketing attribution workbook project calls for a careful, reproducible delivery.\n\nFor Tableau, I can draw on Marketing attribution workbook proposal 1, where I proposed a scoped marketing attribution workbook delivery using tableau, attribution, sql, with milestones and validation [data-analyst:marketing-tableau:proposal-01].\n\nFor attribution, I can draw on Marketing attribution workbook proposal 1, where I proposed a scoped marketing attribution workbook delivery using tableau, attribution, sql, with milestones and validation [data-analyst:marketing-tableau:proposal-01].\n\nFor SQL, I can draw on Marketing attribution workbook proposal 1, where I proposed a scoped marketing attribution workbook delivery using tableau, attribution, sql, with milestones and validation [data-analyst:marketing-tableau:proposal-01].\n\nFor calculated fields, I can draw on Marketing attribution workbook proposal 1, where I proposed a scoped marketing attribution workbook delivery using tableau, attribution, sql, with milestones and validation [data-analyst:marketing-tableau:proposal-01].\n\nFor working marketing attribution workbook, I can draw on Marketing attribution workbook proposal 1, where I proposed a scoped marketing attribution workbook delivery using tableau, attribution, sql, with milestones and validation [data-analyst:marketing-tableau:proposal-01].\n\nI would confirm the milestones first, then deliver within the agreed scope at 953 USD.",
+      "evidence_ids": [
+        "data-analyst:marketing-tableau:proposal-01",
+        "data-analyst:marketing-tableau:proposal-02",
+        "data-analyst:marketing-tableau:proposal-03",
+        "data-analyst:marketing-tableau:readme",
+        "data-analyst:marketing-tableau:case",
+        "data-analyst:marketing-tableau:review",
+        "data-analyst:marketing-tableau:code",
+        "data-analyst:sales-powerbi:case",
+        "data-analyst:sales-powerbi:readme",
+        "data-analyst:excel-automation:readme"
+      ],
+      "machine_label": "pass",
+      "human_label": null,
+      "human_notes": null
+    },
+    {
+      "item_id": "calibration-25",
+      "persona": "data-analyst",
+      "job_title": "Need help with Analytics warehouse models",
+      "proposal": "Your need help with analytics warehouse models project calls for a careful, reproducible delivery.\n\nFor dbt, I can draw on Analytics warehouse models proposal 1, where I proposed a scoped analytics warehouse models delivery using dbt, sql, data tests, with milestones and validation [data-analyst:warehouse-dbt:proposal-01].\n\nFor SQL, I can draw on Analytics warehouse models proposal 1, where I proposed a scoped analytics warehouse models delivery using dbt, sql, data tests, with milestones and validation [data-analyst:warehouse-dbt:proposal-01].\n\nFor data tests, I can draw on Analytics warehouse models proposal 1, where I proposed a scoped analytics warehouse models delivery using dbt, sql, data tests, with milestones and validation [data-analyst:warehouse-dbt:proposal-01].\n\nFor documentation, I can draw on Analytics warehouse models proposal 1, where I proposed a scoped analytics warehouse models delivery using dbt, sql, data tests, with milestones and validation [data-analyst:warehouse-dbt:proposal-01].\n\nFor working analytics warehouse models, I can draw on Analytics warehouse models proposal 1, where I proposed a scoped analytics warehouse models delivery using dbt, sql, data tests, with milestones and validation [data-analyst:warehouse-dbt:proposal-01].\n\nFor handoff documentation, I can draw on Analytics warehouse models proposal 1, where I proposed a scoped analytics warehouse models delivery using dbt, sql, data tests, with milestones and validation [data-analyst:warehouse-dbt:proposal-01].\n\nI would confirm the milestones first, then deliver within the agreed scope at 911 USD.",
+      "evidence_ids": [
+        "data-analyst:warehouse-dbt:proposal-01",
+        "data-analyst:warehouse-dbt:proposal-02",
+        "data-analyst:warehouse-dbt:proposal-03",
+        "data-analyst:warehouse-dbt:readme",
+        "data-analyst:warehouse-dbt:case",
+        "data-analyst:warehouse-dbt:code",
+        "data-analyst:warehouse-dbt:review",
+        "data-analyst:sales-powerbi:code",
+        "data-analyst:inventory-sql:code",
+        "data-analyst:sales-powerbi:case"
+      ],
+      "machine_label": "pass",
+      "human_label": null,
+      "human_notes": null
+    },
+    {
+      "item_id": "calibration-26",
+      "persona": "data-analyst",
+      "job_title": "Need help with Analytics warehouse models",
+      "proposal": "Your need help with analytics warehouse models project calls for a careful, reproducible delivery.\n\nFor dbt, I can draw on Analytics warehouse models proposal 1, where I proposed a scoped analytics warehouse models delivery using dbt, sql, data tests, with milestones and validation [data-analyst:warehouse-dbt:proposal-01].\n\nFor SQL, I can draw on Analytics warehouse models proposal 1, where I proposed a scoped analytics warehouse models delivery using dbt, sql, data tests, with milestones and validation [data-analyst:warehouse-dbt:proposal-01].\n\nFor data tests, I can draw on Analytics warehouse models proposal 1, where I proposed a scoped analytics warehouse models delivery using dbt, sql, data tests, with milestones and validation [data-analyst:warehouse-dbt:proposal-01].\n\nFor documentation, I can draw on Analytics warehouse models proposal 1, where I proposed a scoped analytics warehouse models delivery using dbt, sql, data tests, with milestones and validation [data-analyst:warehouse-dbt:proposal-01].\n\nFor working analytics warehouse models, I can draw on Analytics warehouse models proposal 1, where I proposed a scoped analytics warehouse models delivery using dbt, sql, data tests, with milestones and validation [data-analyst:warehouse-dbt:proposal-01].\n\nFor handoff documentation, I can draw on Analytics warehouse models proposal 1, where I proposed a scoped analytics warehouse models delivery using dbt, sql, data tests, with milestones and validation [data-analyst:warehouse-dbt:proposal-01].\n\nI would confirm the milestones first, then deliver within the agreed scope at 979 USD.",
+      "evidence_ids": [
+        "data-analyst:warehouse-dbt:proposal-01",
+        "data-analyst:warehouse-dbt:proposal-02",
+        "data-analyst:warehouse-dbt:proposal-03",
+        "data-analyst:warehouse-dbt:readme",
+        "data-analyst:warehouse-dbt:case",
+        "data-analyst:warehouse-dbt:code",
+        "data-analyst:warehouse-dbt:review",
+        "data-analyst:ab-testing:code",
+        "data-analyst:board-report:case"
+      ],
+      "machine_label": "pass",
+      "human_label": null,
+      "human_notes": null
+    },
+    {
+      "item_id": "calibration-27",
+      "persona": "data-analyst",
+      "job_title": "Need help with Finance workbook automation",
+      "proposal": "Your need help with finance workbook automation project calls for a careful, reproducible delivery.\n\nFor Excel, I can draw on Finance workbook automation proposal 1, where I proposed a scoped finance workbook automation delivery using excel, power query, vba, with milestones and validation [data-analyst:excel-automation:proposal-01].\n\nFor Power Query, I can draw on Finance workbook automation proposal 1, where I proposed a scoped finance workbook automation delivery using excel, power query, vba, with milestones and validation [data-analyst:excel-automation:proposal-01].\n\nFor VBA, I can draw on Finance workbook automation proposal 1, where I proposed a scoped finance workbook automation delivery using excel, power query, vba, with milestones and validation [data-analyst:excel-automation:proposal-01].\n\nFor reconciliation, I can draw on Finance workbook automation proposal 1, where I proposed a scoped finance workbook automation delivery using excel, power query, vba, with milestones and validation [data-analyst:excel-automation:proposal-01].\n\nFor working finance workbook automation, I can draw on Finance workbook automation proposal 1, where I proposed a scoped finance workbook automation delivery using excel, power query, vba, with milestones and validation [data-analyst:excel-automation:proposal-01].\n\nI would confirm the milestones first, then deliver within the agreed scope at 886 USD.",
+      "evidence_ids": [
+        "data-analyst:excel-automation:proposal-01",
+        "data-analyst:excel-automation:proposal-02",
+        "data-analyst:excel-automation:proposal-03",
+        "data-analyst:excel-automation:readme",
+        "data-analyst:excel-automation:case",
+        "data-analyst:excel-automation:code",
+        "data-analyst:excel-automation:review",
+        "data-analyst:forecast-workbook:case",
+        "data-analyst:forecast-workbook:code",
+        "data-analyst:board-report:review"
+      ],
+      "machine_label": "pass",
+      "human_label": null,
+      "human_notes": null
+    },
+    {
+      "item_id": "calibration-28",
+      "persona": "data-analyst",
+      "job_title": "Need help with Finance workbook automation",
+      "proposal": "Your need help with finance workbook automation project calls for a careful, reproducible delivery.\n\nFor Excel, I can draw on Finance workbook automation proposal 1, where I proposed a scoped finance workbook automation delivery using excel, power query, vba, with milestones and validation [data-analyst:excel-automation:proposal-01].\n\nFor Power Query, I can draw on Finance workbook automation proposal 1, where I proposed a scoped finance workbook automation delivery using excel, power query, vba, with milestones and validation [data-analyst:excel-automation:proposal-01].\n\nFor VBA, I can draw on Finance workbook automation proposal 1, where I proposed a scoped finance workbook automation delivery using excel, power query, vba, with milestones and validation [data-analyst:excel-automation:proposal-01].\n\nFor reconciliation, I can draw on Finance workbook automation proposal 1, where I proposed a scoped finance workbook automation delivery using excel, power query, vba, with milestones and validation [data-analyst:excel-automation:proposal-01].\n\nFor working finance workbook automation, I can draw on Finance workbook automation proposal 1, where I proposed a scoped finance workbook automation delivery using excel, power query, vba, with milestones and validation [data-analyst:excel-automation:proposal-01].\n\nI would confirm the milestones first, then deliver within the agreed scope at 953 USD.",
+      "evidence_ids": [
+        "data-analyst:excel-automation:proposal-01",
+        "data-analyst:excel-automation:proposal-02",
+        "data-analyst:excel-automation:proposal-03",
+        "data-analyst:excel-automation:case",
+        "data-analyst:excel-automation:readme",
+        "data-analyst:marketing-tableau:readme",
+        "data-analyst:excel-automation:review",
+        "data-analyst:excel-automation:code",
+        "data-analyst:board-report:review",
+        "data-analyst:marketing-tableau:case"
+      ],
+      "machine_label": "pass",
+      "human_label": null,
+      "human_notes": null
+    },
+    {
+      "item_id": "calibration-29",
+      "persona": "data-analyst",
+      "job_title": "Need help with Product funnel analysis",
+      "proposal": "Your need help with product funnel analysis project calls for a careful, reproducible delivery.\n\nFor SQL, I can draw on Product funnel analysis proposal 1, where I proposed a scoped product funnel analysis delivery using sql, python, cohorts, with milestones and validation [data-analyst:product-funnel:proposal-01].\n\nFor Python, I can draw on Product funnel analysis proposal 1, where I proposed a scoped product funnel analysis delivery using sql, python, cohorts, with milestones and validation [data-analyst:product-funnel:proposal-01].\n\nFor cohorts, I can draw on Product funnel analysis proposal 1, where I proposed a scoped product funnel analysis delivery using sql, python, cohorts, with milestones and validation [data-analyst:product-funnel:proposal-01].\n\nFor visualisation, I can draw on Product funnel analysis proposal 1, where I proposed a scoped product funnel analysis delivery using sql, python, cohorts, with milestones and validation [data-analyst:product-funnel:proposal-01].\n\nFor working product funnel analysis, I can draw on Product funnel analysis proposal 1, where I proposed a scoped product funnel analysis delivery using sql, python, cohorts, with milestones and validation [data-analyst:product-funnel:proposal-01].\n\nI would confirm the milestones first, then deliver within the agreed scope at 886 USD.",
+      "evidence_ids": [
+        "data-analyst:product-funnel:proposal-01",
+        "data-analyst:product-funnel:proposal-02",
+        "data-analyst:product-funnel:proposal-03",
+        "data-analyst:product-funnel:readme",
+        "data-analyst:product-funnel:case",
+        "data-analyst:product-funnel:code",
+        "data-analyst:product-funnel:review",
+        "data-analyst:survey-analysis:case",
+        "data-analyst:survey-analysis:readme",
+        "data-analyst:customer-segments:readme"
+      ],
+      "machine_label": "pass",
+      "human_label": null,
+      "human_notes": null
+    },
+    {
+      "item_id": "calibration-30",
+      "persona": "data-analyst",
+      "job_title": "Need help with Product funnel analysis",
+      "proposal": "Your need help with product funnel analysis project calls for a careful, reproducible delivery.\n\nFor SQL, I can draw on Product funnel analysis proposal 1, where I proposed a scoped product funnel analysis delivery using sql, python, cohorts, with milestones and validation [data-analyst:product-funnel:proposal-01].\n\nFor Python, I can draw on Product funnel analysis proposal 1, where I proposed a scoped product funnel analysis delivery using sql, python, cohorts, with milestones and validation [data-analyst:product-funnel:proposal-01].\n\nFor cohorts, I can draw on Product funnel analysis proposal 1, where I proposed a scoped product funnel analysis delivery using sql, python, cohorts, with milestones and validation [data-analyst:product-funnel:proposal-01].\n\nFor visualisation, I can draw on Product funnel analysis proposal 1, where I proposed a scoped product funnel analysis delivery using sql, python, cohorts, with milestones and validation [data-analyst:product-funnel:proposal-01].\n\nFor working product funnel analysis, I can draw on Product funnel analysis proposal 1, where I proposed a scoped product funnel analysis delivery using sql, python, cohorts, with milestones and validation [data-analyst:product-funnel:proposal-01].\n\nI would confirm the milestones first, then deliver within the agreed scope at 953 USD.",
+      "evidence_ids": [
+        "data-analyst:product-funnel:proposal-01",
+        "data-analyst:product-funnel:proposal-02",
+        "data-analyst:product-funnel:proposal-03",
+        "data-analyst:product-funnel:case",
+        "data-analyst:product-funnel:readme",
+        "data-analyst:product-funnel:code",
+        "data-analyst:product-funnel:review",
+        "data-analyst:survey-analysis:case",
+        "data-analyst:survey-analysis:readme",
+        "data-analyst:board-report:readme"
+      ],
+      "machine_label": "pass",
+      "human_label": null,
+      "human_notes": null
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+sources:
+  upwork_jobs_60k:
+    selected: true
+    role: primary_job_and_client_risk_corpus
+    kaggle_ref: ahmedmyalo/upwork-freelance-jobs-60k
+    version: 5
+    archive_name: upwork-jobs-60k-v5.zip
+    csv_member: Final_Upwork_Dataset.csv
+    title: Upwork freelance jobs (+60k)
+    webpage: https://www.kaggle.com/datasets/ahmedmyalo/upwork-freelance-jobs-60k
+    license: Apache-2.0
+    license_url: https://www.apache.org/licenses/LICENSE-2.0
+    sha256: 941fe3f5bd91befafb2be31ea9d6b935bbfa04ee894622ac10ca7875d58dba61
+    limitations:
+      - Collected by a third party from public Upwork pages in February-March 2023.
+      - Posted_from is relative to collection time, so it is not a reliable event timestamp.
+      - Search keywords overrepresent data, development, marketing and 3D work.
+      - Client and applicant fields may be stale, missing or incorrectly scraped.
+
+  upwork_jobs_2024_50k:
+    selected: true
+    role: temporal_job_holdout
+    kaggle_ref: asaniczka/upwork-job-postings-dataset-2024-50k-records
+    version: 1
+    archive_name: upwork-jobs-2024-50k-v1.zip
+    csv_member: upwork-jobs.csv
+    title: Upwork Job Postings Dataset 2024 (50K Records)
+    webpage: https://www.kaggle.com/datasets/asaniczka/upwork-job-postings-dataset-2024-50k-records
+    license: ODC-By-1.0
+    license_url: https://opendatacommons.org/licenses/by/1-0/
+    sha256: 3f40f06c267f6429e6c9fdd9a81c0c9bb3a3c9eb85edadb1d6638394e9ce5b35
+    limitations:
+      - Covers roughly two weeks in February 2024 and is not seasonally representative.
+      - Does not include client reputation, applicant count or Connects cost.
+      - Country and pricing fields are frequently missing.
+
+  freelance_contracts_1m3:
+    selected: true
+    role: historical_pricing_corpus
+    kaggle_ref: asaniczka/freelance-contracts-dataset-1-3-million-entries
+    version: 1
+    archive_name: freelance-contracts-1m3-v1.zip
+    csv_member: contracts.csv
+    title: Freelance Contracts Dataset (1.3 Million Entries)
+    webpage: https://www.kaggle.com/datasets/asaniczka/freelance-contracts-dataset-1-3-million-entries
+    license: ODC-By-1.0
+    license_url: https://opendatacommons.org/licenses/by/1-0/
+    sha256: 2bb0f171c137c2586d08f2ba3f361832726c58520bc0adc804b5c5d83a6a24a8
+    limitations:
+      - The source platform is not named by the publisher.
+      - A contract record proves historical payment, not proposal quality or causal success.
+      - Original job and freelancer identifiers are removed during preprocessing.
+
+  upwork_monthly_200k:
+    selected: false
+    role: excluded_redundant_tracker
+    kaggle_ref: asaniczka/all-jobs-on-upwork-200k-plus
+    version: 4
+    archive_name: upwork-monthly-200k-v4.zip
+    title: All Upwork Job Postings - Monthly Tracker
+    webpage: https://www.kaggle.com/datasets/asaniczka/all-jobs-on-upwork-200k-plus
+    license: ODC-By-1.0
+    license_url: https://opendatacommons.org/licenses/by/1-0/
+    sha256: 35232774256936938f9b07bfd227e08bf8b575d5b945e0275e93acd9f39b5dfe
+    exclusion_reason: >-
+      The inspected version overlaps the 2024 50K source but omits job descriptions, which are
+      necessary for fit, risk, grounding and proposal experiments. Keeping it would add volume
+      without adding the text required by this assignment.

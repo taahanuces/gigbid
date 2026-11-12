@@ -1,0 +1,167 @@
+name: gigbid
+
+x-python-service: &python-service
+  build:
+    context: ..
+    dockerfile: infra/docker/api.Dockerfile
+  env_file: ${GIGBID_ENV_FILE:-../.env.example}
+  depends_on:
+    postgres:
+      condition: service_healthy
+    redis:
+      condition: service_healthy
+
+services:
+  web:
+    build:
+      context: ..
+      dockerfile: infra/docker/web.Dockerfile
+    environment:
+      NEXT_PUBLIC_API_URL: http://localhost:8000
+    ports: ["3000:3000"]
+    depends_on: [api]
+
+  api:
+    <<: *python-service
+    ports: ["8000:8000"]
+    volumes: ["trace_data:/data/traces"]
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      qdrant:
+        condition: service_started
+      gigsim:
+        condition: service_healthy
+      ollama-init:
+        condition: service_completed_successfully
+      phoenix:
+        condition: service_started
+
+  gigsim:
+    <<: *python-service
+    command: ["uvicorn", "apps.simulator.main:app", "--host", "0.0.0.0", "--port", "8081"]
+    ports: ["8081:8081"]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8081/health')"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  worker:
+    <<: *python-service
+    command: ["celery", "-A", "worker.celery_app:celery_app", "worker", "--loglevel=INFO"]
+    environment:
+      OTEL_SERVICE_NAME: gigbid-worker
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      gigsim:
+        condition: service_healthy
+      ollama-init:
+        condition: service_completed_successfully
+
+  beat:
+    <<: *python-service
+    command: ["celery", "-A", "worker.celery_app:celery_app", "beat", "--loglevel=INFO"]
+
+  portfolio-mcp:
+    build:
+      context: ..
+      dockerfile: infra/docker/mcp.Dockerfile
+    env_file: ${GIGBID_ENV_FILE:-../.env.example}
+    environment:
+      MCP_HOST: 0.0.0.0
+      MCP_PORT: "8101"
+    command: ["python", "-m", "mcp_servers.portfolio.server"]
+    ports: ["8101:8101"]
+
+  marketplace-mcp:
+    build:
+      context: ..
+      dockerfile: infra/docker/mcp.Dockerfile
+    env_file: ${GIGBID_ENV_FILE:-../.env.example}
+    environment:
+      MCP_HOST: 0.0.0.0
+      MCP_PORT: "8102"
+      MARKETPLACE_MODE: gigsim
+      GIGSIM_BASE_URL: http://gigsim:8081
+    command: ["python", "-m", "mcp_servers.marketplace.server"]
+    ports: ["8102:8102"]
+    volumes: ["audit_data:/data/audit"]
+    depends_on:
+      gigsim:
+        condition: service_healthy
+
+  workspace-mcp:
+    build:
+      context: ..
+      dockerfile: infra/docker/mcp.Dockerfile
+    env_file: ${GIGBID_ENV_FILE:-../.env.example}
+    environment:
+      MCP_HOST: 0.0.0.0
+      MCP_PORT: "8103"
+    command: ["python", "-m", "mcp_servers.workspace.server"]
+    ports: ["8103:8103"]
+
+  postgres:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: gigbid
+      POSTGRES_USER: gigbid
+      POSTGRES_PASSWORD: gigbid
+    ports: ["5432:5432"]
+    volumes: ["postgres_data:/var/lib/postgresql/data"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U gigbid -d gigbid"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  redis:
+    image: redis:8-alpine
+    ports: ["6379:6379"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  qdrant:
+    image: qdrant/qdrant:v1.16.2
+    ports: ["6333:6333"]
+    volumes: ["qdrant_data:/qdrant/storage"]
+
+  phoenix:
+    image: arizephoenix/phoenix:version-20.12.0
+    environment:
+      PHOENIX_HOST: 0.0.0.0
+      PHOENIX_ENABLE_AUTH: "false"
+      PHOENIX_WORKING_DIR: /data
+    ports: ["6006:6006"]
+    volumes: ["phoenix_data:/data"]
+
+  ollama:
+    image: ollama/ollama:latest
+    ports: ["11434:11434"]
+    volumes: ["ollama_data:/root/.ollama"]
+
+  ollama-init:
+    image: ollama/ollama:latest
+    environment:
+      OLLAMA_HOST: http://ollama:11434
+    entrypoint: ["/bin/sh", "-c"]
+    command: ["ollama pull qwen3:4b && ollama pull llama3.1:8b"]
+    depends_on: [ollama]
+
+volumes:
+  postgres_data:
+  qdrant_data:
+  ollama_data:
+  audit_data:
+  trace_data:
+  phoenix_data:
+

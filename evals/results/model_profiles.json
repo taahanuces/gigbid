@@ -1,0 +1,619 @@
+{
+  "metadata": {
+    "generated_at": "2026-11-12T04:56:03.528348+00:00",
+    "data_origin": "synthetic",
+    "benchmark": "fixed direct-job slice of synthetic_rag_benchmark.json",
+    "jobs": 9,
+    "jobs_per_persona": 3,
+    "personas": [
+      "ai-ml-engineer",
+      "data-analyst",
+      "full-stack-developer"
+    ],
+    "retrieval_variant": "v2_hybrid",
+    "prompt": "agent/prompts/writer.v1.md",
+    "temperature": 0,
+    "seed": 4016,
+    "warmup_calls_excluded": 2,
+    "warmup_errors": {},
+    "host": "Apple M4; 11.8 GiB unified GPU memory reported by Ollama",
+    "runtime": "local Ollama; no per-token API fee",
+    "limitations": "Synthetic dev evidence only; automated grounding metrics are not a substitute for the required blind human panel. Wall-clock results are host-specific."
+  },
+  "models": {
+    "qwen3:4b": {
+      "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "size_bytes": 2497293931,
+      "parameter_size": "4.0B",
+      "quantization": "Q4_K_M"
+    },
+    "llama3.1:8b": {
+      "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+      "size_bytes": 4920753328,
+      "parameter_size": "8.0B",
+      "quantization": "Q4_K_M"
+    }
+  },
+  "selection": {
+    "selected_model": "qwen3:4b",
+    "rule": "Lexicographic: schema validity, citation precision, grounding, personalization, then lower p95 latency."
+  },
+  "summary": {
+    "llama3.1:8b": {
+      "calls": 9,
+      "successful_calls": 9,
+      "json_schema_valid_rate": 1.0,
+      "critic_pass_rate": 1.0,
+      "citation_precision": 1.0,
+      "unsupported_claims_before": 0.0,
+      "unsupported_claims_after": 0.0,
+      "grounding_score": 1.0,
+      "personalization_score": 0.5557,
+      "mean_prompt_tokens": 1425.2222,
+      "mean_completion_tokens": 300.3333,
+      "mean_completion_tokens_per_second": 11.5911,
+      "p50_latency_ms": 29621.0,
+      "p95_latency_ms": 33485.88,
+      "cost_usd": 0.0
+    },
+    "qwen3:4b": {
+      "calls": 9,
+      "successful_calls": 9,
+      "json_schema_valid_rate": 1.0,
+      "critic_pass_rate": 1.0,
+      "citation_precision": 1.0,
+      "unsupported_claims_before": 0.0,
+      "unsupported_claims_after": 0.0,
+      "grounding_score": 1.0,
+      "personalization_score": 0.6299,
+      "mean_prompt_tokens": 1488.3333,
+      "mean_completion_tokens": 188.2222,
+      "mean_completion_tokens_per_second": 19.7578,
+      "p50_latency_ms": 10082.18,
+      "p95_latency_ms": 11444.64,
+      "cost_usd": 0.0
+    }
+  },
+  "rows": [
+    {
+      "model": "qwen3:4b",
+      "job_id": "synthetic-job:ai-ml-engineer:retail-forecast:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "retail",
+      "success": true,
+      "json_schema_valid": true,
+      "cost_usd": 0.0,
+      "cover_letter": "Proposed a scoped retail demand forecast delivery using Python, LightGBM, time series, with milestones and validation. [ai-ml-engineer:retail-forecast:proposal-01]",
+      "screening_answers": {
+        "answer_1": "Designed and delivered retail demand forecast using Python, LightGBM, time series, MAE; reduced synthetic forecast MAE by 18%. [ai-ml-engineer:retail-forecast:case]",
+        "answer_2": "Tested implementation modules for Python, LightGBM, time series, MAE with configuration and error handling. [ai-ml-engineer:retail-forecast:code]",
+        "answer_3": "The freelancer explained the retail constraints clearly, communicated trade-offs, and delivered the agreed scope. [ai-ml-engineer:retail-forecast:review]"
+      },
+      "cited_evidence_ids": [
+        "ai-ml-engineer:retail-forecast:proposal-01"
+      ],
+      "invalid_evidence_ids": [],
+      "citation_precision": 1.0,
+      "unsupported_claims_before": 0,
+      "unsupported_claims_after": 0,
+      "grounding_score": 1.0,
+      "personalization_score": 0.667,
+      "critic_passed": true,
+      "prompt_tokens": 1521,
+      "completion_tokens": 190,
+      "latency_ms": 5652.93,
+      "completion_tokens_per_second": 33.61
+    },
+    {
+      "model": "qwen3:4b",
+      "job_id": "synthetic-job:ai-ml-engineer:support-rag:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "SaaS",
+      "success": true,
+      "json_schema_valid": true,
+      "cost_usd": 0.0,
+      "cover_letter": "Delivered a scoped support knowledge RAG using LangGraph, Qdrant, embeddings, and RAG with validation and handoff documentation. Raised synthetic answer grounding to 94% through precise implementation and testing. [ai-ml-engineer:support-rag:case]",
+      "screening_answers": {
+        "answer_1": "I've built and validated support knowledge RAG systems using LangGraph, Qdrant, embeddings, and RAG. This includes testing modules with error handling and configuration. [ai-ml-engineer:support-rag:code]",
+        "answer_2": "I've delivered RAG solutions for SaaS clients with 94% synthetic answer grounding through structured validation. [ai-ml-engineer:support-rag:case]",
+        "answer_3": "I've created reproducible RAG setups with LangGraph, Qdrant, embeddings, and RAG for seamless handoff. [ai-ml-engineer:support-rag:repo_readme]"
+      },
+      "cited_evidence_ids": [
+        "ai-ml-engineer:support-rag:case"
+      ],
+      "invalid_evidence_ids": [],
+      "citation_precision": 1.0,
+      "unsupported_claims_before": 0,
+      "unsupported_claims_after": 0,
+      "grounding_score": 1.0,
+      "personalization_score": 0.667,
+      "critic_passed": true,
+      "prompt_tokens": 1511,
+      "completion_tokens": 218,
+      "latency_ms": 10853.36,
+      "completion_tokens_per_second": 20.09
+    },
+    {
+      "model": "qwen3:4b",
+      "job_id": "synthetic-job:ai-ml-engineer:vision-defects:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "manufacturing",
+      "success": true,
+      "json_schema_valid": true,
+      "cost_usd": 0.0,
+      "cover_letter": "I propose a scoped manufacturing defect vision delivery using PyTorch, computer vision, FastAPI, and Docker with clear validation and handoff documentation. This solution has been successfully implemented in prior projects, achieving 0.91 synthetic F1 and verified by client reviews for clarity and scope adherence. [ai-ml-engineer:vision-defects:case][ai-ml-engineer:vision-defects:review]",
+      "screening_answers": {
+        "deliverable_1": "Working manufacturing defect vision using PyTorch, computer vision, FastAPI, Docker. [ai-ml-engineer:vision-defects:code]",
+        "deliverable_2": "Validation report with synthetic F1 metrics. [ai-ml-engineer:vision-defects:case]",
+        "deliverable_3": "Handoff documentation for seamless transition. [ai-ml-engineer:vision-defects:review]"
+      },
+      "cited_evidence_ids": [
+        "ai-ml-engineer:vision-defects:case",
+        "ai-ml-engineer:vision-defects:review"
+      ],
+      "invalid_evidence_ids": [],
+      "citation_precision": 1.0,
+      "unsupported_claims_before": 0,
+      "unsupported_claims_after": 0,
+      "grounding_score": 1.0,
+      "personalization_score": 0.667,
+      "critic_passed": true,
+      "prompt_tokens": 1531,
+      "completion_tokens": 202,
+      "latency_ms": 10648.6,
+      "completion_tokens_per_second": 18.97
+    },
+    {
+      "model": "qwen3:4b",
+      "job_id": "synthetic-job:full-stack-developer:saas-dashboard:direct",
+      "persona": "full-stack-developer",
+      "job_type": "SaaS",
+      "success": true,
+      "json_schema_valid": true,
+      "cost_usd": 0.0,
+      "cover_letter": "Proposed a scoped multi-tenant SaaS dashboard delivery using Next.js, TypeScript, PostgreSQL, with milestones and validation. [full-stack-developer:saas-dashboard:proposal-01]",
+      "screening_answers": {
+        "answer_1": "Delivered multi-tenant SaaS dashboard supporting 40 synthetic tenant accounts using Next.js, TypeScript, PostgreSQL, RBAC. [full-stack-developer:saas-dashboard:case]",
+        "answer_2": "Tested implementation modules with configuration and error handling for Next.js, TypeScript, PostgreSQL, RBAC. [full-stack-developer:saas-dashboard:code]",
+        "answer_3": "Explained SaaS constraints clearly, communicated trade-offs, and delivered agreed scope. [full-stack-developer:saas-dashboard:review]"
+      },
+      "cited_evidence_ids": [
+        "full-stack-developer:saas-dashboard:proposal-01"
+      ],
+      "invalid_evidence_ids": [],
+      "citation_precision": 1.0,
+      "unsupported_claims_before": 0,
+      "unsupported_claims_after": 0,
+      "grounding_score": 1.0,
+      "personalization_score": 0.667,
+      "critic_passed": true,
+      "prompt_tokens": 1508,
+      "completion_tokens": 176,
+      "latency_ms": 9976.63,
+      "completion_tokens_per_second": 17.64
+    },
+    {
+      "model": "qwen3:4b",
+      "job_id": "synthetic-job:full-stack-developer:commerce-checkout:direct",
+      "persona": "full-stack-developer",
+      "job_type": "e-commerce",
+      "success": true,
+      "json_schema_valid": true,
+      "cost_usd": 0.0,
+      "cover_letter": "I propose a scoped commerce checkout rebuild using React, Node.js, Stripe, and Redis to meet your timeline of 21 days. This solution includes validation reports and handoff documentation. My past work with synthetic e-commerce clients reduced checkout errors by 31% through similar implementations. [full-stack-developer:commerce-checkout:case][full-stack-developer:commerce-checkout:code][full-stack-developer:commerce-checkout:review]",
+      "screening_answers": {
+        "answer_1": "I've delivered 31% fewer checkout errors using React, Node.js, Stripe, and Redis in previous e-commerce projects. [full-stack-developer:commerce-checkout:case]",
+        "answer_2": "I can provide a validated implementation with error handling and configuration for your checkout rebuild within 21 days. [full-stack-developer:commerce-checkout:code]",
+        "answer_3": "I communicate trade-offs clearly and deliver agreed scope, as confirmed by client reviews. [full-stack-developer:commerce-checkout:review]"
+      },
+      "cited_evidence_ids": [
+        "full-stack-developer:commerce-checkout:case",
+        "full-stack-developer:commerce-checkout:code",
+        "full-stack-developer:commerce-checkout:review"
+      ],
+      "invalid_evidence_ids": [],
+      "citation_precision": 1.0,
+      "unsupported_claims_before": 0,
+      "unsupported_claims_after": 0,
+      "grounding_score": 1.0,
+      "personalization_score": 0.667,
+      "critic_passed": true,
+      "prompt_tokens": 1455,
+      "completion_tokens": 229,
+      "latency_ms": 11444.64,
+      "completion_tokens_per_second": 20.01
+    },
+    {
+      "model": "qwen3:4b",
+      "job_id": "synthetic-job:full-stack-developer:booking-platform:direct",
+      "persona": "full-stack-developer",
+      "job_type": "health services",
+      "success": true,
+      "json_schema_valid": true,
+      "cost_usd": 0.0,
+      "cover_letter": "I propose a scoped appointment booking platform using Next.js, FastAPI, PostgreSQL, and calendar API with validation and handoff documentation. This solution has been successfully deployed for 8,000 synthetic bookings and verified through code and client reviews. [full-stack-developer:booking-platform:case]",
+      "screening_answers": {
+        "answer_1": "The platform processes 8,000 synthetic bookings with Next.js, FastAPI, PostgreSQL, and calendar API. [full-stack-developer:booking-platform:case]",
+        "answer_2": "All code modules are tested with error handling and configuration. [full-stack-developer:booking-platform:code]",
+        "answer_3": "Client reviews confirm clear communication and scope delivery. [full-stack-developer:booking-platform:review]"
+      },
+      "cited_evidence_ids": [
+        "full-stack-developer:booking-platform:case"
+      ],
+      "invalid_evidence_ids": [],
+      "citation_precision": 1.0,
+      "unsupported_claims_before": 0,
+      "unsupported_claims_after": 0,
+      "grounding_score": 1.0,
+      "personalization_score": 0.667,
+      "critic_passed": true,
+      "prompt_tokens": 1465,
+      "completion_tokens": 176,
+      "latency_ms": 10082.18,
+      "completion_tokens_per_second": 17.46
+    },
+    {
+      "model": "qwen3:4b",
+      "job_id": "synthetic-job:data-analyst:sales-powerbi:direct",
+      "persona": "data-analyst",
+      "job_type": "retail",
+      "success": true,
+      "json_schema_valid": true,
+      "cost_usd": 0.0,
+      "cover_letter": "Delivered a scoped executive sales dashboard using Power BI, DAX, SQL, and data modelling for retail clients, replacing 12 synthetic manual reports. [data-analyst:sales-powerbi:case]",
+      "screening_answers": {
+        "answer_1": "I've built similar dashboards with Power BI, DAX, SQL, and data modelling. [data-analyst:sales-powerbi:code]",
+        "answer_2": "I've validated and documented dashboards for retail clients. [data-analyst:sales-powerbi:review]",
+        "answer_3": "I've created reproducible setups for executive dashboards. [data-analyst:sales-powerbi:repo_readme]"
+      },
+      "cited_evidence_ids": [
+        "data-analyst:sales-powerbi:case"
+      ],
+      "invalid_evidence_ids": [],
+      "citation_precision": 1.0,
+      "unsupported_claims_before": 0,
+      "unsupported_claims_after": 0,
+      "grounding_score": 1.0,
+      "personalization_score": 0.5,
+      "critic_passed": true,
+      "prompt_tokens": 1471,
+      "completion_tokens": 161,
+      "latency_ms": 9653.61,
+      "completion_tokens_per_second": 16.68
+    },
+    {
+      "model": "qwen3:4b",
+      "job_id": "synthetic-job:data-analyst:marketing-tableau:direct",
+      "persona": "data-analyst",
+      "job_type": "marketing",
+      "success": true,
+      "json_schema_valid": true,
+      "cost_usd": 0.0,
+      "cover_letter": "Delivered a scoped marketing attribution workbook using Tableau, attribution, SQL, and calculated fields with 97% campaign spend reconciliation. Validated through synthetic data and handoff documentation. [data-analyst:marketing-tableau:case]",
+      "screening_answers": {
+        "answer_1": "Proposed a scoped marketing attribution workbook delivery using Tableau, attribution, SQL, with milestones and validation. [data-analyst:marketing-tableau:proposal-01]",
+        "answer_2": "Architecture and reproducible setup for marketing attribution workbook. Stack: Tableau, attribution, SQL, calculated fields. [data-analyst:marketing-tableau:readme]",
+        "answer_3": "Tested implementation modules for Tableau, attribution, SQL, calculated fields with configuration and error handling. [data-analyst:marketing-tableau:code]"
+      },
+      "cited_evidence_ids": [
+        "data-analyst:marketing-tableau:case"
+      ],
+      "invalid_evidence_ids": [],
+      "citation_precision": 1.0,
+      "unsupported_claims_before": 0,
+      "unsupported_claims_after": 0,
+      "grounding_score": 1.0,
+      "personalization_score": 0.667,
+      "critic_passed": true,
+      "prompt_tokens": 1470,
+      "completion_tokens": 191,
+      "latency_ms": 10812.32,
+      "completion_tokens_per_second": 17.67
+    },
+    {
+      "model": "qwen3:4b",
+      "job_id": "synthetic-job:data-analyst:warehouse-dbt:direct",
+      "persona": "data-analyst",
+      "job_type": "SaaS",
+      "success": true,
+      "json_schema_valid": true,
+      "cost_usd": 0.0,
+      "cover_letter": "Delivered 85 synthetic tested analytics warehouse models using dbt, SQL, data tests, and documentation. [data-analyst:warehouse-dbt:case]",
+      "screening_answers": {
+        "answer_1": "Proposed scoped analytics warehouse models with milestones and validation. [data-analyst:warehouse-dbt:proposal-01]",
+        "answer_2": "Architectural setup with dbt, SQL, data tests, and documentation. [data-analyst:warehouse-dbt:readme]",
+        "answer_3": "Tested implementation modules with error handling and configuration. [data-analyst:warehouse-dbt:code]"
+      },
+      "cited_evidence_ids": [
+        "data-analyst:warehouse-dbt:case"
+      ],
+      "invalid_evidence_ids": [],
+      "citation_precision": 1.0,
+      "unsupported_claims_before": 0,
+      "unsupported_claims_after": 0,
+      "grounding_score": 1.0,
+      "personalization_score": 0.5,
+      "critic_passed": true,
+      "prompt_tokens": 1463,
+      "completion_tokens": 151,
+      "latency_ms": 9624.97,
+      "completion_tokens_per_second": 15.69
+    },
+    {
+      "model": "llama3.1:8b",
+      "job_id": "synthetic-job:ai-ml-engineer:retail-forecast:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "retail",
+      "success": true,
+      "json_schema_valid": true,
+      "cost_usd": 0.0,
+      "cover_letter": "I'm an AI/ML Engineer with experience in retail demand forecasting using Python, LightGBM, time series, and MAE. I've successfully delivered a retail demand forecast project [ai-ml-engineer:retail-forecast:case] and have a scoped retail demand forecast delivery using Python, LightGBM, time series, with milestones and validation [ai-ml-engineer:retail-forecast:proposal-01]. I'm confident in my ability to deliver a working retail demand forecast, validation report, and handoff documentation within the given timeline [ai-ml-engineer:retail-forecast:review].",
+      "screening_answers": {
+        "What is your experience with retail demand forecasting?": "I have experience in retail demand forecasting using Python, LightGBM, time series, and MAE. I've successfully delivered a retail demand forecast project [ai-ml-engineer:retail-forecast:case].",
+        "Can you explain how you would approach this project?": "I would use Python, LightGBM, time series, and MAE to deliver a scoped retail demand forecast with milestones and validation [ai-ml-engineer:retail-forecast:proposal-01].",
+        "How would you ensure the quality of the forecast?": "I would ensure the quality of the forecast by delivering a validation report and handoff documentation [ai-ml-engineer:retail-forecast:review]."
+      },
+      "cited_evidence_ids": [
+        "ai-ml-engineer:retail-forecast:case",
+        "ai-ml-engineer:retail-forecast:proposal-01",
+        "ai-ml-engineer:retail-forecast:review"
+      ],
+      "invalid_evidence_ids": [],
+      "citation_precision": 1.0,
+      "unsupported_claims_before": 0,
+      "unsupported_claims_after": 0,
+      "grounding_score": 1.0,
+      "personalization_score": 0.667,
+      "critic_passed": true,
+      "prompt_tokens": 1460,
+      "completion_tokens": 307,
+      "latency_ms": 15675.34,
+      "completion_tokens_per_second": 19.58
+    },
+    {
+      "model": "llama3.1:8b",
+      "job_id": "synthetic-job:ai-ml-engineer:support-rag:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "SaaS",
+      "success": true,
+      "json_schema_valid": true,
+      "cost_usd": 0.0,
+      "cover_letter": "I'm an AI/ML Engineer with expertise in LangGraph, Qdrant, embeddings, and RAG. I've successfully delivered support knowledge RAGs with high accuracy and efficiency. My most relevant experience is in the SaaS industry, where I've worked on projects like Support knowledge RAG proposal 1 [ai-ml-engineer:support-rag:proposal-01], Support knowledge RAG repository [ai-ml-engineer:support-rag:readme], and Support knowledge RAG [ai-ml-engineer:support-rag:case]. I'm confident in my ability to deliver a scoped support knowledge RAG using LangGraph, Qdrant, embeddings, and RAG, and I'm excited to bring my skills and experience to this project.",
+      "screening_answers": {
+        "What is your experience with LangGraph, Qdrant, embeddings, and RAG?": "I have extensive experience with LangGraph, Qdrant, embeddings, and RAG, having worked on multiple projects in the SaaS industry. My most relevant experience is in the Support knowledge RAG proposal 1 [ai-ml-engineer:support-rag:proposal-01] and Support knowledge RAG repository [ai-ml-engineer:support-rag:readme].",
+        "Can you provide an example of a successful project you've worked on?": "I successfully designed and delivered a support knowledge RAG using LangGraph, Qdrant, embeddings, and RAG, with a synthetic answer grounding of 94% [ai-ml-engineer:support-rag:case].",
+        "How do you ensure high accuracy and efficiency in your work?": "I use a combination of LangGraph, Qdrant, embeddings, and RAG to ensure high accuracy and efficiency in my work. I also conduct thorough testing and validation to ensure that my solutions meet the client's requirements [ai-ml-engineer:support-rag:code]."
+      },
+      "cited_evidence_ids": [
+        "ai-ml-engineer:support-rag:proposal-01",
+        "ai-ml-engineer:support-rag:readme",
+        "ai-ml-engineer:support-rag:case"
+      ],
+      "invalid_evidence_ids": [],
+      "citation_precision": 1.0,
+      "unsupported_claims_before": 0,
+      "unsupported_claims_after": 0,
+      "grounding_score": 1.0,
+      "personalization_score": 0.667,
+      "critic_passed": true,
+      "prompt_tokens": 1450,
+      "completion_tokens": 415,
+      "latency_ms": 31635.52,
+      "completion_tokens_per_second": 13.12
+    },
+    {
+      "model": "llama3.1:8b",
+      "job_id": "synthetic-job:ai-ml-engineer:vision-defects:direct",
+      "persona": "ai-ml-engineer",
+      "job_type": "manufacturing",
+      "success": true,
+      "json_schema_valid": true,
+      "cost_usd": 0.0,
+      "cover_letter": "I have experience with PyTorch, computer vision, FastAPI, and Docker, as demonstrated in my past proposal [ai-ml-engineer:vision-defects:proposal-01] and repository [ai-ml-engineer:vision-defects:readme]. I successfully designed and delivered a manufacturing defect vision using these technologies, achieving a synthetic F1 score of 0.91 [ai-ml-engineer:vision-defects:case]. I also have experience with testing implementation modules and explaining validation and handoff [ai-ml-engineer:vision-defects:code] and [ai-ml-engineer:vision-defects:review]. I am confident in my ability to deliver a scoped manufacturing defect vision using these technologies and meet the required deliverables.",
+      "screening_answers": {
+        "What is your experience with PyTorch?": "I have experience with PyTorch, as demonstrated in my past proposal [ai-ml-engineer:vision-defects:proposal-01] and repository [ai-ml-engineer:vision-defects:readme].",
+        "Can you explain how you would validate the manufacturing defect vision?": "I would validate the manufacturing defect vision by using the validation report and handoff documentation, as demonstrated in my past proposal [ai-ml-engineer:vision-defects:proposal-01].",
+        "How would you ensure a smooth handoff of the manufacturing defect vision?": "I would ensure a smooth handoff of the manufacturing defect vision by providing handoff documentation, as demonstrated in my past proposal [ai-ml-engineer:vision-defects:proposal-01]."
+      },
+      "cited_evidence_ids": [
+        "ai-ml-engineer:vision-defects:proposal-01",
+        "ai-ml-engineer:vision-defects:readme",
+        "ai-ml-engineer:vision-defects:case",
+        "ai-ml-engineer:vision-defects:code",
+        "ai-ml-engineer:vision-defects:review"
+      ],
+      "invalid_evidence_ids": [],
+      "citation_precision": 1.0,
+      "unsupported_claims_before": 0,
+      "unsupported_claims_after": 0,
+      "grounding_score": 1.0,
+      "personalization_score": 0.667,
+      "critic_passed": true,
+      "prompt_tokens": 1453,
+      "completion_tokens": 345,
+      "latency_ms": 30295.1,
+      "completion_tokens_per_second": 11.39
+    },
+    {
+      "model": "llama3.1:8b",
+      "job_id": "synthetic-job:full-stack-developer:saas-dashboard:direct",
+      "persona": "full-stack-developer",
+      "job_type": "SaaS",
+      "success": true,
+      "json_schema_valid": true,
+      "cost_usd": 0.0,
+      "cover_letter": "I'm a full-stack developer with experience delivering multi-tenant SaaS dashboards using Next.js, TypeScript, PostgreSQL, and RBAC. I've successfully designed and delivered a dashboard for a synthetic client, supported 40 synthetic tenant accounts, and received positive reviews for my communication and trade-off explanations. I'm confident in my ability to deliver a working multi-tenant SaaS dashboard, validation report, and handoff documentation within the given timeline and budget. [full-stack-developer:saas-dashboard:case] [full-stack-developer:saas-dashboard:review]",
+      "screening_answers": {
+        "What is your experience with multi-tenant SaaS dashboards?": "I've designed and delivered a multi-tenant SaaS dashboard using Next.js, TypeScript, PostgreSQL, and RBAC, and supported 40 synthetic tenant accounts. [full-stack-developer:saas-dashboard:case]",
+        "Can you explain your approach to validation and handoff?": "I've explained validation and handoff clearly to clients and delivered handoff documentation. [full-stack-developer:saas-dashboard:review]",
+        "How do you ensure the quality of your work?": "I've tested implementation modules for Next.js, TypeScript, PostgreSQL, and RBAC with configuration and error handling. [full-stack-developer:saas-dashboard:code]"
+      },
+      "cited_evidence_ids": [
+        "full-stack-developer:saas-dashboard:case",
+        "full-stack-developer:saas-dashboard:review"
+      ],
+      "invalid_evidence_ids": [],
+      "citation_precision": 1.0,
+      "unsupported_claims_before": 0,
+      "unsupported_claims_after": 0,
+      "grounding_score": 1.0,
+      "personalization_score": 0.667,
+      "critic_passed": true,
+      "prompt_tokens": 1447,
+      "completion_tokens": 285,
+      "latency_ms": 29621.0,
+      "completion_tokens_per_second": 9.62
+    },
+    {
+      "model": "llama3.1:8b",
+      "job_id": "synthetic-job:full-stack-developer:commerce-checkout:direct",
+      "persona": "full-stack-developer",
+      "job_type": "e-commerce",
+      "success": true,
+      "json_schema_valid": true,
+      "cost_usd": 0.0,
+      "cover_letter": "I have experience delivering scoped commerce checkout rebuilds using React, Node.js, Stripe, and Redis. I can explain validation and handoff. My price is $886.38, which is within the observed/client band and adjusts for 71% fit and 0% risk. [full-stack-developer:commerce-checkout:proposal-01]",
+      "screening_answers": {
+        "What is your experience with React?": "I have experience delivering scoped commerce checkout rebuilds using React, Node.js, Stripe, and Redis. [full-stack-developer:commerce-checkout:code]",
+        "Can you explain validation and handoff?": "The freelancer explained the e-commerce constraints clearly, communicated trade-offs, and delivered the agreed scope. [full-stack-developer:commerce-checkout:review]",
+        "What is your experience with Node.js?": "I have experience delivering scoped commerce checkout rebuilds using React, Node.js, Stripe, and Redis. [full-stack-developer:commerce-checkout:code]",
+        "Can you describe your experience with Stripe?": "I have experience delivering scoped commerce checkout rebuilds using React, Node.js, Stripe, and Redis. [full-stack-developer:commerce-checkout:code]",
+        "What is your experience with Redis?": "I have experience delivering scoped commerce checkout rebuilds using React, Node.js, Stripe, and Redis. [full-stack-developer:commerce-checkout:code]"
+      },
+      "cited_evidence_ids": [
+        "full-stack-developer:commerce-checkout:proposal-01"
+      ],
+      "invalid_evidence_ids": [],
+      "citation_precision": 1.0,
+      "unsupported_claims_before": 0,
+      "unsupported_claims_after": 0,
+      "grounding_score": 1.0,
+      "personalization_score": 0.333,
+      "critic_passed": true,
+      "prompt_tokens": 1394,
+      "completion_tokens": 305,
+      "latency_ms": 30412.46,
+      "completion_tokens_per_second": 10.03
+    },
+    {
+      "model": "llama3.1:8b",
+      "job_id": "synthetic-job:full-stack-developer:booking-platform:direct",
+      "persona": "full-stack-developer",
+      "job_type": "health services",
+      "success": true,
+      "json_schema_valid": true,
+      "cost_usd": 0.0,
+      "cover_letter": "I'm a full-stack developer with experience delivering appointment booking platforms using Next.js, FastAPI, PostgreSQL, and calendar API. I've successfully processed 8,000 synthetic bookings and have a positive review from a client. I'm confident in my ability to deliver a working appointment booking platform, validation report, and handoff documentation within the given timeline. [full-stack-developer:booking-platform:case]",
+      "screening_answers": {
+        "What is your experience with Next.js?": "I have experience delivering appointment booking platforms using Next.js. [full-stack-developer:booking-platform:code]",
+        "Can you explain the validation process for an appointment booking platform?": "I can explain the validation process and provide a validation report. [full-stack-developer:booking-platform:proposal-01]",
+        "How do you ensure a smooth handoff of the project?": "I provide handoff documentation to ensure a smooth transition. [full-stack-developer:booking-platform:review]"
+      },
+      "cited_evidence_ids": [
+        "full-stack-developer:booking-platform:case"
+      ],
+      "invalid_evidence_ids": [],
+      "citation_precision": 1.0,
+      "unsupported_claims_before": 0,
+      "unsupported_claims_after": 0,
+      "grounding_score": 1.0,
+      "personalization_score": 0.5,
+      "critic_passed": true,
+      "prompt_tokens": 1403,
+      "completion_tokens": 212,
+      "latency_ms": 22787.55,
+      "completion_tokens_per_second": 9.3
+    },
+    {
+      "model": "llama3.1:8b",
+      "job_id": "synthetic-job:data-analyst:sales-powerbi:direct",
+      "persona": "data-analyst",
+      "job_type": "retail",
+      "success": true,
+      "json_schema_valid": true,
+      "cost_usd": 0.0,
+      "cover_letter": "I have experience delivering executive sales dashboards using Power BI, DAX, SQL, and data modelling. I proposed a scoped executive sales dashboard delivery using Power BI, DAX, SQL, with milestones and validation [data-analyst:sales-powerbi:proposal-01]. I also designed and delivered an executive sales dashboard using Power BI, DAX, SQL, data modelling; replaced 12 synthetic manual reports [data-analyst:sales-powerbi:case]. I have a strong understanding of the required skills, including Power BI, DAX, SQL, and data modelling [data-analyst:sales-powerbi:code]. I have a proven track record of delivering high-quality work, as evidenced by a positive review from a client [data-analyst:sales-powerbi:review]. I am confident in my ability to deliver a working executive sales dashboard, validation report, and handoff documentation within the specified timeline and budget.",
+      "screening_answers": {
+        "What is your experience with Power BI?": "I have experience delivering executive sales dashboards using Power BI, DAX, SQL, and data modelling [data-analyst:sales-powerbi:proposal-01].",
+        "Can you provide an example of a project you managed from start to finish?": "I designed and delivered an executive sales dashboard using Power BI, DAX, SQL, data modelling; replaced 12 synthetic manual reports [data-analyst:sales-powerbi:case].",
+        "How do you ensure data quality and accuracy in your work?": "I tested implementation modules for Power BI, DAX, SQL, data modelling with configuration and error handling [data-analyst:sales-powerbi:code].",
+        "Can you describe your experience with data modelling?": "I have a strong understanding of data modelling, as evidenced by my work on the executive sales dashboard project [data-analyst:sales-powerbi:code]."
+      },
+      "cited_evidence_ids": [
+        "data-analyst:sales-powerbi:proposal-01",
+        "data-analyst:sales-powerbi:case",
+        "data-analyst:sales-powerbi:code",
+        "data-analyst:sales-powerbi:review"
+      ],
+      "invalid_evidence_ids": [],
+      "citation_precision": 1.0,
+      "unsupported_claims_before": 0,
+      "unsupported_claims_after": 0,
+      "grounding_score": 1.0,
+      "personalization_score": 0.667,
+      "critic_passed": true,
+      "prompt_tokens": 1410,
+      "completion_tokens": 408,
+      "latency_ms": 33485.88,
+      "completion_tokens_per_second": 12.18
+    },
+    {
+      "model": "llama3.1:8b",
+      "job_id": "synthetic-job:data-analyst:marketing-tableau:direct",
+      "persona": "data-analyst",
+      "job_type": "marketing",
+      "success": true,
+      "json_schema_valid": true,
+      "cost_usd": 0.0,
+      "cover_letter": "I have experience delivering scoped marketing attribution workbooks using Tableau, attribution, SQL, and calculated fields. I can explain validation and handoff. I have a 71% fit and 0% risk, and my price stays inside the observed/client band. [data-analyst:marketing-tableau:proposal-01]",
+      "screening_answers": {
+        "What is your experience with Tableau?": "I have experience delivering scoped marketing attribution workbooks using Tableau, attribution, SQL, and calculated fields. [data-analyst:marketing-tableau:proposal-01]",
+        "Can you explain validation and handoff?": "I can explain validation and handoff. [data-analyst:marketing-tableau:proposal-01]",
+        "What is your pricing strategy?": "My price stays inside the observed/client band and adjusts for 71% fit and 0% risk. [data-analyst:marketing-tableau:proposal-01]"
+      },
+      "cited_evidence_ids": [
+        "data-analyst:marketing-tableau:proposal-01"
+      ],
+      "invalid_evidence_ids": [],
+      "citation_precision": 1.0,
+      "unsupported_claims_before": 0,
+      "unsupported_claims_after": 0,
+      "grounding_score": 1.0,
+      "personalization_score": 0.333,
+      "critic_passed": true,
+      "prompt_tokens": 1409,
+      "completion_tokens": 210,
+      "latency_ms": 22061.65,
+      "completion_tokens_per_second": 9.52
+    },
+    {
+      "model": "llama3.1:8b",
+      "job_id": "synthetic-job:data-analyst:warehouse-dbt:direct",
+      "persona": "data-analyst",
+      "job_type": "SaaS",
+      "success": true,
+      "json_schema_valid": true,
+      "cost_usd": 0.0,
+      "cover_letter": "I have experience delivering scoped analytics warehouse models using dbt, SQL, data tests, and documentation. I can explain validation and handoff. I have a 86% fit and 0% risk, and my price stays inside the observed/client band. [data-analyst:warehouse-dbt:proposal-01]",
+      "screening_answers": {
+        "What is your experience with dbt, SQL, data tests, and documentation?": "I have experience delivering scoped analytics warehouse models using dbt, SQL, data tests, and documentation. [data-analyst:warehouse-dbt:proposal-01]",
+        "Can you explain validation and handoff?": "I can explain validation and handoff. [data-analyst:warehouse-dbt:proposal-01]",
+        "What is your pricing strategy?": "My price stays inside the observed/client band and adjusts for 86% fit and 0% risk. [data-analyst:warehouse-dbt:proposal-01]"
+      },
+      "cited_evidence_ids": [
+        "data-analyst:warehouse-dbt:proposal-01"
+      ],
+      "invalid_evidence_ids": [],
+      "citation_precision": 1.0,
+      "unsupported_claims_before": 0,
+      "unsupported_claims_after": 0,
+      "grounding_score": 1.0,
+      "personalization_score": 0.5,
+      "critic_passed": true,
+      "prompt_tokens": 1401,
+      "completion_tokens": 216,
+      "latency_ms": 22550.21,
+      "completion_tokens_per_second": 9.58
+    }
+  ]
+}

@@ -1,0 +1,275 @@
+{
+  "metadata": {
+    "generated_at": "2026-11-10T18:56:13.864268+00:00",
+    "data_origin": "real_public_dataset",
+    "sources": [
+      "ahmedmyalo/upwork-freelance-jobs-60k:v5",
+      "asaniczka/upwork-job-postings-dataset-2024-50k-records:v1",
+      "asaniczka/freelance-contracts-dataset-1-3-million-entries:v1"
+    ],
+    "reportable_scope": "descriptive profile; no reply, hire, or causal labels"
+  },
+  "job_splits": {
+    "development_2023": {
+      "rows": 12913,
+      "category_counts": {
+        "web_development": 4966,
+        "marketing_sales": 3180,
+        "other": 1649,
+        "writing_translation": 940,
+        "data_analytics": 804,
+        "design_creative": 785,
+        "ai_ml": 491,
+        "admin_support": 98
+      },
+      "pricing_model_counts": {
+        "hourly": 8092,
+        "fixed": 4821
+      },
+      "budget_max_usd": {
+        "fixed": {
+          "count": 4051,
+          "p25": 50.0,
+          "median": 150.0,
+          "p75": 500.0
+        },
+        "hourly": {
+          "count": 5376,
+          "p25": 20.0,
+          "median": 30.0,
+          "p75": 50.0
+        }
+      },
+      "injection_signal_rate": 0.006273,
+      "payment_verified_rate": 0.653527
+    },
+    "training_2023": {
+      "rows": 51035,
+      "category_counts": {
+        "web_development": 19648,
+        "marketing_sales": 12797,
+        "other": 6419,
+        "writing_translation": 3905,
+        "data_analytics": 3177,
+        "design_creative": 2915,
+        "ai_ml": 1848,
+        "admin_support": 326
+      },
+      "pricing_model_counts": {
+        "hourly": 32240,
+        "fixed": 18795
+      },
+      "budget_max_usd": {
+        "fixed": {
+          "count": 16016,
+          "p25": 50.0,
+          "median": 150.0,
+          "p75": 500.0
+        },
+        "hourly": {
+          "count": 21194,
+          "p25": 20.0,
+          "median": 30.0,
+          "p75": 50.0
+        }
+      },
+      "injection_signal_rate": 0.007132,
+      "payment_verified_rate": 0.654316
+    },
+    "temporal_holdout_2024": {
+      "rows": 53058,
+      "category_counts": {
+        "web_development": 12877,
+        "design_creative": 8785,
+        "marketing_sales": 8337,
+        "writing_translation": 7525,
+        "other": 7281,
+        "data_analytics": 4475,
+        "admin_support": 2153,
+        "ai_ml": 1625
+      },
+      "pricing_model_counts": {
+        "fixed": 30102,
+        "hourly": 22956
+      },
+      "budget_max_usd": {
+        "fixed": {
+          "count": 21867,
+          "p25": 30.0,
+          "median": 100.0,
+          "p75": 300.0
+        },
+        "hourly": {
+          "count": 22956,
+          "p25": 20.0,
+          "median": 30.0,
+          "p75": 50.0
+        }
+      },
+      "injection_signal_rate": 0.006992,
+      "payment_verified_rate": 0.0
+    }
+  },
+  "combined_job_budget_max_usd": {
+    "fixed": {
+      "count": 41934,
+      "p25": 30.0,
+      "median": 100.0,
+      "p75": 500.0
+    },
+    "hourly": {
+      "count": 49526,
+      "p25": 20.0,
+      "median": 30.0,
+      "p75": 50.0
+    }
+  },
+  "contract_pricing": {
+    "metadata": {
+      "generated_at": "2026-11-10T18:56:13.864268+00:00",
+      "data_origin": "real_public_dataset",
+      "source": "asaniczka/freelance-contracts-dataset-1-3-million-entries",
+      "source_version": 1,
+      "license": "ODC-By-1.0",
+      "rows_scanned": 1292791,
+      "filtering": {
+        "hourly_rate_usd": "1 <= value <= 500",
+        "fixed_total_paid_usd": "1 <= value <= 100000",
+        "rejected": {
+          "fixed_outside_1_to_100000_usd": 212130,
+          "hourly_outside_1_to_500_usd": 2839
+        }
+      },
+      "warning": "Descriptive observational priors only; not causal pricing guidance or outcomes."
+    },
+    "category_method": "deterministic title keyword rules in build_public_profiles.py",
+    "priors": {
+      "admin_support": {
+        "fixed_or_milestone": {
+          "count": 5366,
+          "p25": 18.0,
+          "median": 50.0,
+          "p75": 200.0
+        },
+        "hourly": {
+          "count": 15861,
+          "p25": 5.0,
+          "median": 6.6,
+          "p75": 11.0
+        }
+      },
+      "ai_ml": {
+        "fixed_or_milestone": {
+          "count": 5734,
+          "p25": 50.0,
+          "median": 165.0,
+          "p75": 590.47
+        },
+        "hourly": {
+          "count": 5514,
+          "p25": 20.0,
+          "median": 30.0,
+          "p75": 50.0
+        }
+      },
+      "all": {
+        "fixed_or_milestone": {
+          "count": 584617,
+          "p25": 41.0,
+          "median": 115.0,
+          "p75": 350.0
+        },
+        "hourly": {
+          "count": 493205,
+          "p25": 10.5,
+          "median": 21.0,
+          "p75": 40.0
+        }
+      },
+      "data_analytics": {
+        "fixed_or_milestone": {
+          "count": 13563,
+          "p25": 39.6,
+          "median": 100.0,
+          "p75": 250.0
+        },
+        "hourly": {
+          "count": 16695,
+          "p25": 15.0,
+          "median": 30.0,
+          "p75": 50.0
+        }
+      },
+      "design_creative": {
+        "fixed_or_milestone": {
+          "count": 42522,
+          "p25": 37.5,
+          "median": 100.0,
+          "p75": 250.0
+        },
+        "hourly": {
+          "count": 29256,
+          "p25": 15.0,
+          "median": 25.0,
+          "p75": 35.0
+        }
+      },
+      "marketing_sales": {
+        "fixed_or_milestone": {
+          "count": 25763,
+          "p25": 50.0,
+          "median": 150.0,
+          "p75": 500.0
+        },
+        "hourly": {
+          "count": 38345,
+          "p25": 6.99,
+          "median": 13.0,
+          "p75": 30.0
+        }
+      },
+      "other": {
+        "fixed_or_milestone": {
+          "count": 354915,
+          "p25": 40.0,
+          "median": 105.0,
+          "p75": 345.0
+        },
+        "hourly": {
+          "count": 284755,
+          "p25": 12.0,
+          "median": 25.0,
+          "p75": 45.0
+        }
+      },
+      "web_development": {
+        "fixed_or_milestone": {
+          "count": 79401,
+          "p25": 55.0,
+          "median": 170.0,
+          "p75": 500.0
+        },
+        "hourly": {
+          "count": 77255,
+          "p25": 12.0,
+          "median": 20.0,
+          "p75": 35.0
+        }
+      },
+      "writing_translation": {
+        "fixed_or_milestone": {
+          "count": 57353,
+          "p25": 33.32,
+          "median": 100.0,
+          "p75": 350.0
+        },
+        "hourly": {
+          "count": 25524,
+          "p25": 12.6,
+          "median": 25.0,
+          "p75": 45.0
+        }
+      }
+    }
+  }
+}
