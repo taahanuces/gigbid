@@ -118,10 +118,11 @@ cd apps/web && pnpm lint && pnpm build && pnpm test:e2e
 
 ## Presentation and publication — student required
 
-- [ ] Record a demonstration of no more than three minutes: onboarding → ranked job → run timeline →
-  cited proposal → paragraph revision → approval → pipeline/messages/analytics.
-- [ ] Include one failure/safety example and make clear when GigBid is using synthetic data.
-- [ ] Video URL: `___________________________________________________________`.
+- [x] Record an 85-second demonstration: onboarding → ranked job → run timeline →
+  cited proposal → paragraph revision → approval → pipeline → analytics.
+- [x] Include a prompt-injection/off-platform safety example and clearly label GigSim and synthetic
+  evaluation evidence. Local artifact: `output/demo/GigBid_Submission_Demo.mp4`.
+- [ ] Upload the MP4 and record its public video URL: `_______________________________`.
 - [x] Capture a short README GIF from the production UI build with clearly synthetic fixtures and add
   it under `docs/assets/`.
 - [ ] Optionally recapture the GIF against the final public deployment if its UI differs materially.

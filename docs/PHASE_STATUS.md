@@ -39,6 +39,9 @@
   sixteen-class failure analysis, external-action checklist and production-build README GIF are
   generated. The Portfolio MCP image now packages and validates its 630-item synthetic demo corpus
   instead of starting with an empty index.
+- Demo-video slice: an 85-second, 1440 by 900 captioned MP4 records onboarding, ranking, a safety
+  rejection, evidence-backed analysis, durable replay, proposal revision, the approval gate, pipeline
+  and synthetic evaluation metrics. The browser-only capture excludes desktop and private data.
 - Deployment slice: the tested Render Blueprint is live as a free Next.js reviewer service, a combined
   FastAPI + localhost-only GigSim service, and durable Postgres. Public health, reviewer login, the
   100-job inbox, a five-event/five-checkpoint hosted analysis, and a 390 by 844 mobile view were

@@ -145,7 +145,7 @@ improvement.
 The local implementation and synthetic/public-data evidence are reproducible. Several submission
 items cannot be honestly manufactured by code: 30 human calibration labels and Cohen's kappa, a blind
 classmate panel, optional GitHub PAT validation, instructor hidden-test results, external read-only trace
-URLs, a recorded demonstration, and the instructor's exact final change-request text. The repository
+URLs, a public video link, and the instructor's exact final change-request text. The repository
 provides worksheets, commands, placeholders, and a checklist for those tasks. They should be completed
 with genuine people, credentials, and deployment evidence before final submission.
 

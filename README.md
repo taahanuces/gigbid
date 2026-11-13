@@ -38,7 +38,8 @@ Missing instructor assets and human calibration labels remain explicitly externa
 | Render deployment | [`render.yaml`](render.yaml) and [`docs/RENDER_DEPLOYMENT.md`](docs/RENDER_DEPLOYMENT.md) |
 | Public reviewer app | [gigbid-web.onrender.com](https://gigbid-web.onrender.com) |
 | Public API health | [gigbid-api.onrender.com/health](https://gigbid-api.onrender.com/health) |
-| Video and external trace links | Remain student/account work; no placeholder is presented as evidence |
+| Submission demo | [`output/demo/GigBid_Submission_Demo.mp4`](output/demo/GigBid_Submission_Demo.mp4), 85 seconds, captioned GigSim workflow |
+| Public video and external trace links | Remain student/account publication work; no placeholder is presented as evidence |
 
 ## Architecture
 

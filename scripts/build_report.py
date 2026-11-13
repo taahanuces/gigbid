@@ -660,7 +660,7 @@ def build() -> Path:
                     ["Blind classmate panel", "Requires independent human raters"],
                     ["Hidden test results", "Instructor-only dataset and post-deadline run"],
                     ["Optional GitHub live validation", "Requires the user's PAT and consented repositories"],
-                    ["External traces, video and publication", "Public app is live; these still require secure hosting or human publication"],
+                    ["Public video link, external traces, publication", "The 85-second MP4 exists locally; these still require external publication"],
                     ["Exact change-request diff", "Final instructor policy update text was not supplied"],
                 ],
                 [62 * mm, 104 * mm],
@@ -672,7 +672,7 @@ def build() -> Path:
                 "two durable graphs, RAG variants, verification, worker scheduling, safety controls, "
                 "typed full-stack UI, live Render reviewer and evaluation gates. The evidence supports shipping the explicit "
                 "hand-built graph, type-diverse V2 retrieval and Qwen3 4B writer while preserving "
-                "negative results. The remaining human studies, external traces, recorded demo and "
+                "negative results. The remaining human studies, external traces, public video link and "
                 "instructor hidden run must still be filled with genuine evidence.",
                 styles["body"],
             ),
