@@ -109,6 +109,13 @@ verification, and responsive browser flows. Twenty Playwright cases pass across 
 CI runs static typing, linting, tests, production web build, Compose validation, evaluations, and
 regression thresholds.
 
+The public reviewer profile is deployed at `https://gigbid-web.onrender.com`. Render runs the Next.js
+UI, a combined FastAPI and localhost-only GigSim service, and durable Postgres. A clean login loaded
+100 simulated jobs; a hosted analysis completed five graph events and five checkpoints, and its run
+view was verified at desktop and 390 by 844 mobile sizes. The free profile uses deterministic models
+and synchronous execution to avoid pretending that GPU, Redis or Celery capacity exists in the hosted
+demo; the fuller production topology is the locally tested profile described above.
+
 ## Data, simulator, and extension
 
 The simulator uses 300 Apache-2.0 public Kaggle job records, then adds clearly labelled synthetic
@@ -137,7 +144,7 @@ improvement.
 
 The local implementation and synthetic/public-data evidence are reproducible. Several submission
 items cannot be honestly manufactured by code: 30 human calibration labels and Cohen's kappa, a blind
-classmate panel, optional GitHub PAT validation, instructor hidden-test results, public hosting and trace
+classmate panel, optional GitHub PAT validation, instructor hidden-test results, external read-only trace
 URLs, a recorded demonstration, and the instructor's exact final change-request text. The repository
 provides worksheets, commands, placeholders, and a checklist for those tasks. They should be completed
 with genuine people, credentials, and deployment evidence before final submission.

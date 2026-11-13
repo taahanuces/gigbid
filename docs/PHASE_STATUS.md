@@ -39,10 +39,11 @@
   sixteen-class failure analysis, external-action checklist and production-build README GIF are
   generated. The Portfolio MCP image now packages and validates its 630-item synthetic demo corpus
   instead of starting with an empty index.
-- Deployment slice: a tested Render Blueprint defines a free Next.js reviewer service, a combined
-  FastAPI + localhost-only GigSim service, and durable Postgres. The hosted profile uses GigSim as the
-  authoritative marketplace, deterministic model execution, and synchronous graph runs; the fuller
-  Celery/Redis/Qdrant/open-model stack remains available and tested locally.
+- Deployment slice: the tested Render Blueprint is live as a free Next.js reviewer service, a combined
+  FastAPI + localhost-only GigSim service, and durable Postgres. Public health, reviewer login, the
+  100-job inbox, a five-event/five-checkpoint hosted analysis, and a 390 by 844 mobile view were
+  verified. The hosted profile uses GigSim, deterministic model execution and synchronous graph runs;
+  the fuller Celery/Redis/Qdrant/open-model stack remains available and tested locally.
 
 ## Verified evidence
 
@@ -80,5 +81,6 @@ The project now supplies its own simulator, persona corpora, authored developmen
 engine. These support reproducible synthetic conclusions only; the project must not claim real-world
 outcome causality. A genuine blind human panel and 30-item human judge calibration still require human
 ratings. Live Upwork testing is not required because GigSim is the authoritative assignment
-marketplace. Optional GitHub verification requires the user's PAT, while applying the prepared Render
-Blueprint requires the student's hosting account; no credential is committed or assumed.
+marketplace. Optional GitHub verification requires the user's PAT. The Render reviewer deployment is
+complete, and its generated reviewer password remains only in Render and the student's handoff; no
+credential is committed.

@@ -15,6 +15,19 @@ claim-verification, approval and idempotency boundaries. The separate local expe
 evidence for Qwen/Llama routing and Celery reliability. Qdrant is not required by the in-memory V2
 retriever used by the demo, and Redis is not required when graph runs execute synchronously.
 
+## Live reviewer deployment
+
+- Web: <https://gigbid-web.onrender.com>
+- API health: <https://gigbid-api.onrender.com/health>
+- Reviewer email: `reviewer@gigbid.local`
+- Reviewer password: supplied out of band and stored only in Render; it is not committed.
+
+On 12 November 2026 the public health endpoint returned `status=ok`,
+`marketplace=available`, and `checkpointer=postgres`. A clean reviewer login loaded 100 GigSim jobs,
+and a hosted analysis produced a five-event run with five durable checkpoints. The same run rendered
+successfully at a 390 by 844 mobile viewport. Exact service, deploy, commit, run and trace identifiers
+are retained in `docs/DEPLOYMENT_EVIDENCE.md`.
+
 ## Deploy
 
 1. Push the repository to GitHub.

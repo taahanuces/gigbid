@@ -104,15 +104,17 @@ cd apps/web && pnpm lint && pnpm build && pnpm test:e2e
 - [x] Define a cost-safe Render Blueprint with two free web services and free Postgres.
 - [x] Configure the deployed reviewer profile for GigSim, deterministic model execution, synchronous
   graph runs, generated application secrets, exact CORS origin, TLS and health checks.
-- [ ] Apply the Blueprint from the final GitHub repository and wait for all three resources to be live.
-- [ ] Create and verify the reviewer account with only synthetic demonstration data.
-- [ ] Public application URL: `________________________________________________`.
-- [ ] Reviewer login/instructions: `____________________________________________`.
+- [x] Apply the Blueprint from the GitHub repository and wait for all three resources to be live.
+- [x] Create and verify the reviewer account with only synthetic demonstration data.
+- [x] Public application URL: `https://gigbid-web.onrender.com`.
+- [x] Reviewer login/instructions: `reviewer@gigbid.local`; password supplied out of band and never
+  committed.
 - [x] Configure local Phoenix OTLP tracing with PII redaction and content-free graph/model spans.
 - [ ] Deploy the trace viewer securely and publish three read-only trace URLs:
   `________________`, `________________`, `________________`.
-- [ ] Verify the public app from a clean browser and mobile viewport.
-- [ ] Add deployed URLs to the README and PDF/report source, then rebuild the PDF.
+- [x] Verify the public app from a clean browser and a 390 by 844 mobile viewport; retain the hosted
+  run and Render identifiers in `docs/DEPLOYMENT_EVIDENCE.md`.
+- [x] Add deployed URLs to the README and PDF/report source, then rebuild the PDF.
 
 ## Presentation and publication — student required
 

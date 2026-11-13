@@ -248,7 +248,7 @@ def build() -> Path:
                         "Taaha Khan",
                         "AI-4016 Agentic AI",
                         "12 November 2026",
-                        "Local implementation and reproducible public/synthetic studies",
+                        "Local evidence plus a live Render reviewer deployment",
                     ],
                 ],
                 [35 * mm, 39 * mm, 34 * mm, 60 * mm],
@@ -270,11 +270,13 @@ def build() -> Path:
                 "Recall@5, and lexical-only ranking beat type-diverse hybrid RRF on the authored "
                 "synthetic benchmark. V2 still ships for maximum Recall@5, semantic/type coverage and "
                 "claim grounding. A separate measured writer study selected Qwen3 4B over Llama 3.1 "
-                "8B. No human, hidden-test, live-marketplace or hosting result is invented.",
+                "8B. A Render reviewer deployment is live; no human, hidden-test or live-marketplace "
+                "result is invented.",
                 styles["body"],
             ),
             _p(
-                "Evidence: evals/results/*.json; docs/RAG_EXPERIMENT.md; docs/PHASE_STATUS.md",
+                "Live reviewer: https://gigbid-web.onrender.com. Evidence: evals/results/*.json; "
+                "docs/RAG_EXPERIMENT.md; docs/DEPLOYMENT_EVIDENCE.md",
                 styles["small"],
             ),
             PageBreak(),
@@ -508,7 +510,7 @@ def build() -> Path:
                     ["API contract", "FastAPI OpenAPI regenerates the TypeScript client"],
                     ["Responsive UI", "20 Playwright cases pass: 10 flows on desktop and mobile"],
                     ["Background work", "Celery long runs, beat saved searches, Redis dedupe/DLQ"],
-                    ["Local packaging", "Compose: web/API/workers, MCPs, simulator, Postgres, Redis, Qdrant, Ollama, Phoenix"],
+                    ["Packaging", "Compose full stack plus live Render web/API/Postgres reviewer profile"],
                     ["Evaluation CI", "make eval plus regression thresholds; unit, contract and UI workflows"],
                 ],
                 [42 * mm, 124 * mm],
@@ -532,11 +534,13 @@ def build() -> Path:
                 styles,
             ),
             _p(
-                "Phoenix received a content-free OTLP verification span locally; Prometheus and "
-                "redacted JSONL remain available. Public read-only trace URLs still require deployment. "
+                "The reviewer is live at https://gigbid-web.onrender.com; its hosted graph produced five "
+                "events and five Postgres checkpoints. Phoenix received a content-free OTLP span locally; "
+                "public read-only trace URLs still require secured deployment. "
                 "[evals/results/model_profiles.json; docs/MODEL_PROFILE_EXPERIMENT.md]",
                 styles["small"],
             ),
+            Spacer(1, 2 * mm),
             _p(
                 "Simulator outcome study (synthetic rule engine): 90 jobs, bid/skip F1 1.00 and scam "
                 "recall 1.00 for every persona; reply rates 0.667 AI/ML, 0.917 full-stack and 0.708 data; "
@@ -656,7 +660,7 @@ def build() -> Path:
                     ["Blind classmate panel", "Requires independent human raters"],
                     ["Hidden test results", "Instructor-only dataset and post-deadline run"],
                     ["Optional GitHub live validation", "Requires the user's PAT and consented repositories"],
-                    ["Public URL, external traces, video and publication", "Render profile is prepared; accounts and publication remain external"],
+                    ["External traces, video and publication", "Public app is live; these still require secure hosting or human publication"],
                     ["Exact change-request diff", "Final instructor policy update text was not supplied"],
                 ],
                 [62 * mm, 104 * mm],
@@ -666,10 +670,10 @@ def build() -> Path:
             _p(
                 "GigBid's core local product is implemented and reproducible: simulator, MCP servers, "
                 "two durable graphs, RAG variants, verification, worker scheduling, safety controls, "
-                "typed full-stack UI and evaluation gates. The evidence supports shipping the explicit "
+                "typed full-stack UI, live Render reviewer and evaluation gates. The evidence supports shipping the explicit "
                 "hand-built graph, type-diverse V2 retrieval and Qwen3 4B writer while preserving "
-                "negative results. Submission should occur only after the human studies, public "
-                "deployment and instructor hidden run are filled with genuine evidence.",
+                "negative results. The remaining human studies, external traces, recorded demo and "
+                "instructor hidden run must still be filled with genuine evidence.",
                 styles["body"],
             ),
             _p(

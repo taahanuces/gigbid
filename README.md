@@ -16,9 +16,9 @@ analytics without exposing private data.
 
 ## Current status
 
-The end-to-end local product slice, MCP services, durable graphs, synthetic/public-data experiments,
+The end-to-end product slice, MCP services, durable graphs, synthetic/public-data experiments,
 observability and worker reliability controls are implemented and tested. The reviewer deployment is
-designed for Render with GigSim as its authoritative marketplace; live Upwork access is not required.
+live on Render with GigSim as its authoritative marketplace; live Upwork access is not required.
 Missing instructor assets and human calibration labels remain explicitly external. See
 [`docs/IMPLEMENTATION_PLAN.md`](docs/IMPLEMENTATION_PLAN.md) and
 [`docs/PHASE_STATUS.md`](docs/PHASE_STATUS.md).
@@ -36,7 +36,9 @@ Missing instructor assets and human calibration labels remain explicitly externa
 | Reproduction/runbook | [`docs/RUNBOOK.md`](docs/RUNBOOK.md) |
 | Human/live submission work | [`docs/SUBMISSION_CHECKLIST.md`](docs/SUBMISSION_CHECKLIST.md) |
 | Render deployment | [`render.yaml`](render.yaml) and [`docs/RENDER_DEPLOYMENT.md`](docs/RENDER_DEPLOYMENT.md) |
-| Public app, video and trace links | App deployment in progress; video and external trace links remain student/account work |
+| Public reviewer app | [gigbid-web.onrender.com](https://gigbid-web.onrender.com) |
+| Public API health | [gigbid-api.onrender.com/health](https://gigbid-api.onrender.com/health) |
+| Video and external trace links | Remain student/account work; no placeholder is presented as evidence |
 
 ## Architecture
 
@@ -111,8 +113,10 @@ Run the API, worker, beat and web commands from separate terminals as described 
 The root [`render.yaml`](render.yaml) creates a free reviewer profile: a Next.js web service, a
 combined FastAPI + localhost-only GigSim service, and Postgres. It deliberately uses deterministic
 model execution and synchronous graph runs so the demonstration needs no GPU, Redis, Celery, Qdrant,
-or Upwork account. The complete local stack still exercises those production components. Follow
-[`docs/RENDER_DEPLOYMENT.md`](docs/RENDER_DEPLOYMENT.md) for deployment and verification.
+or Upwork account. The complete local stack still exercises those production components. The live
+reviewer is [https://gigbid-web.onrender.com](https://gigbid-web.onrender.com); deployment identifiers
+and the verified hosted run are recorded in [`docs/DEPLOYMENT_EVIDENCE.md`](docs/DEPLOYMENT_EVIDENCE.md).
+Follow [`docs/RENDER_DEPLOYMENT.md`](docs/RENDER_DEPLOYMENT.md) for deployment and verification.
 
 ## Safety invariants
 
