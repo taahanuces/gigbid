@@ -4,6 +4,10 @@
 
 - Reviewer UI: <https://gigbid-web.onrender.com>
 - API health: <https://gigbid-api.onrender.com/health>
+- Public trace index: <https://gigbid-web.onrender.com/traces>
+- Scam/injection skip: <https://gigbid-web.onrender.com/traces/scam-injection-skip>
+- Critic loop and approval: <https://gigbid-web.onrender.com/traces/approved-critic-loop>
+- Crash/resume exactly-once: <https://gigbid-web.onrender.com/traces/crash-resume-exactly-once>
 - Reviewer email: `reviewer@gigbid.local`
 - Reviewer password: supplied out of band; never committed or included in this document.
 
@@ -18,9 +22,9 @@
 | Web deploy | `dep-dbqvotsipgvc73cv2p50` | Succeeded |
 | API deploy | `dep-dbqvotkipgvc73cv2o00` | Succeeded |
 
-The deployed source was commit `f3f95f387daa97e5eb448764789e25a232fd668a` from the private
-GitHub repository. The password is stored as a Render secret and is deliberately absent from Git,
-logs, screenshots and report artifacts.
+The initial deployed source was commit `f3f95f387daa97e5eb448764789e25a232fd668a`; Render then
+auto-deployed the versioned public-evidence update from `main`. The password is stored as a Render
+secret and is deliberately absent from Git, logs, screenshots and report artifacts.
 
 ## Hosted verification — 12 November 2026
 
@@ -55,6 +59,8 @@ HTTP 200 and the subsequent run, event and history reads as HTTP 200.
 This deployment demonstrates the assignment workflow with GigSim only. It intentionally does not use
 an Upwork account or perform a live marketplace write. The free reviewer profile uses deterministic
 model execution and synchronous graph runs, while the two-model and Celery evidence remains in the
-reproducible local experiments. Phoenix is verified locally; external read-only Phoenix trace URLs are
-not claimed. Render free services may cold-start after inactivity, and free Postgres has the limits
-documented in `docs/RENDER_DEPLOYMENT.md`.
+reproducible local experiments. Phoenix is verified locally. The three public URLs are deliberately
+small, signed-out trace snapshots regenerated from the real graph and fault-injection harness; they
+preserve redacted events, checkpoint/write counts and source references without exposing prompts,
+credentials, PII or private portfolio text. Render free services may cold-start after inactivity, and
+free Postgres has the limits documented in `docs/RENDER_DEPLOYMENT.md`.

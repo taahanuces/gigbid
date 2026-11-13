@@ -4,12 +4,12 @@
 | --- | --- | --- | --- |
 | R1 One marketplace port | `agent/marketplace_port.py`, simulator/memory/Upwork adapters | port, REST simulator, idempotency and graph integration tests | Complete; GigSim is the authoritative assignment marketplace and live Upwork is optional/not evaluated |
 | R2 Three owned MCP servers | `mcp_servers/` | in-process protocol tests and reviewed full-schema hashes | Complete locally; manual Inspector captures pending |
-| R3 Hand-written parallel graph | `agent/graphs/bid_graph.py` | parallel/skip/approval/budget tests and checkpoint timeline | Complete locally; instructor traces pending |
+| R3 Hand-written parallel graph | `agent/graphs/bid_graph.py` | parallel/skip/approval/budget tests, checkpoint timeline and three public redacted traces | Complete; public trace pages cover skip, Critic/approval and crash/resume |
 | R4 Approval before writes | graph interrupts, Postgres checkpointer and API approvals | exactly-once crash tests, history and read-only replay | Complete locally; Docker Postgres test also runs in CI |
 | R5 Grounded claims | `rag/verify.py` | claim tests and synthetic normal/attack evaluation | Complete for synthetic study; human/instructor dev evaluation pending |
 | R6 Measured retrieval | `rag/variants/`, synthetic RAG and ablation runners | 90-job V0/V1/V2/V3/V8 results plus dense/lexical/RRF ablation | Complete synthetic measurement and shipped choice; human relevance review pending |
 | R7 Explicit memory promotion | `agent/memory/`, settings API/UI | promotion thresholds, durable store and deletion tests | Complete locally |
-| R8 Tracing and budgets | `agent/observability.py`, `agent/telemetry.py`, Phoenix, graph runtime and run UI | trace propagation, OTLP tests plus local Phoenix 200/span-ingestion check, Prometheus/JSONL, baseline p95 | Complete locally; three public read-only trace URLs still require deployment |
+| R8 Tracing and budgets | `agent/observability.py`, `agent/telemetry.py`, Phoenix, graph runtime and public trace UI | trace propagation, OTLP tests plus local Phoenix 200/span-ingestion check, Prometheus/JSONL, baseline p95 and three signed-out trace snapshots | Complete; public snapshots are synthetic, redacted and reproducible from the committed graph harness |
 | R9 Safety and platform respect | policy, redaction, bearer auth, rate limiting | injection, PII, auth, audit and synthetic attack tests | Complete locally; instructor attack set pending |
 | R10 Deployable product | `infra/`, `apps/`, `render.yaml` | Compose validation, Render Blueprint tests, container smoke test and [live reviewer](https://gigbid-web.onrender.com) | Complete; Render web/API/Postgres are live and the hosted GigSim run was verified |
 | A Tool-design study | `evals/datasets/tool_design_tasks.json`, `evals/runners/tool_design_eval.py` | 40 tasks × 3 designs in `evals/results/tool_design.json` | Complete locally; one-model limitation documented |

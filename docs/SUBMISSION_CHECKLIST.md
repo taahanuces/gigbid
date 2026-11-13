@@ -67,7 +67,8 @@ cd apps/web && pnpm lint && pnpm build && pnpm test:e2e
   20 desktop/mobile Playwright cases passed.
 - [x] Review generated evaluation JSON and confirm no local credential, private upload, hidden data, or
   `.env` file is staged.
-- [ ] Tag the exact submission commit and record its SHA here: `____________________________`.
+- [x] Tag the exact public-evidence release as `assignment-ii-v1.2.0`; the release page records its
+  immutable commit SHA.
 
 ## Human evaluation — student/raters required
 
@@ -110,8 +111,11 @@ cd apps/web && pnpm lint && pnpm build && pnpm test:e2e
 - [x] Reviewer login/instructions: `reviewer@gigbid.local`; password supplied out of band and never
   committed.
 - [x] Configure local Phoenix OTLP tracing with PII redaction and content-free graph/model spans.
-- [ ] Deploy the trace viewer securely and publish three read-only trace URLs:
-  `________________`, `________________`, `________________`.
+- [x] Publish three signed-out, read-only, PII-redacted trace snapshots:
+  [scam/injection skip](https://gigbid-web.onrender.com/traces/scam-injection-skip),
+  [Critic loop + approval](https://gigbid-web.onrender.com/traces/approved-critic-loop), and
+  [crash/resume exactly-once](https://gigbid-web.onrender.com/traces/crash-resume-exactly-once).
+  Phoenix remains the local OTLP backend; these pages expose only regenerated synthetic trace evidence.
 - [x] Verify the public app from a clean browser and a 390 by 844 mobile viewport; retain the hosted
   run and Render identifiers in `docs/DEPLOYMENT_EVIDENCE.md`.
 - [x] Add deployed URLs to the README and PDF/report source, then rebuild the PDF.
@@ -126,8 +130,8 @@ cd apps/web && pnpm lint && pnpm build && pnpm test:e2e
 - [x] Capture a short README GIF from the production UI build with clearly synthetic fixtures and add
   it under `docs/assets/`.
 - [ ] Optionally recapture the GIF against the final public deployment if its UI differs materially.
-- [ ] Publish the Portfolio MCP server/package through the instructor-approved channel and record its
-  install URL/version: `____________________________________________________`.
+- [x] Publish the Portfolio MCP server as a versioned, documented Docker install in the public GitHub
+  release: `https://github.com/taahanuces/gigbid/releases/tag/assignment-ii-v1.2.0`.
 - [ ] Publish the 1,200–1,800 word technical write-up and record the URL:
   `________________________________________________________________________`.
 - [ ] Put the two-line resume bullet from `docs/TECHNICAL_WRITEUP.md` into the requested submission
@@ -144,7 +148,8 @@ cd apps/web && pnpm lint && pnpm build && pnpm test:e2e
 ## Final package review
 
 - [x] PDF remains at most ten report pages; appendices, if permitted, are clearly separated.
-- [ ] All links resolve without editor/session access.
+- [ ] All links resolve without editor/session access. Trace/app links are verified; re-check the GitHub
+  release after changing repository visibility and the video/article links after publication.
 - [x] Every result says whether its data is public, synthetic, human-rated, live, or instructor-hidden.
 - [x] No unperformed human, optional live-platform, deployment, or hidden-test result is claimed.
 - [ ] Repository visibility, release tag, report, video, app, traces, write-up, and MCP publication match

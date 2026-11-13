@@ -28,7 +28,7 @@ Missing instructor assets and human calibration labels remain explicitly externa
 | Artifact | Location / status |
 | --- | --- |
 | Engineering report | [`output/pdf/GigBid_AI-4016_RnD_Report.pdf`](output/pdf/GigBid_AI-4016_RnD_Report.pdf), 9 pages |
-| Technical write-up | [`docs/TECHNICAL_WRITEUP.md`](docs/TECHNICAL_WRITEUP.md), 1,200–1,800 words |
+| Technical write-up | [`docs/TECHNICAL_WRITEUP.md`](docs/TECHNICAL_WRITEUP.md), 1,683-word publication draft |
 | Requirements and evidence | [`docs/REQUIREMENTS_MATRIX.md`](docs/REQUIREMENTS_MATRIX.md) |
 | Failure taxonomy | [`docs/FAILURE_ANALYSIS.md`](docs/FAILURE_ANALYSIS.md) |
 | Open-model selection | [`docs/MODEL_PROFILE_EXPERIMENT.md`](docs/MODEL_PROFILE_EXPERIMENT.md) |
@@ -39,7 +39,9 @@ Missing instructor assets and human calibration labels remain explicitly externa
 | Public reviewer app | [gigbid-web.onrender.com](https://gigbid-web.onrender.com) |
 | Public API health | [gigbid-api.onrender.com/health](https://gigbid-api.onrender.com/health) |
 | Submission demo | [`output/demo/GigBid_Submission_Demo.mp4`](output/demo/GigBid_Submission_Demo.mp4), 85 seconds, captioned GigSim workflow |
-| Public video and external trace links | Remain student/account publication work; no placeholder is presented as evidence |
+| Public traces | [scam/injection skip](https://gigbid-web.onrender.com/traces/scam-injection-skip) · [Critic loop + approval](https://gigbid-web.onrender.com/traces/approved-critic-loop) · [crash/resume](https://gigbid-web.onrender.com/traces/crash-resume-exactly-once) |
+| Portfolio MCP release | [`assignment-ii-v1.2.0`](https://github.com/taahanuces/gigbid/releases/tag/assignment-ii-v1.2.0), with versioned Docker install instructions |
+| Public video URL | Student upload pending; the verified local MP4 is included above |
 
 ## Architecture
 
@@ -118,6 +120,32 @@ or Upwork account. The complete local stack still exercises those production com
 reviewer is [https://gigbid-web.onrender.com](https://gigbid-web.onrender.com); deployment identifiers
 and the verified hosted run are recorded in [`docs/DEPLOYMENT_EVIDENCE.md`](docs/DEPLOYMENT_EVIDENCE.md).
 Follow [`docs/RENDER_DEPLOYMENT.md`](docs/RENDER_DEPLOYMENT.md) for deployment and verification.
+
+The signed-out [public trace index](https://gigbid-web.onrender.com/traces) exposes three synthetic,
+PII-redacted, read-only execution snapshots: a scam/injection skip with zero writes, a bounded Critic
+revision followed by human approval, and a crash/restart test that preserves exactly one marketplace
+draft. Each page links its assertions to committed tests or generated evidence; private prompts,
+portfolio text and credentials are excluded.
+
+## Published Portfolio MCP
+
+The Portfolio MCP server is frozen in the
+[`assignment-ii-v1.2.0` release](https://github.com/taahanuces/gigbid/releases/tag/assignment-ii-v1.2.0).
+It exposes read-only synthetic demo evidence through the official MCP Python SDK. Build and run the
+versioned Docker source with:
+
+```bash
+git clone --branch assignment-ii-v1.2.0 --depth 1 https://github.com/taahanuces/gigbid.git
+cd gigbid
+docker build -f infra/docker/mcp.Dockerfile -t gigbid-portfolio-mcp:v1.2.0 .
+docker run --rm -p 8101:8101 \
+  -e MCP_HOST=0.0.0.0 -e MCP_PORT=8101 \
+  -e MCP_BEARER_TOKEN=replace-with-a-random-local-token \
+  gigbid-portfolio-mcp:v1.2.0 python -m mcp_servers.portfolio.server
+```
+
+Connect an MCP client to `http://127.0.0.1:8101/mcp` with the same bearer token. The release contains
+only the generated synthetic persona corpus; private evidence is never packaged.
 
 ## Safety invariants
 
@@ -204,7 +232,7 @@ docker compose --env-file .env.example -f infra/docker-compose.yml config --quie
 cd apps/web && pnpm lint && pnpm build && pnpm test:e2e
 ```
 
-The latest checked product run contains 20 passing Playwright cases across desktop and mobile. The
+The latest checked product run contains 22 passing Playwright cases across desktop and mobile. The
 Postgres restart test is optional when Docker is unavailable and runs in CI with the service present.
 
 ## Local development

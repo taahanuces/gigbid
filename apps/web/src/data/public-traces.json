@@ -1,0 +1,402 @@
+{
+  "generated_at": "2026-11-13T08:15:40.375146+00:00",
+  "schema_version": 1,
+  "disclosure": "Public snapshots contain synthetic data and redacted state only. They preserve graph events, safety assertions, checkpoint counts, and write counts without prompts, private portfolio text, credentials, or PII.",
+  "traces": [
+    {
+      "slug": "scam-injection-skip",
+      "trace_id": "trace-public-scam-4016",
+      "title": "Scam and prompt-injection job skipped",
+      "status": "skip",
+      "summary": "The risk branch treated the job post as untrusted input, recorded the injected instruction, blocked the off-platform request, and terminated with zero marketplace writes.",
+      "data_origin": "Synthetic GigSim smoke fixture; redacted, read-only execution snapshot",
+      "metrics": {
+        "duration_ms": 4.679,
+        "events": 5,
+        "checkpoints": 5,
+        "marketplace_writes": 0,
+        "model_cost_usd": 0
+      },
+      "assertions": [
+        "Injected job instructions were recorded but never followed.",
+        "Off-platform contact and unpaid-work signals forced a skip.",
+        "No proposal draft or Connects spend occurred."
+      ],
+      "evidence_refs": [
+        "tests/unit/test_nodes.py::test_risky_job_is_blocked_and_injection_is_recorded",
+        "tests/integration/test_bid_graph.py::test_risky_job_terminates_without_draft",
+        "evals/datasets/smoke_jobs.json#job-risk-002"
+      ],
+      "spans": [
+        {
+          "sequence": 1,
+          "node": "load_job",
+          "status": "complete",
+          "attributes": {}
+        },
+        {
+          "sequence": 2,
+          "node": "analyst",
+          "status": "complete",
+          "attributes": {}
+        },
+        {
+          "sequence": 3,
+          "node": "fit_matcher",
+          "status": "complete",
+          "attributes": {}
+        },
+        {
+          "sequence": 4,
+          "node": "risk_assessor",
+          "status": "complete",
+          "attributes": {}
+        },
+        {
+          "sequence": 5,
+          "node": "decision",
+          "status": "complete",
+          "attributes": {
+            "action": "skip"
+          }
+        }
+      ],
+      "redacted_state": {
+        "decision": {
+          "action": "skip",
+          "confidence": 1.0,
+          "reasons": [
+            "Portfolio evidence does not support enough required work."
+          ]
+        },
+        "risk_report": {
+          "score": 0.6,
+          "flags": [
+            "off_platform_contact",
+            "prompt_injection"
+          ],
+          "client_quality_score": 0.59,
+          "explanation": "off platform contact; embedded instructions were isolated and ignored",
+          "blocked": false,
+          "ignored_instructions": [
+            "ignore previous instructions",
+            "system prompt",
+            "reveal your system prompt"
+          ]
+        },
+        "proposal_created": false
+      }
+    },
+    {
+      "slug": "approved-critic-loop",
+      "trace_id": "trace-public-critic-4016",
+      "title": "Critic revision loop and approved draft",
+      "status": "draft_created",
+      "summary": "The Critic rejected a 260-plus-word synthetic draft, the bounded revision loop trimmed it to policy, verification and compliance ran again, and a human approval created one marketplace draft.",
+      "data_origin": "Synthetic GigSim test harness; redacted, read-only execution snapshot",
+      "metrics": {
+        "duration_ms": 9.446,
+        "events": 17,
+        "checkpoints": 17,
+        "critic_passes": 2,
+        "revisions": 1,
+        "marketplace_writes": 1,
+        "model_cost_usd": 0
+      },
+      "assertions": [
+        "The first Critic pass failed for excessive length.",
+        "The bounded revision loop reran claim verification and Critic checks.",
+        "The graph interrupted for explicit human approval before the write.",
+        "Approval created a marketplace draft only; it did not submit a final proposal."
+      ],
+      "evidence_refs": [
+        "scripts/build_public_trace_snapshots.py::_critic_and_approval_trace",
+        "tests/integration/test_bid_graph.py::test_bid_graph_interrupts_then_writes_once",
+        "agent/graphs/bid_graph.py#critic_route"
+      ],
+      "spans": [
+        {
+          "sequence": 1,
+          "node": "load_job",
+          "status": "complete",
+          "attributes": {}
+        },
+        {
+          "sequence": 2,
+          "node": "analyst",
+          "status": "complete",
+          "attributes": {}
+        },
+        {
+          "sequence": 3,
+          "node": "fit_matcher",
+          "status": "complete",
+          "attributes": {}
+        },
+        {
+          "sequence": 4,
+          "node": "risk_assessor",
+          "status": "complete",
+          "attributes": {}
+        },
+        {
+          "sequence": 5,
+          "node": "decision",
+          "status": "complete",
+          "attributes": {
+            "action": "bid"
+          }
+        },
+        {
+          "sequence": 6,
+          "node": "pricing",
+          "status": "complete",
+          "attributes": {}
+        },
+        {
+          "sequence": 7,
+          "node": "writer",
+          "status": "complete",
+          "attributes": {
+            "execution": "deterministic_fallback"
+          }
+        },
+        {
+          "sequence": 8,
+          "node": "claim_verifier",
+          "status": "complete",
+          "attributes": {}
+        },
+        {
+          "sequence": 9,
+          "node": "critic",
+          "status": "complete",
+          "attributes": {
+            "passed": false
+          }
+        },
+        {
+          "sequence": 10,
+          "node": "revise",
+          "status": "complete",
+          "attributes": {}
+        },
+        {
+          "sequence": 11,
+          "node": "claim_verifier",
+          "status": "complete",
+          "attributes": {}
+        },
+        {
+          "sequence": 12,
+          "node": "critic",
+          "status": "complete",
+          "attributes": {
+            "passed": true
+          }
+        },
+        {
+          "sequence": 13,
+          "node": "compliance",
+          "status": "complete",
+          "attributes": {
+            "passed": true
+          }
+        },
+        {
+          "sequence": 14,
+          "node": "prepare_approval",
+          "status": "complete",
+          "attributes": {}
+        },
+        {
+          "sequence": 15,
+          "node": "approval",
+          "status": "approve",
+          "attributes": {}
+        },
+        {
+          "sequence": 16,
+          "node": "record_memory",
+          "status": "complete",
+          "attributes": {
+            "observations": 0
+          }
+        },
+        {
+          "sequence": 17,
+          "node": "submit",
+          "status": "draft_created",
+          "attributes": {}
+        }
+      ],
+      "redacted_state": {
+        "status": "draft_created",
+        "revision_count": 1,
+        "compliance_passed": true,
+        "approval": "human_approved",
+        "marketplace_receipt": {
+          "marketplace_id": "proposal-f74ec141-0fed-4216-beb2-8b3b1091dd21",
+          "action": "create_proposal_draft",
+          "status": "draft_created",
+          "idempotency_key": "proposal:demo:job-forecast-001:cf98319b-0e17-4a93-b1e5-9fd8401cf82d",
+          "connects_spent": 8,
+          "created_at": "2026-11-13T08:15:40.350385Z"
+        }
+      }
+    },
+    {
+      "slug": "crash-resume-exactly-once",
+      "trace_id": "trace-public-resume-4016",
+      "title": "Crash, checkpoint resume, and exactly-once draft",
+      "status": "draft_created",
+      "summary": "The marketplace accepted the draft, the worker crashed before recording completion, and a reconstructed graph resumed from the checkpoint. The idempotency key returned the original receipt, so the final write count remained one.",
+      "data_origin": "Synthetic fault-injection harness; redacted, read-only execution snapshot",
+      "metrics": {
+        "duration_ms": 13.193,
+        "events": 17,
+        "checkpoints": 14,
+        "simulated_crashes": 1,
+        "marketplace_writes": 1,
+        "idempotency_receipts": 1,
+        "model_cost_usd": 0
+      },
+      "assertions": [
+        "The checkpoint remained available after graph reconstruction.",
+        "The accepted marketplace write retained its original idempotency receipt.",
+        "Resume completed with exactly one draft and no duplicate Connects spend."
+      ],
+      "evidence_refs": [
+        "tests/integration/test_bid_graph.py::test_retry_after_post_write_crash_is_exactly_once",
+        "tests/integration/test_postgres_durability.py::test_postgres_checkpoint_survives_connection_restart",
+        "agent/graphs/bid_graph.py#submit"
+      ],
+      "spans": [
+        {
+          "sequence": 1,
+          "node": "load_job",
+          "status": "complete",
+          "attributes": {}
+        },
+        {
+          "sequence": 2,
+          "node": "analyst",
+          "status": "complete",
+          "attributes": {}
+        },
+        {
+          "sequence": 3,
+          "node": "fit_matcher",
+          "status": "complete",
+          "attributes": {}
+        },
+        {
+          "sequence": 4,
+          "node": "risk_assessor",
+          "status": "complete",
+          "attributes": {}
+        },
+        {
+          "sequence": 5,
+          "node": "decision",
+          "status": "complete",
+          "attributes": {
+            "action": "bid"
+          }
+        },
+        {
+          "sequence": 6,
+          "node": "pricing",
+          "status": "complete",
+          "attributes": {}
+        },
+        {
+          "sequence": 7,
+          "node": "writer",
+          "status": "complete",
+          "attributes": {
+            "execution": "deterministic_fallback"
+          }
+        },
+        {
+          "sequence": 8,
+          "node": "claim_verifier",
+          "status": "complete",
+          "attributes": {}
+        },
+        {
+          "sequence": 9,
+          "node": "critic",
+          "status": "complete",
+          "attributes": {
+            "passed": true
+          }
+        },
+        {
+          "sequence": 10,
+          "node": "compliance",
+          "status": "complete",
+          "attributes": {
+            "passed": true
+          }
+        },
+        {
+          "sequence": 11,
+          "node": "prepare_approval",
+          "status": "complete",
+          "attributes": {}
+        },
+        {
+          "sequence": 12,
+          "node": "approval",
+          "status": "approve",
+          "attributes": {}
+        },
+        {
+          "sequence": 13,
+          "node": "record_memory",
+          "status": "complete",
+          "attributes": {
+            "observations": 0
+          }
+        },
+        {
+          "sequence": 14,
+          "node": "marketplace_write",
+          "status": "accepted_before_crash",
+          "attributes": {
+            "idempotency_receipts": 1
+          }
+        },
+        {
+          "sequence": 15,
+          "node": "process_failure",
+          "status": "simulated_crash",
+          "attributes": {
+            "checkpoint_preserved": true
+          }
+        },
+        {
+          "sequence": 16,
+          "node": "checkpoint_restore",
+          "status": "resumed",
+          "attributes": {
+            "replayed_marketplace_writes": 0
+          }
+        },
+        {
+          "sequence": 17,
+          "node": "submit",
+          "status": "draft_created",
+          "attributes": {}
+        }
+      ],
+      "redacted_state": {
+        "status": "draft_created",
+        "process_reconstructed": true,
+        "marketplace_write_count": 1,
+        "idempotency_receipt_count": 1
+      }
+    }
+  ]
+}

@@ -508,7 +508,7 @@ def build() -> Path:
                     ["Area", "Implementation evidence"],
                     ["Streaming", "Authenticated SSE polls durable checkpoints and de-duplicates node events"],
                     ["API contract", "FastAPI OpenAPI regenerates the TypeScript client"],
-                    ["Responsive UI", "20 Playwright cases pass: 10 flows on desktop and mobile"],
+                    ["Responsive UI", "22 Playwright cases pass: 11 flows on desktop and mobile"],
                     ["Background work", "Celery long runs, beat saved searches, Redis dedupe/DLQ"],
                     ["Packaging", "Compose full stack plus live Render web/API/Postgres reviewer profile"],
                     ["Evaluation CI", "make eval plus regression thresholds; unit, contract and UI workflows"],
@@ -535,8 +535,10 @@ def build() -> Path:
             ),
             _p(
                 "The reviewer is live at https://gigbid-web.onrender.com; its hosted graph produced five "
-                "events and five Postgres checkpoints. Phoenix received a content-free OTLP span locally; "
-                "public read-only trace URLs still require secured deployment. "
+                "events and five Postgres checkpoints. Phoenix received a content-free OTLP span locally. "
+                "Three signed-out, redacted execution snapshots are published under "
+                "https://gigbid-web.onrender.com/traces for scam/injection skip, Critic/approval and "
+                "crash/resume evidence. "
                 "[evals/results/model_profiles.json; docs/MODEL_PROFILE_EXPERIMENT.md]",
                 styles["small"],
             ),
@@ -570,7 +572,8 @@ def build() -> Path:
                 "GitHub's official MCP server is allowlisted for repository reads. The builder detects "
                 "technologies in README/code, quarantines unverifiable outcome claims, and produces a "
                 "pending candidate. Only explicit approval converts the code-verifiable summary into a "
-                "private portfolio evidence item.",
+                "private portfolio evidence item. The read-only Portfolio MCP is published as the "
+                "versioned assignment-ii-v1.2.0 GitHub release with a documented Docker install.",
                 styles["body"],
             ),
             _table(
@@ -660,7 +663,7 @@ def build() -> Path:
                     ["Blind classmate panel", "Requires independent human raters"],
                     ["Hidden test results", "Instructor-only dataset and post-deadline run"],
                     ["Optional GitHub live validation", "Requires the user's PAT and consented repositories"],
-                    ["Public video link, external traces, publication", "The 85-second MP4 exists locally; these still require external publication"],
+                    ["Public video and article links", "The 85-second MP4 and 1,683-word draft exist locally; the student must publish them"],
                     ["Exact change-request diff", "Final instructor policy update text was not supplied"],
                 ],
                 [62 * mm, 104 * mm],
@@ -672,8 +675,8 @@ def build() -> Path:
                 "two durable graphs, RAG variants, verification, worker scheduling, safety controls, "
                 "typed full-stack UI, live Render reviewer and evaluation gates. The evidence supports shipping the explicit "
                 "hand-built graph, type-diverse V2 retrieval and Qwen3 4B writer while preserving "
-                "negative results. The remaining human studies, external traces, public video link and "
-                "instructor hidden run must still be filled with genuine evidence.",
+                "negative results. The remaining human studies, public video/article links and instructor "
+                "hidden run must still be filled with genuine evidence.",
                 styles["body"],
             ),
             _p(

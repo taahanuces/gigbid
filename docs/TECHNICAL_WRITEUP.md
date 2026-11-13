@@ -100,12 +100,14 @@ keeping orchestration deterministic; model planning added no synthetic outcome b
 Trace identifiers flow from HTTP to graph state and marketplace audit events.
 Prometheus metrics and redacted JSONL spans work locally. A pinned self-hosted Phoenix service receives
 content-free OTLP spans for HTTP, graph and model operations; prompts and portfolio/proposal bodies are
-excluded from span attributes. Public read-only trace links still require secured deployment.
+excluded from span attributes. Three public read-only snapshots now show a scam/injection skip, a
+bounded Critic loop with approval, and a crash/resume exactly-once write. They expose synthetic,
+redacted events and evidence references rather than private prompts or portfolio contents.
 
 The local product is packaged with Docker Compose: web, API, worker, beat, three MCP servers,
 simulator, Postgres, Redis, Qdrant, Ollama, and Phoenix. Tests cover Python units and integrations, MCP
 contracts, tenant isolation, exactly-once writes, restart/resume behavior, prompt injection, claim
-verification, and responsive browser flows. Twenty Playwright cases pass across desktop and mobile.
+verification, and responsive browser flows. Twenty-two Playwright cases pass across desktop and mobile.
 CI runs static typing, linting, tests, production web build, Compose validation, evaluations, and
 regression thresholds.
 
@@ -144,8 +146,8 @@ improvement.
 
 The local implementation and synthetic/public-data evidence are reproducible. Several submission
 items cannot be honestly manufactured by code: 30 human calibration labels and Cohen's kappa, a blind
-classmate panel, optional GitHub PAT validation, instructor hidden-test results, external read-only trace
-URLs, a public video link, and the instructor's exact final change-request text. The repository
+classmate panel, optional GitHub PAT validation, instructor hidden-test results, a public video link,
+and the instructor's exact final change-request text. The repository
 provides worksheets, commands, placeholders, and a checklist for those tasks. They should be completed
 with genuine people, credentials, and deployment evidence before final submission.
 

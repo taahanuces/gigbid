@@ -47,6 +47,9 @@
   100-job inbox, a five-event/five-checkpoint hosted analysis, and a 390 by 844 mobile view were
   verified. The hosted profile uses GigSim, deterministic model execution and synchronous graph runs;
   the fuller Celery/Redis/Qdrant/open-model stack remains available and tested locally.
+- Public-evidence slice: three signed-out, synthetic and PII-redacted trace snapshots expose a
+  scam/injection skip, a bounded Critic loop with human approval, and crash/resume exactly-once
+  behavior. The Portfolio MCP is frozen as the `assignment-ii-v1.2.0` Docker-installable GitHub release.
 
 ## Verified evidence
 

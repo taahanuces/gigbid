@@ -328,3 +328,15 @@ test("promoted memory is inspectable and deletable", async ({ page }) => {
   await page.getByRole("button", { name: "Forget prefer_concise_proposals" }).click();
   await expect(page.getByText("prefer concise proposals")).toHaveCount(0);
 });
+
+test("public trace evidence is available without reviewer authentication", async ({ page }) => {
+  await page.goto("/traces");
+  await expect(page.getByRole("heading", { name: "Read-only agent traces" })).toBeVisible();
+  await expect(page.getByRole("link", { name: /Scam and prompt-injection job skipped/ })).toBeVisible();
+
+  await page.goto("/traces/approved-critic-loop");
+  await expect(page.getByRole("heading", { name: "Critic revision loop and approved draft" })).toBeVisible();
+  await expect(page.getByText("trace-public-critic-4016")).toBeVisible();
+  await expect(page.getByText("The graph interrupted for explicit human approval before the write.")).toBeVisible();
+  await expect(page.getByText("Synthetic · redacted · read-only")).toBeVisible();
+});

@@ -2,8 +2,28 @@
 
 The Portfolio MCP server exposes tenant-scoped, read-only portfolio evidence for grounded proposal
 generation. It is an independently implemented MCP server, not a wrapper around the starter kit. The
-repository includes a runnable service and container; public package publication is a separate
-submission action because it requires the student's registry/account.
+repository includes a runnable service and container. The assignment release is versioned so another
+MCP host can build the exact tested source without private portfolio data.
+
+## Published assignment release
+
+- Release: <https://github.com/taahanuces/gigbid/releases/tag/assignment-ii-v1.2.0>
+- Versioned server source:
+  <https://github.com/taahanuces/gigbid/tree/assignment-ii-v1.2.0/mcp_servers/portfolio>
+- Version: `assignment-ii-v1.2.0`
+
+```bash
+git clone --branch assignment-ii-v1.2.0 --depth 1 https://github.com/taahanuces/gigbid.git
+cd gigbid
+docker build -f infra/docker/mcp.Dockerfile -t gigbid-portfolio-mcp:v1.2.0 .
+docker run --rm -p 8101:8101 \
+  -e MCP_HOST=0.0.0.0 -e MCP_PORT=8101 \
+  -e MCP_BEARER_TOKEN=replace-with-a-random-local-token \
+  gigbid-portfolio-mcp:v1.2.0 python -m mcp_servers.portfolio.server
+```
+
+Connect to `http://127.0.0.1:8101/mcp` with `Authorization: Bearer <token>`. The image contains only
+the generated synthetic personas. Users mount their own tenant-scoped JSONL locally for private use.
 
 ## Tools and resources
 
@@ -70,7 +90,7 @@ For manual inspection, connect an MCP Inspector-compatible client to the streama
 supply the bearer header. Capture the advertised tool schemas and at least one `search_evidence` call
 for submission evidence. Do not include a private evidence body or bearer token in screenshots.
 
-## Publish for the assignment
+## Re-publish or deploy another version
 
 1. Freeze and tag the exact tested commit.
 2. Build the `infra/docker/mcp.Dockerfile` image and scan it for secrets.
@@ -80,8 +100,9 @@ for submission evidence. Do not include a private evidence body or bearer token 
    `docs/SUBMISSION_CHECKLIST.md`.
 6. Revoke temporary credentials after the review.
 
-Publication is intentionally not claimed by this repository. A genuine public endpoint and registry
-URL require account ownership and must be added by the student.
+The release URL is the public installation target for the assignment. A continuously hosted remote MCP
+endpoint is optional; if one is deployed, keep bearer authentication enabled and never bundle private
+portfolio evidence.
 
 ## Trust boundary
 

@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from collections.abc import Callable
 from dataclasses import dataclass
 from typing import Literal, TypeAlias
 from uuid import uuid4
@@ -17,6 +18,10 @@ from agent.handoffs import (
     ApprovalDecision,
     ApprovalPayload,
     BidAction,
+    EvidenceItem,
+    FitReport,
+    JobSpec,
+    PriceQuote,
     ProposalDraft,
 )
 from agent.marketplace_port import MarketplacePort
@@ -38,6 +43,9 @@ from rag.retriever import retrieve_for_job
 from rag.verify import verify_claims
 
 BidCompiledGraph: TypeAlias = CompiledStateGraph[GigBidState, None, GigBidState, GigBidState]
+ProposalWriter: TypeAlias = Callable[
+    [JobSpec, FitReport, list[EvidenceItem], PriceQuote], ProposalDraft
+]
 
 
 @dataclass(slots=True)
@@ -47,6 +55,7 @@ class BidGraphServices:
     config: AppConfig
     evidence_indexes: dict[str, InMemoryEvidenceIndex] | None = None
     model_router: ModelRouter | None = None
+    proposal_writer: ProposalWriter | None = None
     user_floor: float = 300
     store: BaseStore | None = None
 
@@ -172,7 +181,8 @@ def build_bid_graph(
         }
 
     async def writer(state: GigBidState) -> dict[str, object]:
-        draft = draft_proposal(
+        active_writer = services.proposal_writer or draft_proposal
+        draft = active_writer(
             state["job_spec"], state["fit_report"], state["evidence"], state["price_quote"]
         )
         usage: list[dict[str, object]] = []
@@ -184,9 +194,7 @@ def build_bid_graph(
                     prompt_name="writer.v1.md",
                     payload={
                         "job": state["job_spec"].model_dump(mode="json"),
-                        "evidence": [
-                            item.model_dump(mode="json") for item in state["evidence"]
-                        ],
+                        "evidence": [item.model_dump(mode="json") for item in state["evidence"]],
                         "price": state["price_quote"].model_dump(mode="json"),
                     },
                 )
@@ -197,9 +205,7 @@ def build_bid_graph(
                 draft = ProposalDraft(
                     job_id=state["job_spec"].job_id,
                     cover_letter=cover_letter,
-                    screening_answers={
-                        str(key): str(value) for key, value in raw_answers.items()
-                    },
+                    screening_answers={str(key): str(value) for key, value in raw_answers.items()},
                     claims=[],
                     status="pending_verification",
                 )
